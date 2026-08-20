@@ -6,8 +6,8 @@ A small static site that lists recent earthquakes in and around **Istanbul**, us
 
 The site refreshes itself on two levels:
 
-1. A **scheduled GitHub Action** runs every 10 minutes, fetches the latest quakes and commits
-   the snapshot to `data/istanbul.json`, which redeploys the site via GitHub Pages.
+1. A **scheduled GitHub Action** runs every 10 minutes: it fetches the latest quakes, commits
+   the snapshot to `data/istanbul.json`, and — in the same run — redeploys the site to Pages.
 2. The **open page polls that snapshot every 60 seconds** (and immediately when a backgrounded
    tab becomes visible again), so a browser left open keeps showing current data without a reload.
 
@@ -26,22 +26,29 @@ assets/styles.css                 styling (dark + light, responsive)
 assets/app.js                     rendering, filtering, polling
 scripts/fetch-quakes.mjs          API client that writes the snapshot (Node 20+, no dependencies)
 data/istanbul.json                the committed snapshot the page reads
-.github/workflows/update-data.yml scheduled fetch + commit
-.github/workflows/pages.yml       GitHub Pages deployment
+.github/workflows/publish.yml     scheduled fetch, commit, and Pages deploy
 ```
 
 ## Setup
 
-1. Push to `main` (the workflows are scheduled off the default branch).
+1. Push to `main` (scheduled workflows only run off the default branch).
 2. In **Settings → Pages**, set *Source* to **GitHub Actions**. This step has to be done by hand:
    creating a Pages site requires repo-admin rights, which `GITHUB_TOKEN` cannot be granted, so
    the deploy workflow cannot enable Pages for you — it fails with *"Resource not accessible by
    integration"* until Pages exists.
-3. Re-run **Actions → Deploy to GitHub Pages** once Pages is on. Every later push to `main` —
-   including the data commits — deploys automatically.
+3. Run **Actions → Refresh data and deploy → Run workflow** once Pages is on. The schedule takes
+   over from there.
 
-The data workflow needs no setup beyond **Settings → Actions → General → Read and write
-permissions** (the default for most repos) so it can commit its snapshot.
+The workflow also needs **Settings → Actions → General → Read and write permissions** (the default
+for most repos) so it can commit its snapshot.
+
+### Why fetch and deploy live in one workflow
+
+Commits made with `GITHUB_TOKEN` deliberately **do not trigger new workflow runs** — GitHub blocks
+that to prevent recursive builds. So a separate deploy workflow listening on `push` would never see
+the data commits, and the published site would sit frozen at whatever a human last pushed while
+`data/istanbul.json` kept moving. Doing both in one run avoids that trap. The deploy job is skipped
+on scheduled runs that found no new quakes, so unchanged data costs no build.
 
 ## Local development
 
