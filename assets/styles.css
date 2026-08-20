@@ -1,0 +1,222 @@
+:root {
+  --bg: #0f1216;
+  --surface: #171c23;
+  --surface-2: #1e242d;
+  --border: #2a323d;
+  --text: #e8edf4;
+  --muted: #9aa7b8;
+  --accent: #4da3ff;
+
+  --light: #7cc4a4;
+  --moderate: #e8c56a;
+  --strong: #ef9350;
+  --severe: #e5615f;
+
+  --radius: 12px;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #f4f6f9;
+    --surface: #ffffff;
+    --surface-2: #eef1f6;
+    --border: #d8dee8;
+    --text: #16202c;
+    --muted: #5b6879;
+    --accent: #1667cc;
+
+    --light: #2f7d5b;
+    --moderate: #9a7411;
+    --strong: #b45a15;
+    --severe: #c0332f;
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 16px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrap {
+  width: min(760px, 100% - 2rem);
+  margin-inline: auto;
+}
+
+.site-header {
+  border-bottom: 1px solid var(--border);
+  background: var(--surface);
+  padding: 1.75rem 0 1.5rem;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  letter-spacing: -0.02em;
+}
+
+.tagline {
+  margin: 0.35rem 0 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+main { padding-block: 1.5rem 2.5rem; }
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: end;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  flex: 1 1 10rem;
+}
+
+.field label {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+}
+
+select,
+.refresh {
+  font: inherit;
+  color: var(--text);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.5rem 0.65rem;
+  min-height: 2.6rem;
+}
+
+.refresh { cursor: pointer; }
+.refresh:hover:not(:disabled) { background: var(--surface-2); }
+.refresh:disabled { opacity: 0.55; cursor: progress; }
+
+select:focus-visible,
+.refresh:focus-visible,
+a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.status {
+  margin: 1.1rem 0 0.9rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.status--stale { color: var(--strong); }
+
+.quakes {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.6rem;
+}
+
+.quake {
+  display: flex;
+  gap: 0.9rem;
+  align-items: flex-start;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--band, var(--border));
+  border-radius: var(--radius);
+  padding: 0.9rem 1rem;
+}
+
+.quake--light { --band: var(--light); }
+.quake--moderate { --band: var(--moderate); }
+.quake--strong { --band: var(--strong); }
+.quake--severe { --band: var(--severe); }
+
+.quake__mag {
+  flex: none;
+  min-width: 3.4rem;
+  text-align: center;
+  padding: 0.35rem 0.4rem;
+  border-radius: 10px;
+  background: var(--surface-2);
+  color: var(--band, var(--text));
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.02em;
+}
+
+.quake__body { min-width: 0; }
+
+.quake__title {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+}
+
+.quake__when {
+  margin: 0.15rem 0 0.5rem;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.quake__meta {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 1rem;
+  margin: 0;
+  padding: 0;
+  font-size: 0.85rem;
+}
+
+.quake__meta .k { color: var(--muted); }
+.quake__meta .v { font-variant-numeric: tabular-nums; }
+
+.quake__map {
+  display: inline-block;
+  margin-top: 0.55rem;
+  color: var(--accent);
+  font-size: 0.85rem;
+  text-decoration: none;
+}
+
+.quake__map:hover { text-decoration: underline; }
+
+.empty {
+  margin-top: 1.5rem;
+  padding: 1.5rem;
+  text-align: center;
+  color: var(--muted);
+  background: var(--surface);
+  border: 1px dashed var(--border);
+  border-radius: var(--radius);
+}
+
+.site-footer {
+  border-top: 1px solid var(--border);
+  padding: 1.25rem 0 2rem;
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+.site-footer p { margin: 0 0 0.5rem; }
+.site-footer a { color: var(--accent); }
+.disclaimer { opacity: 0.85; }
+
+@media (max-width: 30rem) {
+  .quake { padding: 0.75rem; gap: 0.7rem; }
+  .quake__mag { min-width: 3rem; font-size: 1.3rem; }
+}
