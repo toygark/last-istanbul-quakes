@@ -32,12 +32,17 @@ data/istanbul.json                the committed snapshot the page reads
 ## Setup
 
 1. Push to `main` (scheduled workflows only run off the default branch).
-2. In **Settings → Pages**, set *Source* to **GitHub Actions**. This step has to be done by hand:
+2. Make sure the repo is **public**, or that the account has **GitHub Pro**. Pages is a paid
+   feature on private repos, and while it is unavailable the *Source* setting below silently
+   refuses to stick.
+3. In **Settings → Pages**, set *Source* to **GitHub Actions**. This step has to be done by hand:
    creating a Pages site requires repo-admin rights, which `GITHUB_TOKEN` cannot be granted, so
-   the deploy workflow cannot enable Pages for you — it fails with *"Resource not accessible by
-   integration"* until Pages exists.
-3. Run **Actions → Refresh data and deploy → Run workflow** once Pages is on. The schedule takes
-   over from there.
+   the deploy workflow cannot enable Pages for you. Until a Pages site exists the deploy job fails
+   with *"Get Pages site failed … Not Found"*.
+4. Run **Actions → Refresh data and deploy → Run workflow** once Pages is on. The schedule takes
+   over from there — though note GitHub delays and sometimes drops high-frequency `schedule`
+   events under load, so a 10-minute cron is a target rather than a guarantee. The page always
+   shows how old its snapshot actually is, so a skipped run is visible rather than silent.
 
 The workflow also needs **Settings → Actions → General → Read and write permissions** (the default
 for most repos) so it can commit its snapshot.
