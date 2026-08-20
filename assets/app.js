@@ -20,22 +20,33 @@ const STALE_AFTER_MS = 10 * 60_000;
 /** Never hit the API more often than this from one browser on its own. */
 const LIVE_MIN_INTERVAL_MS = 5 * 60_000;
 /**
- * Floor for user-initiated refreshes. The throttle above lives in
- * sessionStorage and so survives a reload -- without this exemption, pull to
- * refresh (which *is* a reload) would silently skip the live fetch and
- * re-render the same stale snapshot, making the page look frozen.
+ * Floor for user-initiated refreshes. The throttle above is stored, and so
+ * survives a reload -- without this exemption, pull to refresh (which *is* a
+ * reload) would silently skip the live fetch and re-render the same stale
+ * snapshot, making the page look frozen.
  */
 const LIVE_MIN_INTERVAL_FORCED_MS = 15_000;
 /** After this many consecutive failures (no CORS, offline), stop trying. */
 const LIVE_MAX_FAILURES = 3;
 const LIVE_ATTEMPT_KEY = "last-istanbul-quakes:last-live-attempt";
 /**
- * Live results are cached alongside the attempt timestamp so a reload keeps
- * them. Without this, every pull to refresh drops back to the (stale) snapshot
- * and the page appears to go backwards in time until the throttle allows
- * another API call.
+ * Live results are cached alongside the attempt timestamp so the next page
+ * view starts from them instead of dropping back to the (older) snapshot.
+ *
+ * This lives in localStorage rather than sessionStorage on purpose. iOS Safari
+ * discards backgrounded tabs and starts a fresh session when you switch back
+ * to it, which empties sessionStorage -- so the page would re-render the stale
+ * snapshot, then visibly jump when the live fetch landed, every single time
+ * the app came to the foreground. A desktop tab, which keeps its session
+ * alive, never showed it.
  */
 const LIVE_CACHE_KEY = "last-istanbul-quakes:live";
+/**
+ * Cached live results older than this are ignored. The snapshot is usually the
+ * better answer by then, and stale rows should not outlive the session that
+ * fetched them by much.
+ */
+const LIVE_CACHE_MAX_AGE_MS = 2 * 3600_000;
 
 const listEl = document.getElementById("quakes");
 const statusEl = document.getElementById("status");
@@ -76,6 +87,8 @@ let snapshotFetchFailed = false;
 /** When we last pulled live data straight from the API, if ever. */
 let liveAt = null;
 let liveFailures = 0;
+/** True while a refresh is in flight that the reader was told about. */
+let refreshing = false;
 
 /** Coarse magnitude bands, used for colour and for the screen-reader label. */
 function magBand(mag) {
@@ -203,6 +216,7 @@ function render() {
     parts.push(`veriler ${formatRelative(at)} güncellendi (${istanbulTime.format(at)})`);
   }
   if (liveAt) parts.push("doğrudan API'den alındı");
+  if (refreshing) parts.push("güncelleniyor…");
   if (snapshotFetchFailed) parts.push("son yenileme başarısız oldu, önceki veriler gösteriliyor");
 
   const stale = at !== null && Date.now() - at > STALE_AFTER_MS;
@@ -214,7 +228,7 @@ function render() {
 
 function lastLiveAttempt() {
   try {
-    return Number(sessionStorage.getItem(LIVE_ATTEMPT_KEY)) || 0;
+    return Number(localStorage.getItem(LIVE_ATTEMPT_KEY)) || 0;
   } catch {
     return 0; // Private mode or blocked storage; the in-memory guards still apply.
   }
@@ -222,8 +236,9 @@ function lastLiveAttempt() {
 
 function readLiveCache() {
   try {
-    const parsed = JSON.parse(sessionStorage.getItem(LIVE_CACHE_KEY) ?? "null");
+    const parsed = JSON.parse(localStorage.getItem(LIVE_CACHE_KEY) ?? "null");
     if (!Array.isArray(parsed?.quakes) || !Number.isFinite(parsed?.at)) return null;
+    if (Date.now() - parsed.at > LIVE_CACHE_MAX_AGE_MS) return null;
     return parsed;
   } catch {
     return null;
@@ -232,7 +247,7 @@ function readLiveCache() {
 
 function writeLiveCache(at, quakes) {
   try {
-    sessionStorage.setItem(LIVE_CACHE_KEY, JSON.stringify({ at, quakes }));
+    localStorage.setItem(LIVE_CACHE_KEY, JSON.stringify({ at, quakes }));
   } catch {
     /* quota or private mode; the in-memory copy still serves this page view */
   }
@@ -268,7 +283,7 @@ function isNewQuake(q, generation) {
 
 function markLiveAttempt() {
   try {
-    sessionStorage.setItem(LIVE_ATTEMPT_KEY, String(Date.now()));
+    localStorage.setItem(LIVE_ATTEMPT_KEY, String(Date.now()));
   } catch {
     /* not fatal */
   }
@@ -327,8 +342,16 @@ async function loadLive({ force = false } = {}) {
   render();
 }
 
-async function load({ force = false } = {}) {
+async function load({ force = false, announce = false } = {}) {
   refreshBtn.disabled = true;
+  refreshing = true;
+  // A tab the browser froze and restored paints its old frame first, with
+  // "39 dakika önce" labels that were written before the freeze. Re-render
+  // straight away so those are right within the same beat as the restore,
+  // and say a refresh is under way rather than letting stale text stand
+  // until the network answers.
+  if (announce) render();
+
   try {
     // Cache-bust so a redeployed snapshot is picked up without a hard reload.
     const res = await fetch(`${SNAPSHOT_URL}?t=${Date.now()}`, { cache: "no-store" });
@@ -354,11 +377,11 @@ async function load({ force = false } = {}) {
     if (!snapshot) {
       statusEl.textContent = `Veriler yüklenemedi (${err.message}). Birazdan yeniden denenecek.`;
       statusEl.classList.add("status--stale");
-      refreshBtn.disabled = false;
       return;
     }
   } finally {
     refreshBtn.disabled = false;
+    refreshing = false;
   }
 
   render();
@@ -376,9 +399,17 @@ refreshBtn.addEventListener("click", () => load({ force: true }));
 setInterval(render, 30_000);
 setInterval(load, POLL_INTERVAL_MS);
 
-// A backgrounded tab gets throttled; catch up as soon as it is visible again.
+// A backgrounded tab gets throttled -- or, on iOS, frozen outright -- so catch
+// up as soon as it is visible again. Both events matter: visibilitychange
+// covers switching back to the tab, pageshow fires when the browser restores a
+// page it had put away, which is the path iOS Safari takes when you leave the
+// app and come back.
 document.addEventListener("visibilitychange", () => {
-  if (document.visibilityState === "visible") load();
+  if (document.visibilityState === "visible") load({ announce: true });
+});
+
+window.addEventListener("pageshow", (event) => {
+  if (event.persisted) load({ announce: true });
 });
 
 load({ force: true });
