@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>İstanbul Depremleri — Son Depremler</title>
+<meta name="description" content="İstanbul ve çevresinde meydana gelen son depremler. Kandilli Rasathanesi ve AFAD verileriyle, her 10 dakikada bir güncellenir." />
+<meta name="color-scheme" content="dark light" />
+<link rel="stylesheet" href="assets/styles.css" />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌍</text></svg>" />
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <h1>İstanbul Depremleri</h1>
+    <p class="tagline">İstanbul ve çevresindeki son depremler — Kandilli Rasathanesi &amp; AFAD verileri</p>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="controls" aria-label="Filtreler">
+    <div class="field">
+      <label for="radius">Uzaklık</label>
+      <select id="radius">
+        <option value="istanbul">Sadece İstanbul</option>
+        <option value="50">Merkeze 50 km</option>
+        <option value="100" selected>Merkeze 100 km</option>
+        <option value="250">Merkeze 250 km</option>
+      </select>
+    </div>
+    <div class="field">
+      <label for="minmag">En düşük büyüklük</label>
+      <select id="minmag">
+        <option value="0" selected>Tümü</option>
+        <option value="2">2.0+</option>
+        <option value="3">3.0+</option>
+        <option value="4">4.0+</option>
+      </select>
+    </div>
+    <div class="field">
+      <label for="period">Zaman aralığı</label>
+      <select id="period">
+        <option value="24">Son 24 saat</option>
+        <option value="168">Son 7 gün</option>
+        <option value="0" selected>Tümü</option>
+      </select>
+    </div>
+    <button id="refresh" type="button" class="refresh">Yenile</button>
+  </section>
+
+  <p id="status" class="status" role="status" aria-live="polite">Veriler yükleniyor…</p>
+
+  <ul id="quakes" class="quakes"></ul>
+
+  <p id="empty" class="empty" hidden>Seçilen filtrelere uyan deprem kaydı yok.</p>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>
+      Veri kaynağı: Boğaziçi Üniversitesi Kandilli Rasathanesi ve Deprem Araştırma Enstitüsü &amp; AFAD,
+      <a href="https://github.com/orhanayd/kandilli-rasathanesi-api" rel="noopener">Kandilli Rasathanesi API</a> üzerinden.
+    </p>
+    <p class="disclaimer">
+      Bu site resmî bir kaynak değildir ve yalnızca bilgilendirme amaçlıdır. Acil durumlarda AFAD'ın resmî duyurularını takip edin.
+      Saatler Türkiye saatiyle (UTC+3) gösterilir.
+    </p>
+  </div>
+</footer>
+
+<script src="assets/app.js" type="module"></script>
+</body>
+</html>
