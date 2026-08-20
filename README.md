@@ -98,6 +98,14 @@ Parsing, distance and the Istanbul rule live in `assets/quakes.js`, imported by 
 and the fetch script — the rule is subtle enough (see the comment there) that two copies would
 drift apart.
 
+### Cache busting
+
+GitHub Pages serves everything with `Cache-Control: max-age=600`, and it caches `index.html` and
+the assets *independently* — so without care a reload can pair new HTML with ten-minute-old JS.
+The asset URLs therefore carry a `?v=N`: **bump it in `index.html` (styles and script) and in the
+`./quakes.js?v=` import inside `app.js` whenever those files change.** The snapshot JSON needs no
+version, it is fetched with a timestamp query and `cache: "no-store"`.
+
 ### When the schedule slips
 
 GitHub `schedule` events are best-effort: in practice this repo has seen slots skipped entirely
