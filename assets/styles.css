@@ -167,6 +167,27 @@ a:focus-visible {
   flex: 1;
 }
 
+/* Rows that showed up after the reader's last visit. color-mix keeps the tint
+   tied to the accent in both themes; browsers without it just get --surface. */
+.quake--new {
+  background: color-mix(in srgb, var(--accent) 10%, var(--surface));
+  border-color: color-mix(in srgb, var(--accent) 35%, var(--border));
+}
+
+.quake__new {
+  flex: none;
+  align-self: center;
+  padding: 0.05rem 0.32rem;
+  border-radius: 999px;
+  background: var(--accent);
+  color: var(--bg);
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
 .quake__head {
   display: flex;
   align-items: baseline;
