@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-20T11:25:22.881Z",
+  "generated_at": "2026-08-20T11:45:55.621Z",
   "source": "Kandilli Rasathanesi / AFAD — api.orhanaydogdu.com.tr",
   "center": {
     "lat": 41.0082,
@@ -8,6 +8,34 @@
   "radius_km": 250,
   "count": 300,
   "quakes": [
+    {
+      "id": "ESir5YKxe8X78",
+      "provider": "kandilli",
+      "title": "ADALAR (ISTANBUL)",
+      "mag": 1.4,
+      "depth": 9.8,
+      "lat": 40.7778,
+      "lon": 29.1197,
+      "timestamp": 1787225837000,
+      "closest_city": "Yalova",
+      "epicenter": "Marmara Denizi",
+      "distance_km": 28.2,
+      "is_istanbul": true
+    },
+    {
+      "id": "eqp52b4S_nFa9",
+      "provider": "kandilli",
+      "title": "ADALAR (ISTANBUL)",
+      "mag": 1.2,
+      "depth": 15.1,
+      "lat": 40.7805,
+      "lon": 29.1237,
+      "timestamp": 1787225546000,
+      "closest_city": "Yalova",
+      "epicenter": "Marmara Denizi",
+      "distance_km": 28.1,
+      "is_istanbul": true
+    },
     {
       "id": "1R8jYil6_DxFw",
       "provider": "kandilli",
@@ -4178,34 +4206,6 @@
       "closest_city": "Sakarya",
       "epicenter": "Bilecik",
       "distance_km": 158.6,
-      "is_istanbul": false
-    },
-    {
-      "id": "YnpWl7tZOlZ8V",
-      "provider": "afad",
-      "title": "İnhisar (Bilecik)",
-      "mag": 2,
-      "depth": 6.98,
-      "lat": 40.0853,
-      "lon": 30.4598,
-      "timestamp": 1786987837000,
-      "closest_city": "Eskişehir",
-      "epicenter": "Bilecik",
-      "distance_km": 161.9,
-      "is_istanbul": false
-    },
-    {
-      "id": "nLqlBwifqwNqk",
-      "provider": "afad",
-      "title": "İnhisar (Bilecik)",
-      "mag": 1.1,
-      "depth": 7.12,
-      "lat": 40.0918,
-      "lon": 30.4547,
-      "timestamp": 1786987678000,
-      "closest_city": "Eskişehir",
-      "epicenter": "Bilecik",
-      "distance_km": 161.1,
       "is_istanbul": false
     }
   ]
