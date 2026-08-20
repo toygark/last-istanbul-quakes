@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-20T11:45:55.621Z",
+  "generated_at": "2026-08-20T11:53:27.734Z",
   "source": "Kandilli Rasathanesi / AFAD — api.orhanaydogdu.com.tr",
   "center": {
     "lat": 41.0082,
@@ -8,6 +8,20 @@
   "radius_km": 250,
   "count": 300,
   "quakes": [
+    {
+      "id": "Cz2lCyN_N4wJm",
+      "provider": "kandilli",
+      "title": "ADALAR (ISTANBUL)",
+      "mag": 1.8,
+      "depth": 11.6,
+      "lat": 40.7803,
+      "lon": 29.1132,
+      "timestamp": 1787226185000,
+      "closest_city": "Yalova",
+      "epicenter": "Marmara Denizi",
+      "distance_km": 27.8,
+      "is_istanbul": true
+    },
     {
       "id": "ESir5YKxe8X78",
       "provider": "kandilli",
@@ -4192,20 +4206,6 @@
       "closest_city": "Bursa",
       "epicenter": "Yalova",
       "distance_km": 45.5,
-      "is_istanbul": false
-    },
-    {
-      "id": "wNK3QNCA2MfgQ",
-      "provider": "kandilli",
-      "title": "MURATCA-INHISAR (BILECIK)",
-      "mag": 2.2,
-      "depth": 8.6,
-      "lat": 40.127,
-      "lon": 30.455,
-      "timestamp": 1786987838000,
-      "closest_city": "Sakarya",
-      "epicenter": "Bilecik",
-      "distance_km": 158.6,
       "is_istanbul": false
     }
   ]
