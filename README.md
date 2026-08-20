@@ -4,26 +4,39 @@ A small static site that lists recent earthquakes in and around **Istanbul**, us
 [Kandilli Rasathanesi API](https://github.com/orhanayd/kandilli-rasathanesi-api)
 (Boğaziçi University Kandilli Observatory + AFAD data).
 
-The site refreshes itself on two levels:
+The site refreshes itself on three levels:
 
 1. A **scheduled GitHub Action** runs every 10 minutes: it fetches the latest quakes, commits
    the snapshot to `data/istanbul.json`, and — in the same run — redeploys the site to Pages.
 2. The **open page polls that snapshot every 60 seconds** (and immediately when a backgrounded
    tab becomes visible again), so a browser left open keeps showing current data without a reload.
+3. If the snapshot is more than 10 minutes old — which happens when GitHub skips a scheduled run —
+   the page **queries the API itself** and layers the fresh events on top, marking the result
+   *doğrudan API'den alındı*.
 
-## Why a committed snapshot instead of calling the API from the browser?
+## Where the data comes from
 
-The upstream API allows **40 requests/minute per IP** and **auto-bans offenders for 72 hours**.
-If every visitor's browser polled it directly, a modest traffic spike would get the API — or the
-visitors — banned. Fetching once per cron run and serving the result as a static file keeps usage
-at roughly 6 requests/hour regardless of how many people have the page open.
+The committed snapshot is the normal source. Fetching once per scheduled run and serving the
+result as a static file costs the upstream API about 6 requests/hour no matter how many people
+have the page open — a courtesy worth extending to a free community service that also asks for
+no more than **40 requests/minute per IP**.
+
+That limit is per IP, so a visitor's own browser polling occasionally would never come close to
+it. The snapshot is about not hammering someone else's free API for no reason, not about avoiding
+a ban.
+
+Which is why the page *does* go to the API directly when the snapshot has fallen more than
+10 minutes behind — see below. That path is throttled to at most one request per browser every
+5 minutes and gives up for the session after three consecutive failures, so it stays negligible
+even if it runs for a while.
 
 ## Layout
 
 ```
 index.html                        page markup
 assets/styles.css                 styling (dark + light, responsive)
-assets/app.js                     rendering, filtering, polling
+assets/app.js                     rendering, filtering, polling, live fallback
+assets/quakes.js                  shared parsing + Istanbul rule (browser and script)
 scripts/fetch-quakes.mjs          API client that writes the snapshot (Node 20+, no dependencies)
 data/istanbul.json                the committed snapshot the page reads
 .github/workflows/publish.yml     scheduled fetch, commit, and Pages deploy
@@ -80,6 +93,18 @@ narrow it down without another API call:
 
 Timestamps come back from the API as Turkey local time without an offset; they are pinned to
 UTC+3 when parsed and displayed in `Europe/Istanbul`.
+
+Parsing, distance and the Istanbul rule live in `assets/quakes.js`, imported by both the browser
+and the fetch script — the rule is subtle enough (see the comment there) that two copies would
+drift apart.
+
+### When the schedule slips
+
+GitHub `schedule` events are best-effort: in practice this repo has seen slots skipped entirely
+and others fire five minutes late. Nothing hides that — the page always states how old its data
+is, and the live fallback covers the gap when a run goes missing. If the API cannot be reached
+from the browser (no CORS headers for the origin, or the visitor is offline), the page keeps
+showing the snapshot with its true age rather than failing.
 
 ## Data and attribution
 

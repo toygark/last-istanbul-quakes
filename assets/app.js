@@ -1,12 +1,27 @@
 /**
  * Reads the snapshot written by scripts/fetch-quakes.mjs and renders it.
  *
- * The Kandilli API bans IPs that exceed 40 requests/minute, so the browser
- * never talks to it directly — it only polls this repo's own snapshot file.
+ * The snapshot is the normal source: it costs the upstream API one fetch per
+ * scheduled run no matter how many people are reading. But GitHub's `schedule`
+ * events are best-effort and routinely skipped, so when the snapshot has gone
+ * stale the browser falls back to querying the API directly. That path is
+ * throttled hard and only runs while the snapshot is behind -- the API's rate
+ * limit is per IP, so one call per visitor every few minutes is negligible for
+ * them, but there is no reason to make it whenever the snapshot is current.
  */
+
+import { API_BASE, mergeQuakes, normalise, searchBody } from "./quakes.js";
 
 const SNAPSHOT_URL = "data/istanbul.json";
 const POLL_INTERVAL_MS = 60_000;
+
+/** Snapshot older than this and we consider going to the API ourselves. */
+const STALE_AFTER_MS = 10 * 60_000;
+/** Never hit the API more often than this from one browser. */
+const LIVE_MIN_INTERVAL_MS = 5 * 60_000;
+/** After this many consecutive failures (no CORS, offline), stop trying. */
+const LIVE_MAX_FAILURES = 3;
+const LIVE_ATTEMPT_KEY = "last-istanbul-quakes:last-live-attempt";
 
 const listEl = document.getElementById("quakes");
 const statusEl = document.getElementById("status");
@@ -24,7 +39,10 @@ const istanbulTime = new Intl.DateTimeFormat("tr-TR", {
 const relativeTime = new Intl.RelativeTimeFormat("tr-TR", { numeric: "auto" });
 
 let snapshot = null;
-let lastFetchFailed = false;
+let snapshotFetchFailed = false;
+/** When we last pulled live data straight from the API, if ever. */
+let liveAt = null;
+let liveFailures = 0;
 
 /** Coarse magnitude bands, used for colour and for the screen-reader label. */
 function magBand(mag) {
@@ -47,6 +65,14 @@ function formatRelative(timestamp) {
     }
   }
   return relativeTime.format(diffSec, "second");
+}
+
+/** Age of the data on screen, whether it came from the snapshot or the API. */
+function dataTimestamp() {
+  const generated = Date.parse(snapshot?.generated_at ?? "");
+  const generatedMs = Number.isFinite(generated) ? generated : null;
+  if (liveAt && generatedMs) return Math.max(liveAt, generatedMs);
+  return liveAt ?? generatedMs;
 }
 
 function applyFilters(quakes) {
@@ -127,14 +153,75 @@ function render() {
       ? "Henüz deprem verisi alınmadı. İlk güncelleme çalıştığında liste burada görünecek."
       : "Seçilen filtrelere uyan deprem kaydı yok.";
 
-  const generated = Date.parse(snapshot.generated_at);
+  const at = dataTimestamp();
   const parts = [`${filtered.length} deprem listeleniyor`];
-  if (Number.isFinite(generated)) {
-    parts.push(`veriler ${formatRelative(generated)} güncellendi (${istanbulTime.format(generated)})`);
+  if (at !== null) {
+    parts.push(`veriler ${formatRelative(at)} güncellendi (${istanbulTime.format(at)})`);
   }
-  if (lastFetchFailed) parts.push("son yenileme başarısız oldu, önceki veriler gösteriliyor");
+  if (liveAt) parts.push("doğrudan API'den alındı");
+  if (snapshotFetchFailed) parts.push("son yenileme başarısız oldu, önceki veriler gösteriliyor");
+
+  const stale = at !== null && Date.now() - at > STALE_AFTER_MS;
+  if (stale && liveFailures >= LIVE_MAX_FAILURES) {
+    parts.push("canlı veri alınamıyor");
+  }
+
   statusEl.textContent = `${parts.join(" · ")}.`;
-  statusEl.classList.toggle("status--stale", lastFetchFailed);
+  statusEl.classList.toggle("status--stale", snapshotFetchFailed || stale);
+}
+
+function lastLiveAttempt() {
+  try {
+    return Number(sessionStorage.getItem(LIVE_ATTEMPT_KEY)) || 0;
+  } catch {
+    return 0; // Private mode or blocked storage; the in-memory guards still apply.
+  }
+}
+
+function markLiveAttempt() {
+  try {
+    sessionStorage.setItem(LIVE_ATTEMPT_KEY, String(Date.now()));
+  } catch {
+    /* not fatal */
+  }
+}
+
+/**
+ * Query the API directly. Only called when the snapshot has fallen behind --
+ * see the note at the top of this file.
+ */
+async function loadLive() {
+  if (liveFailures >= LIVE_MAX_FAILURES) return;
+  if (Date.now() - lastLiveAttempt() < LIVE_MIN_INTERVAL_MS) return;
+  markLiveAttempt();
+
+  try {
+    const res = await fetch(`${API_BASE}/data/search`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json", Accept: "application/json" },
+      body: JSON.stringify(searchBody({ limit: 100 })),
+    });
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+
+    const body = await res.json();
+    if (body?.status === false) throw new Error(body?.desc ?? "API reported failure");
+
+    const fresh = (Array.isArray(body?.result) ? body.result : [])
+      .map(normalise)
+      .filter(Boolean);
+    if (fresh.length === 0) throw new Error("no usable records");
+
+    // Keep the snapshot's longer history and layer the newer events on top.
+    snapshot = { ...snapshot, quakes: mergeQuakes(fresh, snapshot?.quakes ?? []) };
+    liveAt = Date.now();
+    liveFailures = 0;
+  } catch {
+    // Most likely the API sends no CORS headers for this origin, in which case
+    // retrying will never help -- so give up for the session after a few tries
+    // and keep showing the snapshot.
+    liveFailures += 1;
+  }
+  render();
 }
 
 async function load() {
@@ -146,10 +233,16 @@ async function load() {
     const data = await res.json();
     if (!Array.isArray(data?.quakes)) throw new Error("beklenmeyen veri biçimi");
 
-    snapshot = data;
-    lastFetchFailed = false;
+    const generated = Date.parse(data.generated_at ?? "");
+    // A newer snapshot supersedes whatever we pulled live earlier.
+    if (Number.isFinite(generated) && liveAt && generated > liveAt) liveAt = null;
+
+    snapshot = liveAt
+      ? { ...data, quakes: mergeQuakes(snapshot?.quakes ?? [], data.quakes) }
+      : data;
+    snapshotFetchFailed = false;
   } catch (err) {
-    lastFetchFailed = true;
+    snapshotFetchFailed = true;
     if (!snapshot) {
       statusEl.textContent = `Veriler yüklenemedi (${err.message}). Birazdan yeniden denenecek.`;
       statusEl.classList.add("status--stale");
@@ -159,7 +252,11 @@ async function load() {
   } finally {
     refreshBtn.disabled = false;
   }
+
   render();
+
+  const at = dataTimestamp();
+  if (at === null || Date.now() - at > STALE_AFTER_MS) await loadLive();
 }
 
 for (const el of [radiusEl, minMagEl, periodEl]) {
