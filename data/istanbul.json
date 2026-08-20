@@ -1,5 +1,6 @@
 {
-  "generated_at": "2026-08-20T13:35:09.725Z",
+  "generated_at": "2026-08-20T13:46:21.842Z",
+  "previous_generated_at": "2026-08-20T13:35:09.725Z",
   "source": "Kandilli Rasathanesi / AFAD — api.orhanaydogdu.com.tr",
   "center": {
     "lat": 41.0082,
@@ -20,7 +21,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 23.8,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "1CvKS6KaIvJLz",
@@ -34,7 +36,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 32.2,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "WHm4ngRwaxVuB",
@@ -48,7 +51,8 @@
       "closest_city": "Manisa",
       "epicenter": "Balıkesir",
       "distance_km": 193.7,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "laCvBdLXlOmJo",
@@ -62,7 +66,8 @@
       "closest_city": "Manisa",
       "epicenter": "Balıkesir",
       "distance_km": 195.4,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "0XOuodzs_xIqZ",
@@ -76,7 +81,38 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 26.8,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
+    },
+    {
+      "id": "QuaYE_tOr39Zi",
+      "provider": "afad",
+      "title": "Marmara Denizi - [10.34 km] Adalar (İstanbul)",
+      "mag": 1.2,
+      "depth": 7,
+      "lat": 40.7717,
+      "lon": 29.0805,
+      "timestamp": 1787228973000,
+      "closest_city": "Yalova",
+      "epicenter": "Marmara Denizi",
+      "distance_km": 27.7,
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:46:21.842Z"
+    },
+    {
+      "id": "46chmTIUhESrP",
+      "provider": "afad",
+      "title": "Marmara Denizi - [10.51 km] Adalar (İstanbul)",
+      "mag": 1.4,
+      "depth": 7.09,
+      "lat": 40.7747,
+      "lon": 29.067,
+      "timestamp": 1787228692000,
+      "closest_city": "Yalova",
+      "epicenter": "Marmara Denizi",
+      "distance_km": 27,
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:46:21.842Z"
     },
     {
       "id": "xG1PQiartdgrZ",
@@ -90,7 +126,23 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 29.3,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
+    },
+    {
+      "id": "So_804VNUuIzY",
+      "provider": "afad",
+      "title": "Marmara Denizi - [10.22 km] Adalar (İstanbul)",
+      "mag": 1.3,
+      "depth": 6.89,
+      "lat": 40.7765,
+      "lon": 29.0257,
+      "timestamp": 1787228458000,
+      "closest_city": "Yalova",
+      "epicenter": "Marmara Denizi",
+      "distance_km": 26.1,
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:46:21.842Z"
     },
     {
       "id": "wm4Nin7xCFwyL",
@@ -104,7 +156,23 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 32,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
+    },
+    {
+      "id": "WYv3HUnekKGAH",
+      "provider": "afad",
+      "title": "Marmara Denizi - [10.79 km] Adalar (İstanbul)",
+      "mag": 1.4,
+      "depth": 7.15,
+      "lat": 40.7607,
+      "lon": 29.097,
+      "timestamp": 1787228331000,
+      "closest_city": "Yalova",
+      "epicenter": "Marmara Denizi",
+      "distance_km": 29.3,
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:46:21.842Z"
     },
     {
       "id": "Y7IucUsWdiyZl",
@@ -118,7 +186,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 27.8,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "5Umz1gu14pTB6",
@@ -132,7 +201,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 28.2,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "7dmQRjlsOeIDH",
@@ -146,7 +216,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 27.6,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "GfjjOVDWXErpQ",
@@ -160,7 +231,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 27,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "pmo4JCrUNpFMN",
@@ -174,7 +246,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 29.2,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "UrK15ZZL80V10",
@@ -188,7 +261,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 27,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "8DGxHUbr47Ln6",
@@ -202,7 +276,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 30.2,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "eA6RkrC8tZ81V",
@@ -216,7 +291,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 30.9,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "RA1cadnjEvD6r",
@@ -230,7 +306,8 @@
       "closest_city": "İstanbul",
       "epicenter": "Marmara Denizi",
       "distance_km": 13.4,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "Omu5f2dvadTOn",
@@ -244,7 +321,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 29.5,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "5QK9_vfkMe2eC",
@@ -258,7 +336,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 28,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "cW1_9RkrbVxL7",
@@ -272,7 +351,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 27.1,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "oaCwxrP5lMPnP",
@@ -286,7 +366,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 27.5,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "HyMhzUe028yy_",
@@ -300,7 +381,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 28.2,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "Cz2lCyN_N4wJm",
@@ -314,7 +396,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 27.8,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "vWwU8dQbB_DzL",
@@ -328,7 +411,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 25.7,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "ESir5YKxe8X78",
@@ -342,7 +426,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 28.2,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "eqp52b4S_nFa9",
@@ -356,7 +441,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 28.1,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "1R8jYil6_DxFw",
@@ -370,7 +456,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 25.7,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "Az_puzR04vufN",
@@ -384,7 +471,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 27.8,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "0Zv74NQw5pZ_5",
@@ -398,7 +486,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 23.4,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "j5AXva3mAIkCe",
@@ -412,7 +501,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 27.6,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "Fzpp2n02IXVJS",
@@ -426,7 +516,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 27.7,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "FAzYF6iqdBKxA",
@@ -440,7 +531,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 28.2,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "S1SlHh15Qx6cP",
@@ -454,7 +546,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 27.2,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "dQoOMJAdIbIec",
@@ -468,7 +561,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 28.8,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "mzcA9MFq_jYPi",
@@ -482,7 +576,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 28.8,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "zqO3L6HL8Qg_K",
@@ -496,7 +591,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 27.7,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "5c38oG8ritu5Z",
@@ -510,7 +606,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 26.4,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "JTjBH_4kgonc3",
@@ -524,7 +621,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 27.5,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "ucbJ2ovnwL7uL",
@@ -538,7 +636,8 @@
       "closest_city": "Yalova",
       "epicenter": "İstanbul",
       "distance_km": 21.5,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "HTUEOYfmSvu5B",
@@ -552,7 +651,8 @@
       "closest_city": "Yalova",
       "epicenter": "İstanbul",
       "distance_km": 28.6,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "QXrdOA_WzwhIa",
@@ -566,7 +666,8 @@
       "closest_city": "Yalova",
       "epicenter": "Bursa",
       "distance_km": 119,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "1FC1AR7NJJMtX",
@@ -580,7 +681,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 27.4,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "s8aT6lmoFEQHT",
@@ -594,7 +696,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 26.2,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "PoKA_9Jv4U1Ud",
@@ -608,7 +711,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 26.7,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "EfVkl2ZUstWhL",
@@ -622,7 +726,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 27.7,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "5BRnDcQi505Qc",
@@ -636,7 +741,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 27.8,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "jYfMnS1_FUieM",
@@ -650,7 +756,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 27.2,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "_x8_Y4xnv4VpC",
@@ -664,7 +771,8 @@
       "closest_city": "Manisa",
       "epicenter": "Balıkesir",
       "distance_km": 203.9,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "JnrNhkIX_hz00",
@@ -678,7 +786,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 26.7,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "pgLV7qxHUo6E0",
@@ -692,7 +801,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 26.6,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "i5JklqrE6TV3c",
@@ -706,7 +816,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 27.8,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "IjNs4dJLYCGrY",
@@ -720,7 +831,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 26.5,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "_zGpzA91UWUUL",
@@ -734,7 +846,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 25.5,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "U3TYJ8L8aiEEd",
@@ -748,7 +861,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 28.5,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "Az7mfn_QPcsqm",
@@ -762,7 +876,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 28.8,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "03oix2GYWtmM0",
@@ -776,7 +891,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 27.5,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "B_s_wpQdesvc7",
@@ -790,7 +906,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 28.2,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "pFM6FAqQXzTUJ",
@@ -804,7 +921,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 26.4,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "xA7rgH2R8sZbG",
@@ -818,7 +936,8 @@
       "closest_city": "Manisa",
       "epicenter": "Balıkesir",
       "distance_km": 193.2,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "IwEfxYlO38UZo",
@@ -832,7 +951,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 28.2,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "32ZHtf05KDU0z",
@@ -846,7 +966,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 27.3,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "_c8uOGx_bQTas",
@@ -860,7 +981,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 27.6,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "d6zbTNNTfcao_",
@@ -874,7 +996,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 25,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "elfdLk8oco2K7",
@@ -888,7 +1011,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 24.4,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "wYFL1IJAjqbTz",
@@ -902,7 +1026,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 27.7,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "kOX4gtLDqN9eH",
@@ -916,7 +1041,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 26.8,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "88erUWwKBD9kE",
@@ -930,7 +1056,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 30.2,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "LWUzyR3QzAo5m",
@@ -944,7 +1071,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 26.7,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "zBHQz5EOWHINh",
@@ -958,7 +1086,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 27.6,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "wSy3tPKtQhlDn",
@@ -972,7 +1101,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 27.3,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "Zrp1UVRLOleqg",
@@ -986,7 +1116,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 27,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "W1wLQUvN_EtY5",
@@ -1000,7 +1131,8 @@
       "closest_city": "Tekirdağ",
       "epicenter": "Balıkesir",
       "distance_km": 127.3,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "K8656p9gNYtj7",
@@ -1014,7 +1146,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 26.5,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "cFP6hbAksSrvu",
@@ -1028,7 +1161,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 26.6,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "tNnx9vSlYGsI5",
@@ -1042,7 +1176,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 30.4,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "4_Sz1oUmYHvCE",
@@ -1056,7 +1191,8 @@
       "closest_city": "Manisa",
       "epicenter": "Balıkesir",
       "distance_km": 176.5,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "zGQh2Nmber5kX",
@@ -1070,7 +1206,8 @@
       "closest_city": "Manisa",
       "epicenter": "Balıkesir",
       "distance_km": 177.6,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "vDwIfaxJnM6kU",
@@ -1084,7 +1221,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 27.9,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "1HKf2HUzEGg93",
@@ -1098,7 +1236,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 26.9,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "SDesPoQVeBaU4",
@@ -1112,7 +1251,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 25.9,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "MNC4dBY5gvAAC",
@@ -1126,7 +1266,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 27.2,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "M6cY67Bu8FTsb",
@@ -1140,7 +1281,8 @@
       "closest_city": "Manisa",
       "epicenter": "Balıkesir",
       "distance_km": 215,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "UjP_72Om06tK6",
@@ -1154,7 +1296,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 27.1,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "TloCvBYCSA7oh",
@@ -1168,7 +1311,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 26.7,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "KB3nk6MH1PO0S",
@@ -1182,7 +1326,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 26.8,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "ITObEZpMeGsMh",
@@ -1196,7 +1341,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 27.6,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "Zn46lrx7Y8P7J",
@@ -1210,7 +1356,8 @@
       "closest_city": "Manisa",
       "epicenter": "Balıkesir",
       "distance_km": 206.3,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "UpH39rrqrhKX5",
@@ -1224,7 +1371,8 @@
       "closest_city": "Manisa",
       "epicenter": "Balıkesir",
       "distance_km": 211.3,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "5TiH8P3ESUnf8",
@@ -1238,7 +1386,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 26.3,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "xuJQoOzhz3TXn",
@@ -1252,7 +1401,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 26.4,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "vX10zD1tVQs5W",
@@ -1266,7 +1416,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 28.6,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "WKLyLoCUlXwjY",
@@ -1280,7 +1431,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 29.8,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "px666xT3Xd626",
@@ -1294,7 +1446,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 28.5,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "tN9pPHzv2e_SE",
@@ -1308,7 +1461,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 27.7,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "EdlNmzSW1TSxF",
@@ -1322,7 +1476,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 27.3,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "my6ztI9cscT3p",
@@ -1336,7 +1491,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 27.2,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "sLNRpPlTOrCZI",
@@ -1350,7 +1506,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 27.1,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "mmJULxaDRMfaa",
@@ -1364,7 +1521,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 26.6,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "WL6_XWhYbFRpR",
@@ -1378,7 +1536,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 27.3,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "C7WEGkrSoDmUk",
@@ -1392,7 +1551,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 27,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "yI18xKgHH4g37",
@@ -1406,7 +1566,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 27.1,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "IA1GJN_n6SYm3",
@@ -1420,7 +1581,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 27.2,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "IonhpIcaTD8Bs",
@@ -1434,7 +1596,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 26.9,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "GlnnPmwBrIfRZ",
@@ -1448,7 +1611,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 26.8,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "hUFv7l_ec5yn3",
@@ -1462,7 +1626,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 27.9,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "__oGXq6USPHpC",
@@ -1476,7 +1641,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 28.9,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "XDqAESP2mWdSk",
@@ -1490,7 +1656,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 27.7,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "18o81frOgSO0Q",
@@ -1504,7 +1671,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 26,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "L7E82BCRxKZ6P",
@@ -1518,7 +1686,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 27.8,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "hi7nnFUcvgoMM",
@@ -1532,7 +1701,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 27.6,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "i9P9runXlqzKe",
@@ -1546,7 +1716,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 28.1,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "BjWNcDhMTQNNg",
@@ -1560,7 +1731,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 24,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "Ip3GIMLjzAFkp",
@@ -1574,7 +1746,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 26.3,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "x57rnxm4KcFc7",
@@ -1588,7 +1761,8 @@
       "closest_city": "Manisa",
       "epicenter": "Balıkesir",
       "distance_km": 217,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "sseoXwciJ07kJ",
@@ -1602,7 +1776,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 26.4,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "7JvUhekI_pPc_",
@@ -1616,7 +1791,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 26.9,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "Cjwamqva3sgfR",
@@ -1630,7 +1806,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 26.5,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "tzwqrU9fqQwnz",
@@ -1644,7 +1821,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 27.7,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "LCuaeCo3KuKe5",
@@ -1658,7 +1836,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 26.2,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "rLeZKCo1S8JJK",
@@ -1672,7 +1851,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 26,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "1UNMDUXbXmyyJ",
@@ -1686,7 +1866,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 26.1,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "FQuVgIkGP4IMQ",
@@ -1700,7 +1881,8 @@
       "closest_city": "İstanbul",
       "epicenter": "Yalova",
       "distance_km": 41.8,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "Vl9GbJcB3fcid",
@@ -1714,7 +1896,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 26.9,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "AwmncvSahLB23",
@@ -1728,7 +1911,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 29.5,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "wREpzegvaxamX",
@@ -1742,7 +1926,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 26.4,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "yz9w2Ng15xWYM",
@@ -1756,7 +1941,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 26.1,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "FmVAjIEUJfIix",
@@ -1770,7 +1956,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 26,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "Z1ldemZtnDHGT",
@@ -1784,7 +1971,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 24.6,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "BaxvT4vE9k4fL",
@@ -1798,7 +1986,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 29.6,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "Yoc1_fcfmZYlj",
@@ -1812,7 +2001,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 28.1,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "IOjd0e_RnjnIT",
@@ -1826,7 +2016,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 27.3,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "705AeqvplTpvW",
@@ -1840,7 +2031,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 28.1,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "vmjOajks990_7",
@@ -1854,7 +2046,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 26.5,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "vA25TByHXGAGK",
@@ -1868,7 +2061,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 26.4,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "OyST6HoZi0KEI",
@@ -1882,7 +2076,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 27.4,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "iVjiTMTv8Vo0u",
@@ -1896,7 +2091,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 26.9,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "hyVUleK5Y9gS_",
@@ -1910,7 +2106,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 26.8,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "VD41FqwefoTra",
@@ -1924,7 +2121,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 27.2,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "gJZVjcxYI8R1c",
@@ -1938,7 +2136,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 31.8,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "OfHj6mg3agjXw",
@@ -1952,7 +2151,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 25.9,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "_Jsurq8qk7RI2",
@@ -1966,7 +2166,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 27.4,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "fQNU71If3PP5A",
@@ -1980,7 +2181,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 28.3,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "R28_7ezAGhJxD",
@@ -1994,7 +2196,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 27.4,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "fuSN4YO9wYWGm",
@@ -2008,7 +2211,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 26.2,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "pfMwP88XZ992s",
@@ -2022,7 +2226,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 27.5,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "IVVhLqqiEuF8v",
@@ -2036,7 +2241,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 27.6,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "ujZZWiVSzkBVp",
@@ -2050,7 +2256,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 29.9,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "2jXKLq3dBBztx",
@@ -2064,7 +2271,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 27.9,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "EieIpBEXAywoh",
@@ -2078,7 +2286,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 27.7,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "1FVcNngSGqlAR",
@@ -2092,7 +2301,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 25.7,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "C8L45rklcWt2E",
@@ -2106,7 +2316,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 26.6,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "ssTDv7z4DSvXf",
@@ -2120,7 +2331,8 @@
       "closest_city": "Manisa",
       "epicenter": "Balıkesir",
       "distance_km": 216.3,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "xtLrhpHP96P_I",
@@ -2134,7 +2346,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 27.8,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "LLE9WqjnttSpb",
@@ -2148,7 +2361,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 27.6,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "J2NGOLzwAYXHp",
@@ -2162,7 +2376,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 27.5,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "EH4EemrX_O1mI",
@@ -2176,7 +2391,8 @@
       "closest_city": "Tekirdağ",
       "epicenter": "Marmara Denizi",
       "distance_km": 92.7,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "IK16Jg60GXtyZ",
@@ -2190,7 +2406,8 @@
       "closest_city": "Düzce",
       "epicenter": "Bolu",
       "distance_km": 221.6,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "tCJAq8l0ntPAn",
@@ -2204,7 +2421,8 @@
       "closest_city": "Düzce",
       "epicenter": "Bolu",
       "distance_km": 220.2,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "t5g31h3eLeYqT",
@@ -2218,7 +2436,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 28.4,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "AB3zH9bCsZIYt",
@@ -2232,7 +2451,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 27.9,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "nkybbU7rrONIT",
@@ -2246,7 +2466,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 27,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "OQy3771d2JYqQ",
@@ -2260,7 +2481,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 28.7,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "PHntkI6bJOXea",
@@ -2274,7 +2496,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 26.6,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "YDoDVzxPg1J6m",
@@ -2288,7 +2511,8 @@
       "closest_city": "Manisa",
       "epicenter": "Balıkesir",
       "distance_km": 210.2,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "49f6_oNGxcGMo",
@@ -2302,7 +2526,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 29.9,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "vhxRek01m2Faj",
@@ -2316,7 +2541,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 30.4,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "VLfzhaKjBvdoP",
@@ -2330,7 +2556,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 27.1,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "q45InawYKG508",
@@ -2344,7 +2571,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 28,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "bFITwuLFqaQbz",
@@ -2358,7 +2586,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 27.1,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "vMlbw8o2Z0gK_",
@@ -2372,7 +2601,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 27.4,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "2b8q8gKv7dioO",
@@ -2386,7 +2616,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 30.4,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "aCHDEU57npfgY",
@@ -2400,7 +2631,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 27.1,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "Jnrx2WgW96CWe",
@@ -2414,7 +2646,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 27.1,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "73ZmvOnYJfJ2G",
@@ -2428,7 +2661,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 28.2,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "ePqcUb9MLZnVM",
@@ -2442,7 +2676,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 29.3,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "xU9uowKR9mDCn",
@@ -2456,7 +2691,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 26.8,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "8SQXl6faSbPYn",
@@ -2470,7 +2706,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 27.6,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "WuWHeVBIJC5Jt",
@@ -2484,7 +2721,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 26.9,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "ptj8qbgz8zLlm",
@@ -2498,7 +2736,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 27.4,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "0FPqzyXPUHdfQ",
@@ -2512,7 +2751,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 25.8,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "A4CweCqnloG8o",
@@ -2526,7 +2766,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 27.3,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "bnzWJqlC7CW8f",
@@ -2540,7 +2781,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 28.1,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "NBgsFpxUCyB3P",
@@ -2554,7 +2796,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 26.3,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "Qp8Ms18xC5TIZ",
@@ -2568,7 +2811,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 26.1,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "mE1RgIb_7Tedc",
@@ -2582,7 +2826,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 28.4,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "AdlVra1LfWGJV",
@@ -2596,7 +2841,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 28,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "v1uvgpIjjrAwO",
@@ -2610,7 +2856,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 27.7,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "2fnJ0iu38T6Mu",
@@ -2624,7 +2871,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 26.9,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "H4lXKVEvfFyVz",
@@ -2638,7 +2886,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 28.2,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "tXVm2mhbG7Ruj",
@@ -2652,7 +2901,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 27.8,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "6nuIYIDEu1DE3",
@@ -2666,7 +2916,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 28,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "NK5ubHgB9Zd9H",
@@ -2680,7 +2931,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 27.2,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "5fl6c2VfQKEQ4",
@@ -2694,7 +2946,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 28,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "SKc8CoDACA13Z",
@@ -2708,7 +2961,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 27.4,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "f7bN76pfJ910S",
@@ -2722,7 +2976,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 27.7,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "SjYesdbaVELHB",
@@ -2736,7 +2991,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 27.7,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "LpcYIor8r6c5c",
@@ -2750,7 +3006,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 29,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "zncTwm1wDUtvi",
@@ -2764,7 +3021,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 65.7,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "rAcfdfiauzcow",
@@ -2778,7 +3036,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 65.7,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "ZReX6F_4hjXs8",
@@ -2792,7 +3051,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 27.8,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "yXAr0lQHdpVdo",
@@ -2806,7 +3066,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 26.1,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "wS2xfYMnC0xrg",
@@ -2820,7 +3081,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 28.8,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "ImiWP0ebbSjsx",
@@ -2834,7 +3096,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 27,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "zaYgBv5fLmMjn",
@@ -2848,7 +3111,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 29,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "EOAk9eaOAA2FY",
@@ -2862,7 +3126,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 27.9,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "V84h6VrUX3A9E",
@@ -2876,7 +3141,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 27.6,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "DfMW6272lM95G",
@@ -2890,7 +3156,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 26.4,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "tGJDY56HUv9bE",
@@ -2904,7 +3171,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 28.3,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "sJSWf4l_CVwTI",
@@ -2918,7 +3186,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 28.3,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "ugQnF10DOAlba",
@@ -2932,7 +3201,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 28,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "DA0C5_awIuVTB",
@@ -2946,7 +3216,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 29.9,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "GUyJgHjc8nDz6",
@@ -2960,7 +3231,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 26.1,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "IAYVQJpvWpInb",
@@ -2974,7 +3246,8 @@
       "closest_city": "Yalova",
       "epicenter": "Bursa",
       "distance_km": 60.5,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "VAc_qkwnSAFI9",
@@ -2988,7 +3261,8 @@
       "closest_city": "Manisa",
       "epicenter": "Balıkesir",
       "distance_km": 209.9,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "nIIWfp75HkYP3",
@@ -3002,7 +3276,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 24.9,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "wwDLU2Pb380JN",
@@ -3016,7 +3291,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 26.9,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "BEs4ZTpbFupNY",
@@ -3030,7 +3306,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 27.7,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "6t1FxNHSfsYhX",
@@ -3044,7 +3321,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 27.4,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "lHsSt9onjNbJw",
@@ -3058,7 +3336,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 28.3,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "CtCbmjZFpCza5",
@@ -3072,7 +3351,8 @@
       "closest_city": "Balıkesir",
       "epicenter": "Çanakkale",
       "distance_km": 197.6,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "cF4bxPL6htHTW",
@@ -3086,7 +3366,8 @@
       "closest_city": "Manisa",
       "epicenter": "Balıkesir",
       "distance_km": 207.6,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "iKqiuid3cqDqk",
@@ -3100,7 +3381,8 @@
       "closest_city": "Manisa",
       "epicenter": "Balıkesir",
       "distance_km": 215.9,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "8VXr8BLOtMAjh",
@@ -3114,7 +3396,8 @@
       "closest_city": "Düzce",
       "epicenter": "Bolu",
       "distance_km": 220.5,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "24_bKTdFF2Rgu",
@@ -3128,7 +3411,8 @@
       "closest_city": "Düzce",
       "epicenter": "Bolu",
       "distance_km": 219.2,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "Qpcyw2nSjbbY7",
@@ -3142,7 +3426,8 @@
       "closest_city": "Bolu",
       "epicenter": "Düzce",
       "distance_km": 199.5,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "o6RRFEZfv1YAe",
@@ -3156,7 +3441,8 @@
       "closest_city": "Bolu",
       "epicenter": "Düzce",
       "distance_km": 198.4,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "Fn04wp5iMxcHY",
@@ -3170,7 +3456,8 @@
       "closest_city": "Manisa",
       "epicenter": "Balıkesir",
       "distance_km": 217.1,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "j8KdVTpJ7khia",
@@ -3184,7 +3471,8 @@
       "closest_city": "Balıkesir",
       "epicenter": "Manisa",
       "distance_km": 222.5,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "TXveqO9pqlRXI",
@@ -3198,7 +3486,8 @@
       "closest_city": "Manisa",
       "epicenter": "Balıkesir",
       "distance_km": 210.3,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "E4THbzOWiLBMK",
@@ -3212,7 +3501,8 @@
       "closest_city": "Manisa",
       "epicenter": "Balıkesir",
       "distance_km": 208.8,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "VQPk2cbFt5jIo",
@@ -3226,7 +3516,8 @@
       "closest_city": "Manisa",
       "epicenter": "Balıkesir",
       "distance_km": 212.1,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "E_SXhAxgMUnFa",
@@ -3240,7 +3531,8 @@
       "closest_city": "Balıkesir",
       "epicenter": "Manisa",
       "distance_km": 220,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "OWGYMmmQJcC4X",
@@ -3254,7 +3546,8 @@
       "closest_city": "Balıkesir",
       "epicenter": "Manisa",
       "distance_km": 219.4,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "4xHXvsmTbga7f",
@@ -3268,7 +3561,8 @@
       "closest_city": "Manisa",
       "epicenter": "Balıkesir",
       "distance_km": 217.4,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "74Y35VzGE8w7T",
@@ -3282,7 +3576,8 @@
       "closest_city": "Manisa",
       "epicenter": "Balıkesir",
       "distance_km": 217.4,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "jgaqfru3gImDN",
@@ -3296,7 +3591,8 @@
       "closest_city": "Manisa",
       "epicenter": "Balıkesir",
       "distance_km": 212.7,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "Kis024EEp2UGX",
@@ -3310,7 +3606,8 @@
       "closest_city": "Manisa",
       "epicenter": "Balıkesir",
       "distance_km": 218.9,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "070m91bqugxbR",
@@ -3324,7 +3621,8 @@
       "closest_city": "Manisa",
       "epicenter": "Balıkesir",
       "distance_km": 218.1,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "1F3S46IHYZ_rD",
@@ -3338,7 +3636,8 @@
       "closest_city": "Manisa",
       "epicenter": "Balıkesir",
       "distance_km": 213.9,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "bmUSjnurGBXZL",
@@ -3352,7 +3651,8 @@
       "closest_city": "Manisa",
       "epicenter": "Balıkesir",
       "distance_km": 218,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "1mMD54oOyzxC9",
@@ -3366,7 +3666,8 @@
       "closest_city": "Manisa",
       "epicenter": "Balıkesir",
       "distance_km": 210.3,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "t5Uj17oAN0Jjv",
@@ -3380,7 +3681,8 @@
       "closest_city": "Manisa",
       "epicenter": "Balıkesir",
       "distance_km": 206,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "1OotYxxi2_4r7",
@@ -3394,7 +3696,8 @@
       "closest_city": "Manisa",
       "epicenter": "Balıkesir",
       "distance_km": 207.7,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "6Q4Jxx4yoD1Y1",
@@ -3408,7 +3711,8 @@
       "closest_city": "Manisa",
       "epicenter": "Balıkesir",
       "distance_km": 208.6,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "dKfvIUBKsNZlU",
@@ -3422,7 +3726,8 @@
       "closest_city": "Manisa",
       "epicenter": "Balıkesir",
       "distance_km": 188.4,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "4Tno9Qv4lqZG0",
@@ -3436,7 +3741,8 @@
       "closest_city": "Manisa",
       "epicenter": "Balıkesir",
       "distance_km": 186.9,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "cEJIqvkZiXu83",
@@ -3450,7 +3756,8 @@
       "closest_city": "Manisa",
       "epicenter": "Balıkesir",
       "distance_km": 213.1,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "dQoaGV4j9rXCC",
@@ -3464,7 +3771,8 @@
       "closest_city": "Manisa",
       "epicenter": "Balıkesir",
       "distance_km": 212.8,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "tzz8zTmPAognJ",
@@ -3478,7 +3786,8 @@
       "closest_city": "Manisa",
       "epicenter": "Balıkesir",
       "distance_km": 211.3,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "no2UihaWySWLR",
@@ -3492,7 +3801,8 @@
       "closest_city": "Manisa",
       "epicenter": "Balıkesir",
       "distance_km": 208.4,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "tVpxgMfhon2yV",
@@ -3506,7 +3816,8 @@
       "closest_city": "Uşak",
       "epicenter": "Kütahya",
       "distance_km": 195.1,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "1icKVF64bn4on",
@@ -3520,7 +3831,8 @@
       "closest_city": "Manisa",
       "epicenter": "Balıkesir",
       "distance_km": 218.1,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "EHxrQBbJF3Vof",
@@ -3534,7 +3846,8 @@
       "closest_city": "Manisa",
       "epicenter": "Balıkesir",
       "distance_km": 216.5,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "3oVgG27zvOzaX",
@@ -3548,7 +3861,8 @@
       "closest_city": "Manisa",
       "epicenter": "Balıkesir",
       "distance_km": 216.1,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "QPcD7kTd4mdw4",
@@ -3562,7 +3876,8 @@
       "closest_city": "Manisa",
       "epicenter": "Balıkesir",
       "distance_km": 218.2,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "o53JkSk5ow_tn",
@@ -3576,7 +3891,8 @@
       "closest_city": "Manisa",
       "epicenter": "Balıkesir",
       "distance_km": 218.8,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "f06V3YK_tqHnv",
@@ -3590,7 +3906,8 @@
       "closest_city": "Edirne",
       "epicenter": "Tekirdağ",
       "distance_km": 136.1,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "9St8aZEg7SLZe",
@@ -3604,7 +3921,8 @@
       "closest_city": "Tekirdağ",
       "epicenter": "Kırklareli",
       "distance_km": 167.4,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "x6GruGDDxZCwf",
@@ -3618,7 +3936,8 @@
       "closest_city": "Balıkesir",
       "epicenter": "Çanakkale",
       "distance_km": 161.7,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "ZvBcM61DlXxy1",
@@ -3632,7 +3951,8 @@
       "closest_city": "Manisa",
       "epicenter": "Balıkesir",
       "distance_km": 215,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "BtrpXKEWkwlet",
@@ -3646,7 +3966,8 @@
       "closest_city": "Tekirdağ",
       "epicenter": "Marmara Denizi",
       "distance_km": 155.1,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "ZJIFaIRNvYNuV",
@@ -3660,7 +3981,8 @@
       "closest_city": "Manisa",
       "epicenter": "Balıkesir",
       "distance_km": 212.8,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "69yO1Zsl7CelO",
@@ -3674,7 +3996,8 @@
       "closest_city": "Manisa",
       "epicenter": "Balıkesir",
       "distance_km": 212.6,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "4oKJ5MYDNICpc",
@@ -3688,7 +4011,8 @@
       "closest_city": "Kocaeli",
       "epicenter": "İstanbul",
       "distance_km": 29.3,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "85hs3DAWCaf1o",
@@ -3702,7 +4026,8 @@
       "closest_city": "Manisa",
       "epicenter": "Balıkesir",
       "distance_km": 212.9,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "ZGlw1kTErA8nF",
@@ -3716,7 +4041,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 24,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "GiYeWOrPd8EG1",
@@ -3730,7 +4056,8 @@
       "closest_city": "Çanakkale",
       "epicenter": "Balıkesir",
       "distance_km": 179.1,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "MF01mZayIo4Od",
@@ -3744,7 +4071,8 @@
       "closest_city": "Manisa",
       "epicenter": "Balıkesir",
       "distance_km": 204.5,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "Im3tDUHaF976q",
@@ -3758,7 +4086,8 @@
       "closest_city": "Sakarya",
       "epicenter": "Bilecik",
       "distance_km": 130.7,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "FARBQZ4CfuI_u",
@@ -3772,7 +4101,8 @@
       "closest_city": "Sakarya",
       "epicenter": "Bilecik",
       "distance_km": 127.1,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "GvugEWjZMyMHZ",
@@ -3786,7 +4116,8 @@
       "closest_city": "Manisa",
       "epicenter": "Balıkesir",
       "distance_km": 214.5,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "nBTJ6W2JHrdZV",
@@ -3800,7 +4131,8 @@
       "closest_city": "Manisa",
       "epicenter": "Balıkesir",
       "distance_km": 215.9,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "x4AMvL1EqBUj0",
@@ -3814,7 +4146,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 24.4,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "J1B8O5xVXki27",
@@ -3828,7 +4161,8 @@
       "closest_city": "Yalova",
       "epicenter": "İstanbul",
       "distance_km": 20.2,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "qlv1tu5MsiarA",
@@ -3842,7 +4176,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 18.4,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "4uY9ZA2DRDe8g",
@@ -3856,7 +4191,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 29.1,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "JP1_xm2CJQzfK",
@@ -3870,7 +4206,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 25.5,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "bGYGpZ8fHWhwY",
@@ -3884,7 +4221,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 28.6,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "3pbmOLiCmwaFU",
@@ -3898,7 +4236,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 27.3,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "_ycKZoEgo7S4k",
@@ -3912,7 +4251,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 28.1,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "RPoe4ymKA4crG",
@@ -3926,7 +4266,8 @@
       "closest_city": "Manisa",
       "epicenter": "Balıkesir",
       "distance_km": 207.3,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "GIX78DMIo30uf",
@@ -3940,7 +4281,8 @@
       "closest_city": "Manisa",
       "epicenter": "Balıkesir",
       "distance_km": 213.8,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "Ya8LObyrOqo6X",
@@ -3954,7 +4296,8 @@
       "closest_city": "Manisa",
       "epicenter": "Balıkesir",
       "distance_km": 205.3,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "LJWB6cKH1kHmC",
@@ -3968,7 +4311,8 @@
       "closest_city": "Manisa",
       "epicenter": "Balıkesir",
       "distance_km": 214,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "uE9i_cyy_OxWv",
@@ -3982,7 +4326,8 @@
       "closest_city": "Manisa",
       "epicenter": "Balıkesir",
       "distance_km": 213.7,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "YdbugNVOK5dee",
@@ -3996,7 +4341,8 @@
       "closest_city": "Manisa",
       "epicenter": "Balıkesir",
       "distance_km": 208.2,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "nKrSG2N6Lc24U",
@@ -4010,7 +4356,8 @@
       "closest_city": "Manisa",
       "epicenter": "Balıkesir",
       "distance_km": 209.5,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "EBEjMlpp8V3iW",
@@ -4024,7 +4371,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 26.4,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "k43YyH2zPWhNV",
@@ -4038,7 +4386,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 26.7,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "PfyyEmWUGJp35",
@@ -4052,7 +4401,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 26.3,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "be4vqUs_RBB7Z",
@@ -4066,7 +4416,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 28.1,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "51ZkOpt4ZCUm9",
@@ -4080,7 +4431,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 23.3,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "zvN90zcl7PVhr",
@@ -4094,7 +4446,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 28.1,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "idg8VY7O1Lrjn",
@@ -4108,7 +4461,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 27.5,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "zfpxDRcw8kD3m",
@@ -4122,7 +4476,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 26.9,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "0_J_gEMtN63fs",
@@ -4136,7 +4491,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 26.2,
-      "is_istanbul": true
+      "is_istanbul": true,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     },
     {
       "id": "xjqV5kbwBHeu7",
@@ -4150,63 +4506,8 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 27.6,
-      "is_istanbul": false
-    },
-    {
-      "id": "tTZmRlDMvl_ow",
-      "provider": "afad",
-      "title": "Marmara Denizi - [09.00 km] Adalar (İstanbul)",
-      "mag": 1.4,
-      "depth": 13.49,
-      "lat": 40.78,
-      "lon": 29.0932,
-      "timestamp": 1787023334000,
-      "closest_city": "Yalova",
-      "epicenter": "Marmara Denizi",
-      "distance_km": 27.1,
-      "is_istanbul": true
-    },
-    {
-      "id": "xAxgdkMYUGOoA",
-      "provider": "afad",
-      "title": "Simav (Kütahya)",
-      "mag": 0.9,
-      "depth": 10.53,
-      "lat": 39.2382,
-      "lon": 28.994,
-      "timestamp": 1787023221000,
-      "closest_city": "Uşak",
-      "epicenter": "Kütahya",
-      "distance_km": 196.8,
-      "is_istanbul": false
-    },
-    {
-      "id": "sKghnaBgE7vWq",
-      "provider": "afad",
-      "title": "Simav (Kütahya)",
-      "mag": 0.8,
-      "depth": 6.11,
-      "lat": 39.1223,
-      "lon": 29.0802,
-      "timestamp": 1787017794000,
-      "closest_city": "Uşak",
-      "epicenter": "Kütahya",
-      "distance_km": 209.9,
-      "is_istanbul": false
-    },
-    {
-      "id": "ImqbZKzQpXkK2",
-      "provider": "afad",
-      "title": "Marmara Denizi - [16.90 km] Marmara (Balıkesir)",
-      "mag": 1.2,
-      "depth": 6.61,
-      "lat": 40.8037,
-      "lon": 27.6842,
-      "timestamp": 1787016671000,
-      "closest_city": "Tekirdağ",
-      "epicenter": "Marmara Denizi",
-      "distance_km": 111.1,
-      "is_istanbul": false
+      "is_istanbul": false,
+      "first_seen": "2026-08-20T13:35:09.725Z"
     }
   ]
 }
