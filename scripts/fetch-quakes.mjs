@@ -95,11 +95,6 @@ function normalise(raw) {
   const props = raw?.location_properties ?? {};
   const closestCity = props.closestCity ?? null;
   const epiCenter = props.epiCenter ?? null;
-  const nearbyCodes = [
-    closestCity?.cityCode,
-    epiCenter?.cityCode,
-    ...(Array.isArray(props.closestCities) ? props.closestCities.map((c) => c?.cityCode) : []),
-  ];
 
   const timestamp = toEpochMs(raw?.date_time ?? raw?.date);
   if (timestamp === null || Number.isNaN(timestamp)) return null;
@@ -116,10 +111,19 @@ function normalise(raw) {
     closest_city: closestCity?.name ?? null,
     epicenter: epiCenter?.name ?? null,
     distance_km: Number(haversineKm(ISTANBUL, { lat, lon }).toFixed(1)),
-    // True when the API ties the quake to Istanbul's province (plate code 34),
-    // which is stricter than "within N km of the city centre".
+    // True when the API ties the event to Istanbul province (plate code 34).
+    //
+    // The title has to count on its own: for offshore epicentres the API's
+    // closestCity is measured to a city centre, so quakes titled "ADALAR
+    // (ISTANBUL)" out in the Marmara Sea come back with closestCity Yalova.
+    // props.closestCities is deliberately *not* consulted — it lists merely
+    // nearby provinces, which would sweep in Cinarcik/Yalova events that have
+    // nothing to do with Istanbul. Both dotted and dotless I are matched
+    // because Kandilli and AFAD spell the city differently.
     is_istanbul:
-      nearbyCodes.includes(ISTANBUL_CITY_CODE) || /ISTANBUL|İSTANBUL/i.test(raw?.title ?? ""),
+      closestCity?.cityCode === ISTANBUL_CITY_CODE ||
+      epiCenter?.cityCode === ISTANBUL_CITY_CODE ||
+      /ISTANBUL|İSTANBUL/i.test(raw?.title ?? ""),
   };
 }
 
