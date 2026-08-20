@@ -49,10 +49,10 @@ const NEW_KEY = "last-istanbul-quakes:new";
 /** Ids remembered as seen; comfortably more than one snapshot holds. */
 const SEEN_LIMIT = 400;
 /**
- * Kandilli and AFAD publish some events minutes after they happen, so an event
- * can be older than the moment we last recorded what the reader saw and still
- * be new to them. The id list is what actually prevents re-flagging; this only
- * keeps a growing history window from flooding the list with badges.
+ * How far before the reader's last look an event may have entered the feed and
+ * still count as news -- covers a reader whose previous page view was itself
+ * serving a slightly stale snapshot. The id list is what actually prevents
+ * re-flagging; this only keeps a growing history window from flooding the list.
  */
 const NEW_GRACE_MS = 2 * 3600_000;
 
@@ -295,19 +295,37 @@ function writeNewCache() {
 }
 
 /**
+ * When a quake entered the feed. The fetch script stamps each one with the
+ * refresh that first carried it, which is what "new" really means here: an
+ * event's own time cannot say it, because Kandilli and AFAD publish some
+ * events minutes after they happen. Live API records carry no stamp, so they
+ * fall back to the event time.
+ */
+function introducedAt(q) {
+  const stamped = Date.parse(q.first_seen ?? "");
+  return Number.isFinite(stamped) ? stamped : q.timestamp;
+}
+
+/**
  * Flag whatever the reader has not been shown before, then record the current
  * list as seen. Called on every data update, so the flags accumulate through a
  * visit: quakes that land while the page is open stay marked alongside the
  * ones that were already new when it opened.
  */
-function markNewQuakes(quakes) {
+function markNewQuakes(quakes, generatedAt) {
   const seen = readSeen();
-  // On a first visit the whole list is the baseline, not news.
-  if (seen) {
-    for (const q of quakes) {
-      if (!seen.ids.has(q.id) && q.timestamp > seen.at - NEW_GRACE_MS) newIds.add(q.id);
-    }
+  const latestRefresh = Date.parse(generatedAt ?? "");
+
+  for (const q of quakes) {
+    const isNew = seen
+      ? !seen.ids.has(q.id) && introducedAt(q) > seen.at - NEW_GRACE_MS
+      // Nothing remembered yet: fall back to what the newest refresh added, so
+      // a first visit still answers "what changed in the last update" instead
+      // of showing a list with nothing marked on it.
+      : Number.isFinite(latestRefresh) && Date.parse(q.first_seen ?? "") === latestRefresh;
+    if (isNew) newIds.add(q.id);
   }
+
   writeSeen(quakes);
   writeNewCache();
 }
@@ -348,7 +366,7 @@ async function loadLive({ force = false } = {}) {
 
     // Keep the snapshot's longer history and layer the newer events on top.
     snapshot = { ...snapshot, quakes: mergeQuakes(fresh, snapshot?.quakes ?? []) };
-    markNewQuakes(snapshot.quakes);
+    markNewQuakes(snapshot.quakes, snapshot.generated_at);
     liveAt = Date.now();
     liveFailures = 0;
     writeLiveCache(liveAt, fresh);
@@ -382,7 +400,7 @@ async function load({ force = false } = {}) {
 
     liveAt = live?.at ?? null;
     snapshot = live ? { ...data, quakes: mergeQuakes(live.quakes, data.quakes) } : data;
-    markNewQuakes(snapshot.quakes);
+    markNewQuakes(snapshot.quakes, snapshot.generated_at);
     snapshotFetchFailed = false;
   } catch (err) {
     snapshotFetchFailed = true;
