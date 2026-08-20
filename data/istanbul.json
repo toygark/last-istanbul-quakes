@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-20T10:50:29.180Z",
+  "generated_at": "2026-08-20T11:20:52.720Z",
   "source": "Kandilli Rasathanesi / AFAD — api.orhanaydogdu.com.tr",
   "center": {
     "lat": 41.0082,
@@ -8,6 +8,34 @@
   "radius_km": 250,
   "count": 300,
   "quakes": [
+    {
+      "id": "1R8jYil6_DxFw",
+      "provider": "kandilli",
+      "title": "PENDIK (ISTANBUL)",
+      "mag": 1.1,
+      "depth": 13.4,
+      "lat": 40.8608,
+      "lon": 29.2145,
+      "timestamp": 1787223598000,
+      "closest_city": "Yalova",
+      "epicenter": "Marmara Denizi",
+      "distance_km": 25.7,
+      "is_istanbul": true
+    },
+    {
+      "id": "Az_puzR04vufN",
+      "provider": "kandilli",
+      "title": "ADALAR (ISTANBUL)",
+      "mag": 1,
+      "depth": 7.7,
+      "lat": 40.7832,
+      "lon": 29.1215,
+      "timestamp": 1787222498000,
+      "closest_city": "Yalova",
+      "epicenter": "Marmara Denizi",
+      "distance_km": 27.8,
+      "is_istanbul": true
+    },
     {
       "id": "0Zv74NQw5pZ_5",
       "provider": "kandilli",
@@ -4178,34 +4206,6 @@
       "closest_city": "Eskişehir",
       "epicenter": "Bilecik",
       "distance_km": 161.1,
-      "is_istanbul": false
-    },
-    {
-      "id": "avRLwa5DYMgPX",
-      "provider": "afad",
-      "title": "Simav (Kütahya)",
-      "mag": 1.1,
-      "depth": 7,
-      "lat": 39.0952,
-      "lon": 29.0733,
-      "timestamp": 1786984821000,
-      "closest_city": "Uşak",
-      "epicenter": "Kütahya",
-      "distance_km": 212.9,
-      "is_istanbul": false
-    },
-    {
-      "id": "zcoaV093EP4Ov",
-      "provider": "kandilli",
-      "title": "PASAKONAGI-(DUZCE)",
-      "mag": 1.4,
-      "depth": 9.9,
-      "lat": 40.808,
-      "lon": 31.0723,
-      "timestamp": 1786976985000,
-      "closest_city": "Bolu",
-      "epicenter": "Düzce",
-      "distance_km": 177.4,
       "is_istanbul": false
     }
   ]
