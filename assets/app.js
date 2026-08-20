@@ -36,6 +36,25 @@ const LIVE_ATTEMPT_KEY = "last-istanbul-quakes:last-live-attempt";
  * another API call.
  */
 const LIVE_CACHE_KEY = "last-istanbul-quakes:live";
+/**
+ * Which quakes the reader has already been shown. Persisted so the "YENİ"
+ * badges mean "arrived since your last visit", not "since this tab opened".
+ */
+const SEEN_KEY = "last-istanbul-quakes:seen";
+/**
+ * The badges of the current visit, kept per tab so a pull to refresh (a real
+ * reload) does not wipe the marks the reader has not looked at yet.
+ */
+const NEW_KEY = "last-istanbul-quakes:new";
+/** Ids remembered as seen; comfortably more than one snapshot holds. */
+const SEEN_LIMIT = 400;
+/**
+ * How far before the reader's last look an event may have entered the feed and
+ * still count as news -- covers a reader whose previous page view was itself
+ * serving a slightly stale snapshot. The id list is what actually prevents
+ * re-flagging; this only keeps a growing history window from flooding the list.
+ */
+const NEW_GRACE_MS = 2 * 3600_000;
 
 const listEl = document.getElementById("quakes");
 const statusEl = document.getElementById("status");
@@ -76,6 +95,8 @@ let snapshotFetchFailed = false;
 /** When we last pulled live data straight from the API, if ever. */
 let liveAt = null;
 let liveFailures = 0;
+/** Ids flagged as new during this visit; they stay flagged until it ends. */
+let newIds = readNewCache();
 
 /** Coarse magnitude bands, used for colour and for the screen-reader label. */
 function magBand(mag) {
@@ -157,6 +178,15 @@ function renderQuake(q) {
 
   head.append(title, abs);
 
+  if (newIds.has(q.id)) {
+    li.classList.add("quake--new");
+    const badge = document.createElement("span");
+    badge.className = "quake__new";
+    badge.textContent = "YENİ";
+    badge.title = "Son güncellemeden sonra listeye eklendi";
+    head.prepend(badge);
+  }
+
   // Row 2: everything else, on one line.
   const meta = document.createElement("p");
   meta.className = "quake__meta";
@@ -186,7 +216,9 @@ function render() {
       : "Seçilen filtrelere uyan deprem kaydı yok.";
 
   const at = dataTimestamp();
+  const newCount = filtered.reduce((n, q) => n + (newIds.has(q.id) ? 1 : 0), 0);
   const parts = [`${filtered.length} deprem listeleniyor`];
+  if (newCount > 0) parts.push(`${newCount} yeni`);
   if (at !== null) {
     parts.push(`veriler ${formatRelative(at)} güncellendi (${istanbulTime.format(at)})`);
   }
@@ -226,6 +258,78 @@ function writeLiveCache(at, quakes) {
   }
 }
 
+function readSeen() {
+  try {
+    const parsed = JSON.parse(localStorage.getItem(SEEN_KEY) ?? "null");
+    if (!Array.isArray(parsed?.ids) || !Number.isFinite(parsed?.at)) return null;
+    return { at: parsed.at, ids: new Set(parsed.ids) };
+  } catch {
+    return null; // Private mode or blocked storage: no badges, no crash.
+  }
+}
+
+function writeSeen(quakes) {
+  try {
+    const ids = quakes.slice(0, SEEN_LIMIT).map((q) => q.id);
+    localStorage.setItem(SEEN_KEY, JSON.stringify({ at: Date.now(), ids }));
+  } catch {
+    /* not fatal */
+  }
+}
+
+function readNewCache() {
+  try {
+    const parsed = JSON.parse(sessionStorage.getItem(NEW_KEY) ?? "null");
+    return new Set(Array.isArray(parsed) ? parsed : []);
+  } catch {
+    return new Set();
+  }
+}
+
+function writeNewCache() {
+  try {
+    sessionStorage.setItem(NEW_KEY, JSON.stringify([...newIds]));
+  } catch {
+    /* not fatal */
+  }
+}
+
+/**
+ * When a quake entered the feed. The fetch script stamps each one with the
+ * refresh that first carried it, which is what "new" really means here: an
+ * event's own time cannot say it, because Kandilli and AFAD publish some
+ * events minutes after they happen. Live API records carry no stamp, so they
+ * fall back to the event time.
+ */
+function introducedAt(q) {
+  const stamped = Date.parse(q.first_seen ?? "");
+  return Number.isFinite(stamped) ? stamped : q.timestamp;
+}
+
+/**
+ * Flag whatever the reader has not been shown before, then record the current
+ * list as seen. Called on every data update, so the flags accumulate through a
+ * visit: quakes that land while the page is open stay marked alongside the
+ * ones that were already new when it opened.
+ */
+function markNewQuakes(quakes, generatedAt) {
+  const seen = readSeen();
+  const latestRefresh = Date.parse(generatedAt ?? "");
+
+  for (const q of quakes) {
+    const isNew = seen
+      ? !seen.ids.has(q.id) && introducedAt(q) > seen.at - NEW_GRACE_MS
+      // Nothing remembered yet: fall back to what the newest refresh added, so
+      // a first visit still answers "what changed in the last update" instead
+      // of showing a list with nothing marked on it.
+      : Number.isFinite(latestRefresh) && Date.parse(q.first_seen ?? "") === latestRefresh;
+    if (isNew) newIds.add(q.id);
+  }
+
+  writeSeen(quakes);
+  writeNewCache();
+}
+
 function markLiveAttempt() {
   try {
     sessionStorage.setItem(LIVE_ATTEMPT_KEY, String(Date.now()));
@@ -262,6 +366,7 @@ async function loadLive({ force = false } = {}) {
 
     // Keep the snapshot's longer history and layer the newer events on top.
     snapshot = { ...snapshot, quakes: mergeQuakes(fresh, snapshot?.quakes ?? []) };
+    markNewQuakes(snapshot.quakes, snapshot.generated_at);
     liveAt = Date.now();
     liveFailures = 0;
     writeLiveCache(liveAt, fresh);
@@ -295,6 +400,7 @@ async function load({ force = false } = {}) {
 
     liveAt = live?.at ?? null;
     snapshot = live ? { ...data, quakes: mergeQuakes(live.quakes, data.quakes) } : data;
+    markNewQuakes(snapshot.quakes, snapshot.generated_at);
     snapshotFetchFailed = false;
   } catch (err) {
     snapshotFetchFailed = true;
