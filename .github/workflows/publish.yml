@@ -1,0 +1,87 @@
+name: Refresh data and deploy
+
+# One pipeline on purpose: commits made with GITHUB_TOKEN do not trigger new
+# workflow runs (GitHub's anti-recursion rule), so a separate deploy workflow
+# listening for pushes would never see the data commits and the published site
+# would sit frozen while data/istanbul.json kept moving.
+
+on:
+  schedule:
+    # Every 10 minutes. GitHub's scheduler is best-effort and can lag under
+    # load, so the site always shows how old the snapshot actually is.
+    - cron: "*/10 * * * *"
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: publish
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    outputs:
+      changed: ${{ steps.commit.outputs.changed }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+
+      - name: Fetch latest quakes
+        run: node scripts/fetch-quakes.mjs
+
+      - name: Commit snapshot if it changed
+        id: commit
+        run: |
+          if git diff --quiet -- data/istanbul.json; then
+            echo "No new earthquake data."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/istanbul.json
+          git commit -m "chore(data): refresh Istanbul earthquake snapshot"
+          # Another scheduled run may have landed while this one was fetching.
+          for attempt in 1 2 3; do
+            if git push; then
+              echo "changed=true" >> "$GITHUB_OUTPUT"
+              exit 0
+            fi
+            git pull --rebase --strategy-option=theirs
+            sleep $((attempt * 3))
+          done
+          exit 1
+
+  deploy:
+    needs: update
+    runs-on: ubuntu-latest
+    # Publish whenever the data moved. On a push or a manual run, deploy even if
+    # the fetch failed or found nothing new, so site changes still ship.
+    if: ${{ !cancelled() && (github.event_name != 'schedule' || needs.update.outputs.changed == 'true') }}
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      # Pages must already be enabled with Source = GitHub Actions
+      # (Settings -> Pages). configure-pages cannot turn it on for us: creating
+      # a Pages site needs repo-admin rights, which GITHUB_TOKEN cannot hold.
+      - uses: actions/checkout@v4
+        with:
+          # Pick up the snapshot the update job just pushed, which is newer
+          # than the SHA that triggered this run.
+          ref: main
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+      - id: deployment
+        uses: actions/deploy-pages@v4
