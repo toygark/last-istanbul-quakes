@@ -38,6 +38,25 @@ const istanbulTime = new Intl.DateTimeFormat("tr-TR", {
 });
 const relativeTime = new Intl.RelativeTimeFormat("tr-TR", { numeric: "auto" });
 
+// Compact variants for the list rows: the full timestamp stays available as a
+// tooltip and in the <time datetime> attribute.
+const istanbulDay = new Intl.DateTimeFormat("tr-TR", {
+  timeZone: "Europe/Istanbul", year: "numeric", month: "2-digit", day: "2-digit",
+});
+const istanbulClock = new Intl.DateTimeFormat("tr-TR", {
+  timeZone: "Europe/Istanbul", hour: "2-digit", minute: "2-digit",
+});
+const istanbulShortDate = new Intl.DateTimeFormat("tr-TR", {
+  timeZone: "Europe/Istanbul", day: "numeric", month: "short",
+});
+
+/** Clock time for today's quakes, date + clock for older ones. */
+function compactTime(timestamp) {
+  const clock = istanbulClock.format(timestamp);
+  if (istanbulDay.format(timestamp) === istanbulDay.format(Date.now())) return clock;
+  return `${istanbulShortDate.format(timestamp)} ${clock}`;
+}
+
 let snapshot = null;
 let snapshotFetchFailed = false;
 /** When we last pulled live data straight from the API, if ever. */
@@ -102,42 +121,41 @@ function renderQuake(q) {
   const body = document.createElement("div");
   body.className = "quake__body";
 
+  // Row 1: title (linking to the map, which saves a whole line) and the clock.
+  const head = document.createElement("div");
+  head.className = "quake__head";
+
   const title = document.createElement("h2");
   title.className = "quake__title";
-  title.textContent = q.title;
+  const link = document.createElement("a");
+  link.href = `https://www.openstreetmap.org/?mlat=${q.lat}&mlon=${q.lon}#map=9/${q.lat}/${q.lon}`;
+  link.rel = "noopener";
+  link.target = "_blank";
+  link.textContent = q.title;
+  link.title = "Haritada gör";
+  title.append(link);
 
-  const when = document.createElement("p");
-  when.className = "quake__when";
   const abs = document.createElement("time");
+  abs.className = "quake__clock";
   abs.dateTime = new Date(q.timestamp).toISOString();
-  abs.textContent = istanbulTime.format(q.timestamp);
-  when.append(abs, ` · ${formatRelative(q.timestamp)}`);
+  abs.textContent = compactTime(q.timestamp);
+  abs.title = istanbulTime.format(q.timestamp);
 
-  const meta = document.createElement("ul");
+  head.append(title, abs);
+
+  // Row 2: everything else, on one line.
+  const meta = document.createElement("p");
   meta.className = "quake__meta";
   const facts = [
-    ["Derinlik", Number.isFinite(q.depth) ? `${q.depth} km` : "—"],
-    ["Merkeze uzaklık", `${q.distance_km} km`],
-    ["Kaynak", q.provider === "kandilli" ? "Kandilli" : q.provider === "afad" ? "AFAD" : q.provider],
-  ];
-  if (q.closest_city) facts.splice(2, 0, ["En yakın il", q.closest_city]);
+    formatRelative(q.timestamp),
+    Number.isFinite(q.depth) ? `derinlik ${q.depth} km` : null,
+    `uzaklık ${q.distance_km} km`,
+    q.closest_city,
+    q.provider === "kandilli" ? "Kandilli" : q.provider === "afad" ? "AFAD" : q.provider,
+  ].filter(Boolean);
+  meta.textContent = facts.join(" · ");
 
-  for (const [label, value] of facts) {
-    const item = document.createElement("li");
-    item.innerHTML = `<span class="k"></span> <span class="v"></span>`;
-    item.querySelector(".k").textContent = `${label}:`;
-    item.querySelector(".v").textContent = value;
-    meta.append(item);
-  }
-
-  const map = document.createElement("a");
-  map.className = "quake__map";
-  map.href = `https://www.openstreetmap.org/?mlat=${q.lat}&mlon=${q.lon}#map=9/${q.lat}/${q.lon}`;
-  map.rel = "noopener";
-  map.target = "_blank";
-  map.textContent = "Haritada gör";
-
-  body.append(title, when, meta, map);
+  body.append(head, meta);
   li.append(mag, body);
   return li;
 }
