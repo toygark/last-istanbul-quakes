@@ -10,18 +10,32 @@
  * them, but there is no reason to make it whenever the snapshot is current.
  */
 
-import { API_BASE, mergeQuakes, normalise, searchBody } from "./quakes.js";
+import { API_BASE, mergeQuakes, normalise, searchBody } from "./quakes.js?v=3";
 
 const SNAPSHOT_URL = "data/istanbul.json";
 const POLL_INTERVAL_MS = 60_000;
 
 /** Snapshot older than this and we consider going to the API ourselves. */
 const STALE_AFTER_MS = 10 * 60_000;
-/** Never hit the API more often than this from one browser. */
+/** Never hit the API more often than this from one browser on its own. */
 const LIVE_MIN_INTERVAL_MS = 5 * 60_000;
+/**
+ * Floor for user-initiated refreshes. The throttle above lives in
+ * sessionStorage and so survives a reload -- without this exemption, pull to
+ * refresh (which *is* a reload) would silently skip the live fetch and
+ * re-render the same stale snapshot, making the page look frozen.
+ */
+const LIVE_MIN_INTERVAL_FORCED_MS = 15_000;
 /** After this many consecutive failures (no CORS, offline), stop trying. */
 const LIVE_MAX_FAILURES = 3;
 const LIVE_ATTEMPT_KEY = "last-istanbul-quakes:last-live-attempt";
+/**
+ * Live results are cached alongside the attempt timestamp so a reload keeps
+ * them. Without this, every pull to refresh drops back to the (stale) snapshot
+ * and the page appears to go backwards in time until the throttle allows
+ * another API call.
+ */
+const LIVE_CACHE_KEY = "last-istanbul-quakes:live";
 
 const listEl = document.getElementById("quakes");
 const statusEl = document.getElementById("status");
@@ -180,9 +194,7 @@ function render() {
   if (snapshotFetchFailed) parts.push("son yenileme başarısız oldu, önceki veriler gösteriliyor");
 
   const stale = at !== null && Date.now() - at > STALE_AFTER_MS;
-  if (stale && liveFailures >= LIVE_MAX_FAILURES) {
-    parts.push("canlı veri alınamıyor");
-  }
+  if (stale && liveFailures > 0) parts.push("canlı veri alınamadı");
 
   statusEl.textContent = `${parts.join(" · ")}.`;
   statusEl.classList.toggle("status--stale", snapshotFetchFailed || stale);
@@ -193,6 +205,24 @@ function lastLiveAttempt() {
     return Number(sessionStorage.getItem(LIVE_ATTEMPT_KEY)) || 0;
   } catch {
     return 0; // Private mode or blocked storage; the in-memory guards still apply.
+  }
+}
+
+function readLiveCache() {
+  try {
+    const parsed = JSON.parse(sessionStorage.getItem(LIVE_CACHE_KEY) ?? "null");
+    if (!Array.isArray(parsed?.quakes) || !Number.isFinite(parsed?.at)) return null;
+    return parsed;
+  } catch {
+    return null;
+  }
+}
+
+function writeLiveCache(at, quakes) {
+  try {
+    sessionStorage.setItem(LIVE_CACHE_KEY, JSON.stringify({ at, quakes }));
+  } catch {
+    /* quota or private mode; the in-memory copy still serves this page view */
   }
 }
 
@@ -208,9 +238,10 @@ function markLiveAttempt() {
  * Query the API directly. Only called when the snapshot has fallen behind --
  * see the note at the top of this file.
  */
-async function loadLive() {
+async function loadLive({ force = false } = {}) {
   if (liveFailures >= LIVE_MAX_FAILURES) return;
-  if (Date.now() - lastLiveAttempt() < LIVE_MIN_INTERVAL_MS) return;
+  const floor = force ? LIVE_MIN_INTERVAL_FORCED_MS : LIVE_MIN_INTERVAL_MS;
+  if (Date.now() - lastLiveAttempt() < floor) return;
   markLiveAttempt();
 
   try {
@@ -233,6 +264,7 @@ async function loadLive() {
     snapshot = { ...snapshot, quakes: mergeQuakes(fresh, snapshot?.quakes ?? []) };
     liveAt = Date.now();
     liveFailures = 0;
+    writeLiveCache(liveAt, fresh);
   } catch {
     // Most likely the API sends no CORS headers for this origin, in which case
     // retrying will never help -- so give up for the session after a few tries
@@ -242,7 +274,7 @@ async function loadLive() {
   render();
 }
 
-async function load() {
+async function load({ force = false } = {}) {
   refreshBtn.disabled = true;
   try {
     // Cache-bust so a redeployed snapshot is picked up without a hard reload.
@@ -252,12 +284,17 @@ async function load() {
     if (!Array.isArray(data?.quakes)) throw new Error("beklenmeyen veri biçimi");
 
     const generated = Date.parse(data.generated_at ?? "");
-    // A newer snapshot supersedes whatever we pulled live earlier.
-    if (Number.isFinite(generated) && liveAt && generated > liveAt) liveAt = null;
+    const snapshotAt = Number.isFinite(generated) ? generated : 0;
 
-    snapshot = liveAt
-      ? { ...data, quakes: mergeQuakes(snapshot?.quakes ?? [], data.quakes) }
-      : data;
+    // Whichever is newer wins: a fresh snapshot supersedes older live results,
+    // and cached live results (which survive a reload) supersede an older
+    // snapshot. Reading the cache here is what makes pull to refresh keep the
+    // data it already had instead of falling back to the snapshot.
+    const cachedLive = readLiveCache();
+    const live = cachedLive && cachedLive.at > snapshotAt ? cachedLive : null;
+
+    liveAt = live?.at ?? null;
+    snapshot = live ? { ...data, quakes: mergeQuakes(live.quakes, data.quakes) } : data;
     snapshotFetchFailed = false;
   } catch (err) {
     snapshotFetchFailed = true;
@@ -274,13 +311,13 @@ async function load() {
   render();
 
   const at = dataTimestamp();
-  if (at === null || Date.now() - at > STALE_AFTER_MS) await loadLive();
+  if (at === null || Date.now() - at > STALE_AFTER_MS) await loadLive({ force });
 }
 
 for (const el of [radiusEl, minMagEl, periodEl]) {
   el.addEventListener("change", render);
 }
-refreshBtn.addEventListener("click", load);
+refreshBtn.addEventListener("click", () => load({ force: true }));
 
 // Keep the "x minutes ago" labels honest between polls.
 setInterval(render, 30_000);
@@ -291,4 +328,4 @@ document.addEventListener("visibilitychange", () => {
   if (document.visibilityState === "visible") load();
 });
 
-load();
+load({ force: true });
