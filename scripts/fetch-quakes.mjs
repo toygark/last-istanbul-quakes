@@ -61,6 +61,26 @@ async function readExistingSnapshot() {
   }
 }
 
+/**
+ * Stamp every quake with the snapshot generation that first carried it, so the
+ * page can point at what the latest refresh actually added -- something the
+ * quake's own timestamp cannot tell you, because Kandilli and AFAD publish
+ * events minutes after they happen.
+ *
+ * Quakes already in the previous snapshot keep their stamp. Ones the previous
+ * snapshot carried without a stamp (it predates this field) are dated to that
+ * snapshot rather than to now: they were already on screen, so they are not
+ * news, and without this the first run of this version would flag the entire
+ * list for every reader.
+ */
+function stampFirstSeen(quakes, previous, generatedAt) {
+  const previousAt = previous?.generated_at ?? null;
+  const known = new Map(
+    (previous?.quakes ?? []).map((q) => [q.id, q.first_seen ?? previousAt ?? generatedAt]),
+  );
+  return quakes.map((q) => ({ ...q, first_seen: known.get(q.id) ?? generatedAt }));
+}
+
 async function main() {
   const collected = [];
   for (let page = 0; page < MAX_PAGES; page += 1) {
@@ -72,22 +92,24 @@ async function main() {
   }
 
   const quakes = mergeQuakes(collected.map(normalise).filter(Boolean));
+  const previous = await readExistingSnapshot();
 
   if (quakes.length === 0) {
     // A successful-but-empty response would otherwise wipe a good snapshot.
-    const existing = await readExistingSnapshot();
-    if (existing?.quakes?.length) {
+    if (previous?.quakes?.length) {
       throw new Error("API returned no usable records; keeping the previous snapshot");
     }
   }
 
+  const generatedAt = new Date().toISOString();
   const snapshot = {
-    generated_at: new Date().toISOString(),
+    generated_at: generatedAt,
+    previous_generated_at: previous?.generated_at ?? null,
     source: "Kandilli Rasathanesi / AFAD — api.orhanaydogdu.com.tr",
     center: ISTANBUL,
     radius_km: RADIUS_METER / 1000,
     count: quakes.length,
-    quakes,
+    quakes: stampFirstSeen(quakes, previous, generatedAt),
   };
 
   await mkdir(dirname(OUT_FILE), { recursive: true });
