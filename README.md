@@ -32,14 +32,16 @@ data/istanbul.json                the committed snapshot the page reads
 
 ## Setup
 
-1. Push this branch to `main` (the workflows are scheduled off the default branch).
-2. In **Settings → Pages**, set *Source* to **GitHub Actions**.
-3. In **Settings → Actions → General**, make sure workflows have **Read and write permissions**
-   so the data job can commit its snapshot.
-4. Run **Actions → Update earthquake data → Run workflow** once to populate the first snapshot;
-   the schedule takes over from there.
+1. Push to `main` (the workflows are scheduled off the default branch).
+2. In **Settings → Pages**, set *Source* to **GitHub Actions**. This step has to be done by hand:
+   creating a Pages site requires repo-admin rights, which `GITHUB_TOKEN` cannot be granted, so
+   the deploy workflow cannot enable Pages for you — it fails with *"Resource not accessible by
+   integration"* until Pages exists.
+3. Re-run **Actions → Deploy to GitHub Pages** once Pages is on. Every later push to `main` —
+   including the data commits — deploys automatically.
 
-`data/istanbul.json` ships empty, so the page renders a "no data yet" state until that first run.
+The data workflow needs no setup beyond **Settings → Actions → General → Read and write
+permissions** (the default for most repos) so it can commit its snapshot.
 
 ## Local development
 
