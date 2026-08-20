@@ -114,8 +114,8 @@ generation on screen, which is all the page has to check.
 Two details keep it honest:
 
 - The live fallback stamps what it introduces the same way, using the fetch time, and caches the
-  stamped copies per tab (`sessionStorage`) — so during a slipped schedule the badge still means
-  what it says, and a pull to refresh rebuilds the same marks.
+  stamped copies — so during a slipped schedule the badge still means what it says, and a reload
+  rebuilds the same marks.
 - Quakes a snapshot carried before this field existed have no stamp and never match, so the first
   run after deploying it flags nothing for anyone rather than lighting up the whole list.
 
@@ -126,6 +126,23 @@ the assets *independently* — so without care a reload can pair new HTML with t
 The asset URLs therefore carry a `?v=N`: **bump it in `index.html` (styles and script) and in the
 `./quakes.js?v=` import inside `app.js` whenever those files change.** The snapshot JSON needs no
 version, it is fetched with a timestamp query and `cache: "no-store"`.
+
+### Coming back to a page the browser put away
+
+iOS Safari does not keep a backgrounded tab alive: it paints the last frame it had, then hands
+the restored page back — often as a fresh session with `sessionStorage` emptied. Two things follow
+from that, and the page handles both:
+
+- The live results are cached in **`localStorage`**, not `sessionStorage`. Otherwise a discarded
+  tab loses them, re-renders the older snapshot, and visibly jumps when the live fetch lands —
+  every time the app comes to the foreground. A desktop tab keeps its session alive and so never
+  showed this.
+- `visibilitychange` **and** `pageshow` both trigger a refresh, and it re-renders before the
+  network call rather than after, so the "x dakika önce" labels frozen into the restored frame are
+  corrected immediately and the status says a refresh is under way.
+
+The API throttle is stored the same way, so returning to the app repeatedly costs the upstream API
+one request per five minutes rather than one per switch.
 
 ### When the schedule slips
 
