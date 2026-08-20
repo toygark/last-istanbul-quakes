@@ -98,6 +98,23 @@ Parsing, distance and the Istanbul rule live in `assets/quakes.js`, imported by 
 and the fetch script — the rule is subtle enough (see the comment there) that two copies would
 drift apart.
 
+## New since your last visit
+
+Quakes that were not on screen the last time you looked are marked **YENİ** and counted in the
+status line. The browser stores the ids it has already shown you (`localStorage`), so the marks
+mean "new to you", not "new to this tab" — a returning visitor sees exactly what arrived while
+they were away, and events landing during a visit get marked as they appear.
+
+Two details keep it honest:
+
+- The badges of a visit are also cached per tab (`sessionStorage`), so a pull to refresh — a real
+  reload — does not wipe marks you have not read yet.
+- Kandilli and AFAD publish some events minutes after they happen, so an event can be older than
+  the moment we recorded what you saw and still be news. The id list is what prevents re-flagging;
+  a two-hour grace window on top of it only stops a growing history from flooding the list.
+
+A first visit marks nothing: the list you land on is the baseline.
+
 ### Cache busting
 
 GitHub Pages serves everything with `Cache-Control: max-age=600`, and it caches `index.html` and
