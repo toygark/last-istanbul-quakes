@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-20T10:39:09.039Z",
+  "generated_at": "2026-08-20T10:50:29.180Z",
   "source": "Kandilli Rasathanesi / AFAD — api.orhanaydogdu.com.tr",
   "center": {
     "lat": 41.0082,
@@ -8,6 +8,20 @@
   "radius_km": 250,
   "count": 300,
   "quakes": [
+    {
+      "id": "0Zv74NQw5pZ_5",
+      "provider": "kandilli",
+      "title": "ADALAR (ISTANBUL)",
+      "mag": 1.2,
+      "depth": 6.2,
+      "lat": 40.8245,
+      "lon": 29.115,
+      "timestamp": 1787222294000,
+      "closest_city": "Yalova",
+      "epicenter": "Marmara Denizi",
+      "distance_km": 23.4,
+      "is_istanbul": true
+    },
     {
       "id": "Fzpp2n02IXVJS",
       "provider": "kandilli",
@@ -4192,20 +4206,6 @@
       "closest_city": "Bolu",
       "epicenter": "Düzce",
       "distance_km": 177.4,
-      "is_istanbul": false
-    },
-    {
-      "id": "KBSgmBNZ_gUoa",
-      "provider": "kandilli",
-      "title": "BALIKESIR (BALIKESIR)",
-      "mag": 1.2,
-      "depth": 5.2,
-      "lat": 39.6552,
-      "lon": 27.8658,
-      "timestamp": 1786973266000,
-      "closest_city": "Manisa",
-      "epicenter": "Balıkesir",
-      "distance_km": 177.6,
       "is_istanbul": false
     }
   ]
