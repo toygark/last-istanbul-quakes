@@ -98,30 +98,26 @@ Parsing, distance and the Istanbul rule live in `assets/quakes.js`, imported by 
 and the fetch script — the rule is subtle enough (see the comment there) that two copies would
 drift apart.
 
-## New since your last visit
+## New in the latest refresh
 
-Quakes that were not on screen the last time you looked are marked **YENİ** and counted in the
-status line. The browser stores the ids it has already shown you (`localStorage`), so the marks
-mean "new to you", not "new to this tab" — a returning visitor sees exactly what arrived while
-they were away, and events landing during a visit get marked as they appear.
+Quakes the most recent refresh added are marked **YENİ** and counted in the status line. The
+badge belongs to the data, not to the reader: everyone sees the same marks, reloading changes
+nothing, and the next refresh ten minutes later retires them.
 
-What counts as "new" is the refresh that first carried a quake, not the quake's own time:
-Kandilli and AFAD publish some events minutes after they happen, so the event time cannot tell
-you what just showed up. `scripts/fetch-quakes.mjs` therefore stamps every quake with a
-`first_seen` — the `generated_at` of the snapshot that introduced it, carried forward on later
-runs — and records the previous run's time as `previous_generated_at`.
-
-That stamp also gives a first-time visitor something to see: with no history stored, the page
-marks whatever the newest refresh added, so the list answers "what changed in the last update"
-even on a cold visit. Quakes a snapshot already carried before this field existed are dated to
-that snapshot rather than to now, so the first run of this version flags nothing for anyone.
+What makes that possible is a stamp, not the quake's own time. Kandilli and AFAD publish some
+events minutes after they happen — a batch of hour-old records landing at once is exactly what
+the badge is for — so `scripts/fetch-quakes.mjs` stamps every quake with a `first_seen`: the
+`generated_at` of the snapshot that introduced it, carried forward on later runs. It also records
+the previous run's time as `previous_generated_at`. A quake is new when its stamp equals the
+generation on screen, which is all the page has to check.
 
 Two details keep it honest:
 
-- The badges of a visit are also cached per tab (`sessionStorage`), so a pull to refresh — a real
-  reload — does not wipe marks you have not read yet.
-- The id list is what prevents re-flagging something you have already been shown; a two-hour
-  grace window on top of it covers a previous visit that was itself served a stale snapshot.
+- The live fallback stamps what it introduces the same way, using the fetch time, and caches the
+  stamped copies per tab (`sessionStorage`) — so during a slipped schedule the badge still means
+  what it says, and a pull to refresh rebuilds the same marks.
+- Quakes a snapshot carried before this field existed have no stamp and never match, so the first
+  run after deploying it flags nothing for anyone rather than lighting up the whole list.
 
 ### Cache busting
 
