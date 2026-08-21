@@ -135,6 +135,30 @@ function applyFilters(quakes) {
   });
 }
 
+/**
+ * The two feeds the API merges. They disagree often enough -- different
+ * magnitudes, and the same event listed twice with separate ids -- that the
+ * source belongs on the row itself rather than buried in the meta line.
+ */
+const PROVIDERS = {
+  kandilli: { label: "Kandilli", key: "kandilli", title: "Kaynak: Kandilli Rasathanesi" },
+  afad: { label: "AFAD", key: "afad", title: "Kaynak: AFAD" },
+};
+
+/** Small source tag, styled like the YENİ badge so the row reads as one strip. */
+function providerBadge(provider) {
+  const info = PROVIDERS[provider] ?? {
+    label: provider || "bilinmiyor",
+    key: "unknown",
+    title: "Kaynak bilinmiyor",
+  };
+  const badge = document.createElement("span");
+  badge.className = `quake__source quake__source--${info.key}`;
+  badge.textContent = info.label;
+  badge.title = info.title;
+  return badge;
+}
+
 function renderQuake(q, generation) {
   const band = magBand(q.mag);
   const li = document.createElement("li");
@@ -168,7 +192,7 @@ function renderQuake(q, generation) {
   abs.textContent = compactTime(q.timestamp);
   abs.title = istanbulTime.format(q.timestamp);
 
-  head.append(title, abs);
+  head.append(title, providerBadge(q.provider), abs);
 
   if (isNewQuake(q, generation)) {
     li.classList.add("quake--new");
@@ -187,7 +211,6 @@ function renderQuake(q, generation) {
     Number.isFinite(q.depth) ? `derinlik ${q.depth} km` : null,
     `uzaklık ${q.distance_km} km`,
     q.closest_city,
-    q.provider === "kandilli" ? "Kandilli" : q.provider === "afad" ? "AFAD" : q.provider,
   ].filter(Boolean);
   meta.textContent = facts.join(" · ");
 

@@ -12,6 +12,11 @@
   --strong: #ef9350;
   --severe: #e5615f;
 
+  /* Data sources. Deliberately off the magnitude ramp and off --accent, so a
+     source tag is never mistaken for a severity or for the YENİ badge. */
+  --kandilli: #a48cf0;
+  --afad: #4fbfc9;
+
   --radius: 9px;
 }
 
@@ -29,6 +34,9 @@
     --moderate: #9a7411;
     --strong: #b45a15;
     --severe: #c0332f;
+
+    --kandilli: #5a45c4;
+    --afad: #0d6f7a;
   }
 }
 
@@ -188,6 +196,27 @@ a:focus-visible {
   text-transform: uppercase;
 }
 
+/* Which feed the row came from. Outlined rather than filled, so it sits a step
+   below the solid YENİ badge in the row's visual order. */
+.quake__source {
+  flex: none;
+  align-self: center;
+  padding: 0.05rem 0.34rem;
+  border: 1px solid color-mix(in srgb, var(--source, var(--muted)) 55%, transparent);
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--source, var(--muted)) 14%, transparent);
+  color: var(--source, var(--muted));
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  line-height: 1.5;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.quake__source--kandilli { --source: var(--kandilli); }
+.quake__source--afad { --source: var(--afad); }
+
 .quake__head {
   display: flex;
   align-items: baseline;
@@ -258,5 +287,6 @@ a:focus-visible {
   .quake__mag { min-width: 2.3rem; font-size: 0.98rem; }
   .quake__title { font-size: 0.84rem; }
   .quake__meta { font-size: 0.72rem; }
+  .quake__source { font-size: 0.58rem; padding-inline: 0.28rem; }
   .field { flex-basis: 7rem; }
 }

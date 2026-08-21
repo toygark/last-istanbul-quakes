@@ -98,6 +98,18 @@ Parsing, distance and the Istanbul rule live in `assets/quakes.js`, imported by 
 and the fetch script — the rule is subtle enough (see the comment there) that two copies would
 drift apart.
 
+## Which feed a quake came from
+
+The upstream API merges two feeds, and every record says which one it came from. That now shows on
+the row itself as a small tag next to the title — **KANDİLLİ** or **AFAD** — instead of trailing the
+meta line, because the two sources routinely disagree: they publish an event minutes apart, put
+different magnitudes on it, and list it twice under separate ids, so the same quake can appear as
+two rows. The tag is what tells them apart at a glance.
+
+The tags are outlined rather than filled, on colours (`--kandilli`, `--afad`) kept off the magnitude
+ramp and off `--accent`, so a source is never read as a severity or confused with the solid YENİ
+badge. An unrecognised `provider` value still gets a tag, in the muted colour, with its raw value.
+
 ## New in the latest refresh
 
 Quakes the most recent refresh added are marked **YENİ** and counted in the status line. The
