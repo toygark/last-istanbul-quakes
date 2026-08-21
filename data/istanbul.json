@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-21T05:45:48.243Z",
-  "previous_generated_at": "2026-08-21T05:04:47.927Z",
+  "generated_at": "2026-08-21T06:19:36.250Z",
+  "previous_generated_at": "2026-08-21T05:45:48.243Z",
   "source": "Kandilli Rasathanesi / AFAD — api.orhanaydogdu.com.tr",
   "center": {
     "lat": 41.0082,
@@ -9,6 +9,21 @@
   "radius_km": 250,
   "count": 300,
   "quakes": [
+    {
+      "id": "7fPznc3MseWYY",
+      "provider": "kandilli",
+      "title": "ADALAR (ISTANBUL)",
+      "mag": 1.9,
+      "depth": 9.4,
+      "lat": 40.7668,
+      "lon": 29.124,
+      "timestamp": 1787289286000,
+      "closest_city": "Yalova",
+      "epicenter": "Marmara Denizi",
+      "distance_km": 29.5,
+      "is_istanbul": true,
+      "first_seen": "2026-08-21T06:19:36.250Z"
+    },
     {
       "id": "n6joKZ3fJ1rtP",
       "provider": "afad",
@@ -23,6 +38,21 @@
       "distance_km": 27.9,
       "is_istanbul": true,
       "first_seen": "2026-08-21T05:45:48.243Z"
+    },
+    {
+      "id": "9ivxqVX_dehqQ",
+      "provider": "kandilli",
+      "title": "ADALAR (ISTANBUL)",
+      "mag": 1.9,
+      "depth": 15.4,
+      "lat": 40.7835,
+      "lon": 29.1032,
+      "timestamp": 1787289201000,
+      "closest_city": "Yalova",
+      "epicenter": "Marmara Denizi",
+      "distance_km": 27.1,
+      "is_istanbul": true,
+      "first_seen": "2026-08-21T06:19:36.250Z"
     },
     {
       "id": "dCThQm3aUYbBj",
@@ -4477,36 +4507,6 @@
       "epicenter": "Marmara Denizi",
       "distance_km": 29,
       "is_istanbul": true,
-      "first_seen": "2026-08-20T13:35:09.725Z"
-    },
-    {
-      "id": "zncTwm1wDUtvi",
-      "provider": "afad",
-      "title": "Marmara Denizi - Gemlik Körfezi - [04.69 km] Mudanya (Bursa)",
-      "mag": 1.6,
-      "depth": 7,
-      "lat": 40.4303,
-      "lon": 28.8147,
-      "timestamp": 1787154968000,
-      "closest_city": "Yalova",
-      "epicenter": "Marmara Denizi",
-      "distance_km": 65.7,
-      "is_istanbul": false,
-      "first_seen": "2026-08-20T13:35:09.725Z"
-    },
-    {
-      "id": "rAcfdfiauzcow",
-      "provider": "kandilli",
-      "title": "GEMLIK KORFEZI (MARMARA DENIZI)",
-      "mag": 2,
-      "depth": 11,
-      "lat": 40.4255,
-      "lon": 28.8468,
-      "timestamp": 1787154967000,
-      "closest_city": "Yalova",
-      "epicenter": "Marmara Denizi",
-      "distance_km": 65.7,
-      "is_istanbul": false,
       "first_seen": "2026-08-20T13:35:09.725Z"
     }
   ]
