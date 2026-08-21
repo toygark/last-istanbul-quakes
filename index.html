@@ -6,14 +6,28 @@
 <title>İstanbul Depremleri — Son Depremler</title>
 <meta name="description" content="İstanbul ve çevresinde meydana gelen son depremler. Kandilli Rasathanesi ve AFAD verileriyle, her 10 dakikada bir güncellenir." />
 <meta name="color-scheme" content="dark light" />
-<link rel="stylesheet" href="assets/styles.css?v=7" />
+<link rel="stylesheet" href="assets/styles.css?v=8" />
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌍</text></svg>" />
+<script>
+  // Inline and blocking on purpose: assets/theme.js is a module, so it runs
+  // after the first paint -- long enough to show the wrong theme and then
+  // correct it. Nothing else here needs to run this early.
+  try {
+    var t = localStorage.getItem("last-istanbul-quakes:theme");
+    if (t === "light" || t === "dark") document.documentElement.dataset.theme = t;
+  } catch (e) {}
+</script>
 </head>
 <body>
 <header class="site-header">
-  <div class="wrap">
-    <h1>İstanbul Depremleri</h1>
-    <p class="tagline">İstanbul ve çevresindeki son depremler — Kandilli Rasathanesi &amp; AFAD verileri</p>
+  <div class="wrap site-header__bar">
+    <div>
+      <h1>İstanbul Depremleri</h1>
+      <p class="tagline">İstanbul ve çevresindeki son depremler — Kandilli Rasathanesi &amp; AFAD verileri</p>
+    </div>
+    <button id="theme" class="theme-toggle" type="button" title="Tema: Sistem" aria-label="Tema: Sistem. Değiştirmek için tıklayın.">
+      <svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"></svg>
+    </button>
   </div>
 </header>
 
@@ -68,6 +82,7 @@
   </div>
 </footer>
 
-<script src="assets/app.js?v=7" type="module"></script>
+<script src="assets/theme.js?v=8" type="module"></script>
+<script src="assets/app.js?v=8" type="module"></script>
 </body>
 </html>

@@ -10,7 +10,7 @@
  * them, but there is no reason to make it whenever the snapshot is current.
  */
 
-import { API_BASE, mergeQuakes, normalise, searchBody } from "./quakes.js?v=3";
+import { API_BASE, groupDuplicates, mergeQuakes, normalise, searchBody } from "./quakes.js?v=4";
 
 const SNAPSHOT_URL = "data/istanbul.json";
 const POLL_INTERVAL_MS = 60_000;
@@ -136,31 +136,39 @@ function applyFilters(quakes) {
 }
 
 /**
- * The two feeds the API merges. They disagree often enough -- different
- * magnitudes, and the same event listed twice with separate ids -- that the
- * source belongs on the row itself rather than buried in the meta line.
+ * The two feeds the API merges. A row carries one tag per agency that reported
+ * it -- both, when groupDuplicates() folded their copies into a single row.
  */
 const PROVIDERS = {
-  kandilli: { label: "Kandilli", key: "kandilli", title: "Kaynak: Kandilli Rasathanesi" },
-  afad: { label: "AFAD", key: "afad", title: "Kaynak: AFAD" },
+  kandilli: { label: "Kandilli", key: "kandilli", name: "Kandilli Rasathanesi" },
+  afad: { label: "AFAD", key: "afad", name: "AFAD" },
 };
 
-/** Small source tag, styled like the YENİ badge so the row reads as one strip. */
-function providerBadge(provider) {
-  const info = PROVIDERS[provider] ?? {
-    label: provider || "bilinmiyor",
-    key: "unknown",
-    title: "Kaynak bilinmiyor",
-  };
+function providerInfo(provider) {
+  return (
+    PROVIDERS[provider] ?? { label: provider || "bilinmiyor", key: "unknown", name: "Bilinmeyen kaynak" }
+  );
+}
+
+/**
+ * Small source tag, styled like the YENİ badge so the row reads as one strip.
+ * The tooltip carries what that agency actually reported, which is the point
+ * of keeping both tags on a merged row: the numbers behind them differ.
+ */
+function providerBadge(source) {
+  const info = providerInfo(source.provider);
   const badge = document.createElement("span");
   badge.className = `quake__source quake__source--${info.key}`;
   badge.textContent = info.label;
-  badge.title = info.title;
+  badge.title = `${info.name} · ${source.mag.toFixed(1)} · ${compactTime(source.timestamp)}${
+    Number.isFinite(source.depth) ? ` · derinlik ${source.depth} km` : ""
+  }`;
   return badge;
 }
 
 function renderQuake(q, generation) {
   const band = magBand(q.mag);
+  const sources = q.sources ?? [{ provider: q.provider, mag: q.mag, depth: q.depth, timestamp: q.timestamp }];
   const li = document.createElement("li");
   li.className = `quake quake--${band.key}`;
 
@@ -168,6 +176,13 @@ function renderQuake(q, generation) {
   mag.className = "quake__mag";
   mag.textContent = q.mag.toFixed(1);
   mag.setAttribute("aria-label", `Büyüklük ${q.mag.toFixed(1)}, ${band.label}`);
+  // On a merged row the figure shown is one agency's; the other's is a hover
+  // away rather than a second number competing with it.
+  if (sources.length > 1) {
+    mag.title = sources
+      .map((s) => `${providerInfo(s.provider).label} ${s.mag.toFixed(1)}`)
+      .join(" · ");
+  }
 
   const body = document.createElement("div");
   body.className = "quake__body";
@@ -192,7 +207,11 @@ function renderQuake(q, generation) {
   abs.textContent = compactTime(q.timestamp);
   abs.title = istanbulTime.format(q.timestamp);
 
-  head.append(title, providerBadge(q.provider), abs);
+  const tags = document.createElement("span");
+  tags.className = "quake__sources";
+  tags.append(...sources.map(providerBadge));
+
+  head.append(title, tags, abs);
 
   if (isNewQuake(q, generation)) {
     li.classList.add("quake--new");
@@ -223,7 +242,9 @@ function render() {
   if (!snapshot) return;
 
   const generation = currentGeneration();
-  const filtered = applyFilters(snapshot.quakes);
+  // Grouping happens here, not in the snapshot: what is stored stays each
+  // agency's own record, only the list is folded.
+  const filtered = applyFilters(groupDuplicates(snapshot.quakes));
   listEl.replaceChildren(...filtered.map((q) => renderQuake(q, generation)));
   emptyEl.hidden = filtered.length > 0;
   emptyEl.textContent =

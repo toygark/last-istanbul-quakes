@@ -20,8 +20,17 @@
   --radius: 9px;
 }
 
+/*
+ * Light palette, reached two ways: the device asks for it, or the reader picked
+ * it with the header switch (which writes data-theme on <html>). CSS cannot
+ * express "system says light AND not overridden" outside a media query, so the
+ * values appear twice -- keep the two blocks identical.
+ *
+ * The :not() is what makes the switch win over the device in the other
+ * direction: a reader on a light phone who picks "koyu" keeps the dark base.
+ */
 @media (prefers-color-scheme: light) {
-  :root {
+  :root:not([data-theme="dark"]) {
     --bg: #f4f6f9;
     --surface: #ffffff;
     --surface-2: #eef1f6;
@@ -39,6 +48,30 @@
     --afad: #0d6f7a;
   }
 }
+
+:root[data-theme="light"] {
+    --bg: #f4f6f9;
+    --surface: #ffffff;
+    --surface-2: #eef1f6;
+    --border: #d8dee8;
+    --text: #16202c;
+    --muted: #5b6879;
+    --accent: #1667cc;
+
+    --light: #2f7d5b;
+    --moderate: #9a7411;
+    --strong: #b45a15;
+    --severe: #c0332f;
+
+    --kandilli: #5a45c4;
+    --afad: #0d6f7a;
+}
+
+/* Keep form controls, scrollbars and the canvas behind the page in step with
+   whichever palette is showing. */
+:root { color-scheme: dark light; }
+:root[data-theme="light"] { color-scheme: light; }
+:root[data-theme="dark"] { color-scheme: dark; }
 
 * { box-sizing: border-box; }
 
@@ -59,6 +92,43 @@ body {
   border-bottom: 1px solid var(--border);
   background: var(--surface);
   padding: 1rem 0 0.85rem;
+}
+
+.site-header__bar {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.theme-toggle {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 2.1rem;
+  height: 2.1rem;
+  padding: 0;
+  color: var(--muted);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.theme-toggle:hover { color: var(--text); background: var(--surface-2); }
+
+.theme-toggle:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.theme-toggle__icon {
+  width: 1.15rem;
+  height: 1.15rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.6;
+  stroke-linecap: round;
 }
 
 h1 {
@@ -212,6 +282,13 @@ a:focus-visible {
   line-height: 1.5;
   text-transform: uppercase;
   white-space: nowrap;
+}
+
+.quake__sources {
+  flex: none;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
 }
 
 .quake__source--kandilli { --source: var(--kandilli); }
