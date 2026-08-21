@@ -36,7 +36,8 @@ even if it runs for a while.
 index.html                        page markup
 assets/styles.css                 styling (dark + light, responsive)
 assets/app.js                     rendering, filtering, polling, live fallback
-assets/quakes.js                  shared parsing + Istanbul rule (browser and script)
+assets/theme.js                   the header's system / light / dark switch
+assets/quakes.js                  shared parsing, Istanbul rule, duplicate merging (browser and script)
 scripts/fetch-quakes.mjs          API client that writes the snapshot (Node 20+, no dependencies)
 data/istanbul.json                the committed snapshot the page reads
 .github/workflows/publish.yml     scheduled fetch, commit, and Pages deploy
@@ -98,6 +99,45 @@ Parsing, distance and the Istanbul rule live in `assets/quakes.js`, imported by 
 and the fetch script — the rule is subtle enough (see the comment there) that two copies would
 drift apart.
 
+## Which feed a quake came from
+
+The upstream API merges two feeds, and every record says which one it came from. That shows on the
+row itself as a small tag next to the title — **KANDİLLİ** or **AFAD** — rather than trailing the
+meta line, because the two sources routinely disagree: different magnitudes, different depths,
+different wording for the same epicentre. A row that both agencies reported carries **both** tags.
+
+The tags are outlined rather than filled, on colours (`--kandilli`, `--afad`) kept off the magnitude
+ramp and off `--accent`, so a source is never read as a severity or confused with the solid YENİ
+badge. An unrecognised `provider` value still gets a tag, in the muted colour, with its raw value.
+Each tag's tooltip carries what *that* agency reported — magnitude, time, depth — which is the
+point of keeping both on a merged row.
+
+### One row per event
+
+Both agencies report the same quake, so without merging every shared event took two rows. The page
+folds them: `groupDuplicates()` in `assets/quakes.js` treats two reports as one event when they come
+from **different** agencies, their origin times are within **15 s**, and their epicentres within
+**25 km**. The row is then rendered from the preferred agency's record (Kandilli first) — one
+account of the event, not an average of two — with the other agency's numbers a hover away on its
+tag. In the sample snapshot that turns 300 records into 210 rows.
+
+Both numbers are calibrated against real data rather than guessed, and the window is deliberately
+tight. Kandilli and AFAD publish *origin* times, so their copies of one event land seconds apart,
+while an active swarm (Marmara/Adalar, Simav) produces genuinely separate events a minute apart in
+the same spot: 15 s matched 91 pairs with 2 ambiguous cases and no magnitude gap above 0.5, while
+60 s added 10 more pairs, tripled the ambiguities and started pulling in neighbours. Where a report
+could join more than one row, the nearest wins; two reports from the *same* agency never merge,
+because that is either two events or a correction it published itself.
+
+Three details keep the rest of the page honest:
+
+- Merging is a **display** step. The snapshot still stores each agency's record whole, with its own
+  id, magnitude and `first_seen`, so retuning the rule changes nothing about the stored data.
+- A merged row's `first_seen` is the **earliest** of its parts, so the second agency's copy landing
+  an hour later cannot re-flag a row as YENİ.
+- Filters and the count in the status line run on merged rows, and a row counts as Istanbul if
+  *either* agency ties it there.
+
 ## New in the latest refresh
 
 Quakes the most recent refresh added are marked **YENİ** and counted in the status line. The
@@ -123,8 +163,8 @@ Two details keep it honest:
 
 GitHub Pages serves everything with `Cache-Control: max-age=600`, and it caches `index.html` and
 the assets *independently* — so without care a reload can pair new HTML with ten-minute-old JS.
-The asset URLs therefore carry a `?v=N`: **bump it in `index.html` (styles and script) and in the
-`./quakes.js?v=` import inside `app.js` whenever those files change.** The snapshot JSON needs no
+The asset URLs therefore carry a `?v=N`: **bump it in `index.html` (the stylesheet and both scripts)
+and in the `./quakes.js?v=` import inside `app.js` whenever those files change.** The snapshot JSON needs no
 version, it is fetched with a timestamp query and `cache: "no-store"`.
 
 ### Coming back to a page the browser put away
@@ -151,6 +191,23 @@ and others fire five minutes late. Nothing hides that — the page always states
 is, and the live fallback covers the gap when a run goes missing. If the API cannot be reached
 from the browser (no CORS headers for the origin, or the visitor is offline), the page keeps
 showing the snapshot with its true age rather than failing.
+
+## Theme switch
+
+The header carries a three-state switch: **Sistem** (the default, follows the device), **Açık** and
+**Koyu**, cycled by clicking and remembered in `localStorage`. Three states rather than two so a
+reader who pins one can get back to following the device.
+
+Pinning writes `data-theme` on `<html>`; the palette lives entirely in `assets/styles.css`, so
+`assets/theme.js` never mentions a colour. The light palette appears twice there —
+`@media (prefers-color-scheme: light) :root:not([data-theme="dark"])` and `:root[data-theme="light"]`
+— because CSS cannot express "system says light *and* the reader has not overridden it" outside a
+media query. **Keep the two blocks identical.** The `:not()` is what lets someone on a light phone
+pin dark. `color-scheme` is set per state as well, so scrollbars and form controls follow.
+
+The stored choice is applied by a small inline script in `index.html`, not by `theme.js`: module
+scripts are deferred, and a deferred script paints the wrong theme and then corrects it — exactly
+the flash the inline script avoids.
 
 ## Data and attribution
 

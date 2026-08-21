@@ -100,6 +100,110 @@ export function normalise(raw) {
   };
 }
 
+/** Providers in preference order; the first one present supplies the row. */
+export const PROVIDER_ORDER = ["kandilli", "afad"];
+
+/**
+ * How close two agencies' reports have to be to count as the same event.
+ *
+ * Both numbers are calibrated against a real snapshot, not guessed. Kandilli
+ * and AFAD publish *origin* times, not publish times, so their copies of one
+ * event land within a couple of seconds of each other and a few kilometres
+ * apart -- while an active swarm (Marmara/Adalar, Simav) produces genuinely
+ * separate events a minute apart in the same spot. Widening the window past
+ * ~15s starts swallowing those neighbours: in the sample, 15s matched 91 pairs
+ * with 2 ambiguous cases and no magnitude gap above 0.5, and 60s added only 10
+ * more pairs while tripling the ambiguities and pulling in a 1.0 gap.
+ */
+export const DUPLICATE_WINDOW_MS = 15_000;
+export const DUPLICATE_RADIUS_KM = 25;
+
+function providerRank(provider) {
+  const i = PROVIDER_ORDER.indexOf(provider);
+  return i === -1 ? PROVIDER_ORDER.length : i;
+}
+
+/**
+ * The stamp for a merged row: the earliest of its parts, so a row is only ever
+ * "new" the refresh it first appeared in. The second agency's copy arriving an
+ * hour later must not re-flag a row the reader has already seen.
+ *
+ * A part with no stamp (it predates the field) makes the whole row unstamped,
+ * which is the same "not news" answer for the same reason.
+ */
+function earliestStamp(members) {
+  let earliest = null;
+  for (const m of members) {
+    if (!m.first_seen) return null;
+    if (earliest === null || Date.parse(m.first_seen) < Date.parse(earliest)) earliest = m.first_seen;
+  }
+  return earliest;
+}
+
+/**
+ * Collapse the same event reported by both agencies into one row, carrying
+ * every source with it as `sources` so the page can still tag them.
+ *
+ * Deliberately a *display* step: the snapshot keeps both agencies' records
+ * whole, with their own ids, magnitudes and first_seen stamps. Only what the
+ * reader sees is merged, so nothing about the stored data has to be undone if
+ * the rule below is ever retuned.
+ *
+ * One member per provider: two rows from the *same* agency seconds apart are
+ * two events (or a correction it published itself), not a duplicate to hide.
+ * Where a report could join more than one row, the nearest one wins.
+ */
+export function groupDuplicates(
+  quakes,
+  { windowMs = DUPLICATE_WINDOW_MS, radiusKm = DUPLICATE_RADIUS_KM } = {},
+) {
+  const sorted = [...(quakes ?? [])].sort((a, b) => b.timestamp - a.timestamp);
+  const groups = [];
+
+  for (const quake of sorted) {
+    let best = null;
+    // Groups were created newest-first, so the candidates within the window
+    // are the ones at the end of the list; stop as soon as we walk past it.
+    for (let i = groups.length - 1; i >= 0; i -= 1) {
+      const group = groups[i];
+      const gap = group.timestamp - quake.timestamp;
+      if (gap > windowMs) break;
+      if (group.members.some((m) => m.provider === quake.provider)) continue;
+      const km = haversineKm(group, quake);
+      if (km > radiusKm) continue;
+      if (!best || km < best.km || (km === best.km && gap < best.gap)) best = { group, km, gap };
+    }
+
+    if (best) best.group.members.push(quake);
+    else groups.push({ lat: quake.lat, lon: quake.lon, timestamp: quake.timestamp, members: [quake] });
+  }
+
+  return groups
+    .map(({ members }) => {
+      const ordered = [...members].sort((a, b) => providerRank(a.provider) - providerRank(b.provider));
+      const [primary] = ordered;
+      return {
+        // The preferred agency's record supplies the row: title, position,
+        // depth, magnitude and time all stay one agency's account of the event
+        // rather than an average of two.
+        ...primary,
+        // Either agency tying the event to Istanbul is enough -- they word
+        // offshore epicentres differently ("ADALAR (ISTANBUL)" vs "Marmara
+        // Denizi - [09.63 km] Adalar (Istanbul)").
+        is_istanbul: ordered.some((m) => m.is_istanbul),
+        first_seen: earliestStamp(ordered),
+        sources: ordered.map((m) => ({
+          provider: m.provider,
+          id: m.id,
+          mag: m.mag,
+          depth: m.depth,
+          timestamp: m.timestamp,
+        })),
+      };
+    })
+    .sort((a, b) => b.timestamp - a.timestamp);
+}
+
 /**
  * Combine quake lists newest-first, dropping duplicates. The combined feed can
  * carry the same event from both Kandilli and AFAD; earlier lists win, so pass
