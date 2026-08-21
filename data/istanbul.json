@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-21T17:04:54.752Z",
-  "previous_generated_at": "2026-08-21T16:32:28.351Z",
+  "generated_at": "2026-08-21T17:40:52.053Z",
+  "previous_generated_at": "2026-08-21T17:04:54.752Z",
   "source": "Kandilli Rasathanesi / AFAD — api.orhanaydogdu.com.tr",
   "center": {
     "lat": 41.0082,
@@ -9,6 +9,21 @@
   "radius_km": 250,
   "count": 300,
   "quakes": [
+    {
+      "id": "Wzx9syRGcr5Bo",
+      "provider": "kandilli",
+      "title": "YAKUPLAR-ORHANELI (BURSA)",
+      "mag": 1.5,
+      "depth": 14.8,
+      "lat": 39.7522,
+      "lon": 29.025,
+      "timestamp": 1787332068000,
+      "closest_city": "Kütahya",
+      "epicenter": "Bursa",
+      "distance_km": 139.7,
+      "is_istanbul": false,
+      "first_seen": "2026-08-21T17:40:52.053Z"
+    },
     {
       "id": "ftUAIB84QSZEk",
       "provider": "afad",
@@ -4493,21 +4508,6 @@
       "distance_km": 27.4,
       "is_istanbul": true,
       "first_seen": "2026-08-20T13:35:09.725Z"
-    },
-    {
-      "id": "0G9g6EosXA1s2",
-      "provider": "afad",
-      "title": "Marmara Denizi",
-      "mag": 1.2,
-      "depth": 5.3,
-      "lat": 40.776,
-      "lon": 29.1,
-      "timestamp": 1787181360000,
-      "closest_city": "Yalova",
-      "epicenter": "Marmara Denizi",
-      "distance_km": 27.8,
-      "is_istanbul": false,
-      "first_seen": "2026-08-21T14:01:19.236Z"
     }
   ]
 }
