@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-21T14:49:56.851Z",
-  "previous_generated_at": "2026-08-21T14:01:19.236Z",
+  "generated_at": "2026-08-21T15:19:14.839Z",
+  "previous_generated_at": "2026-08-21T14:49:56.851Z",
   "source": "Kandilli Rasathanesi / AFAD — api.orhanaydogdu.com.tr",
   "center": {
     "lat": 41.0082,
@@ -9,6 +9,21 @@
   "radius_km": 250,
   "count": 300,
   "quakes": [
+    {
+      "id": "ftUAIB84QSZEk",
+      "provider": "afad",
+      "title": "Simav (Kütahya)",
+      "mag": 1,
+      "depth": 7.74,
+      "lat": 39.1372,
+      "lon": 29.115,
+      "timestamp": 1787322956000,
+      "closest_city": "Uşak",
+      "epicenter": "Kütahya",
+      "distance_km": 208.4,
+      "is_istanbul": false,
+      "first_seen": "2026-08-21T15:19:14.839Z"
+    },
     {
       "id": "6q33MQYdJKjeT",
       "provider": "afad",
@@ -23,6 +38,21 @@
       "distance_km": 194.6,
       "is_istanbul": false,
       "first_seen": "2026-08-21T14:49:56.851Z"
+    },
+    {
+      "id": "sYxuAO6Fm7HEg",
+      "provider": "kandilli",
+      "title": "ORTACA-SIMAV (KUTAHYA)",
+      "mag": 1.4,
+      "depth": 5,
+      "lat": 39.3107,
+      "lon": 28.9322,
+      "timestamp": 1787322904000,
+      "closest_city": "Bursa",
+      "epicenter": "Kütahya",
+      "distance_km": 188.8,
+      "is_istanbul": false,
+      "first_seen": "2026-08-21T15:19:14.839Z"
     },
     {
       "id": "3efUKvPmgKm_l",
@@ -4476,36 +4506,6 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 27.8,
-      "is_istanbul": false,
-      "first_seen": "2026-08-21T14:01:19.236Z"
-    },
-    {
-      "id": "AQ1gqK85aPbfj",
-      "provider": "afad",
-      "title": "Marmara Denizi",
-      "mag": 1.2,
-      "depth": 2.1,
-      "lat": 40.778,
-      "lon": 29.099,
-      "timestamp": 1787181319000,
-      "closest_city": "Yalova",
-      "epicenter": "Marmara Denizi",
-      "distance_km": 27.5,
-      "is_istanbul": false,
-      "first_seen": "2026-08-21T14:01:19.236Z"
-    },
-    {
-      "id": "tw42gAxJNPpBL",
-      "provider": "afad",
-      "title": "Marmara Denizi",
-      "mag": 1.4,
-      "depth": 6.5,
-      "lat": 40.794,
-      "lon": 29.084,
-      "timestamp": 1787180998000,
-      "closest_city": "Yalova",
-      "epicenter": "Marmara Denizi",
-      "distance_km": 25.4,
       "is_istanbul": false,
       "first_seen": "2026-08-21T14:01:19.236Z"
     }
