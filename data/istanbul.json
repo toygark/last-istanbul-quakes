@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-22T21:24:54.023Z",
-  "previous_generated_at": "2026-08-22T20:56:57.258Z",
+  "generated_at": "2026-08-22T21:46:02.647Z",
+  "previous_generated_at": "2026-08-22T21:24:54.023Z",
   "source": "Kandilli Rasathanesi / AFAD — api.orhanaydogdu.com.tr",
   "center": {
     "lat": 41.0082,
@@ -9,6 +9,21 @@
   "radius_km": 250,
   "count": 300,
   "quakes": [
+    {
+      "id": "NwOgK4ATXCzbc",
+      "provider": "kandilli",
+      "title": "YUREGIL-SINDIRGI (BALIKESIR)",
+      "mag": 1.8,
+      "depth": 11.8,
+      "lat": 39.1268,
+      "lon": 28.3,
+      "timestamp": 1787434213000,
+      "closest_city": "Manisa",
+      "epicenter": "Balıkesir",
+      "distance_km": 217,
+      "is_istanbul": false,
+      "first_seen": "2026-08-22T21:46:02.647Z"
+    },
     {
       "id": "UMwnHaQFrfrWn",
       "provider": "afad",
@@ -4492,21 +4507,6 @@
       "epicenter": "Marmara Denizi",
       "distance_km": 26.4,
       "is_istanbul": false,
-      "first_seen": "2026-08-20T13:35:09.725Z"
-    },
-    {
-      "id": "vX10zD1tVQs5W",
-      "provider": "kandilli",
-      "title": "ADALAR (ISTANBUL)",
-      "mag": 1.2,
-      "depth": 10.4,
-      "lat": 40.7738,
-      "lon": 29.1173,
-      "timestamp": 1787190875000,
-      "closest_city": "Yalova",
-      "epicenter": "Marmara Denizi",
-      "distance_km": 28.6,
-      "is_istanbul": true,
       "first_seen": "2026-08-20T13:35:09.725Z"
     }
   ]
