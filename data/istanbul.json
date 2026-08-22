@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-22T22:34:52.445Z",
-  "previous_generated_at": "2026-08-22T22:01:20.124Z",
+  "generated_at": "2026-08-22T22:55:22.753Z",
+  "previous_generated_at": "2026-08-22T22:34:52.445Z",
   "source": "Kandilli Rasathanesi / AFAD — api.orhanaydogdu.com.tr",
   "center": {
     "lat": 41.0082,
@@ -9,6 +9,21 @@
   "radius_km": 250,
   "count": 300,
   "quakes": [
+    {
+      "id": "2b0DVxnkzqPyt",
+      "provider": "kandilli",
+      "title": "KOBAKLAR-GORDES (MANISA)",
+      "mag": 0.9,
+      "depth": 15.5,
+      "lat": 39.0773,
+      "lon": 28.3488,
+      "timestamp": 1787437701000,
+      "closest_city": "Balıkesir",
+      "epicenter": "Manisa",
+      "distance_km": 221.3,
+      "is_istanbul": false,
+      "first_seen": "2026-08-22T22:55:22.753Z"
+    },
     {
       "id": "QypQv7pQCOQOh",
       "provider": "afad",
@@ -4491,21 +4506,6 @@
       "closest_city": "Manisa",
       "epicenter": "Balıkesir",
       "distance_km": 206.3,
-      "is_istanbul": false,
-      "first_seen": "2026-08-20T13:35:09.725Z"
-    },
-    {
-      "id": "UpH39rrqrhKX5",
-      "provider": "kandilli",
-      "title": "BAYIRLI-SINDIRGI (BALIKESIR)",
-      "mag": 1.2,
-      "depth": 20.5,
-      "lat": 39.2233,
-      "lon": 28.1268,
-      "timestamp": 1787191901000,
-      "closest_city": "Manisa",
-      "epicenter": "Balıkesir",
-      "distance_km": 211.3,
       "is_istanbul": false,
       "first_seen": "2026-08-20T13:35:09.725Z"
     }
