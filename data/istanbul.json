@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-22T08:44:48.759Z",
-  "previous_generated_at": "2026-08-22T08:03:29.832Z",
+  "generated_at": "2026-08-22T09:11:47.759Z",
+  "previous_generated_at": "2026-08-22T08:44:48.759Z",
   "source": "Kandilli Rasathanesi / AFAD — api.orhanaydogdu.com.tr",
   "center": {
     "lat": 41.0082,
@@ -9,6 +9,21 @@
   "radius_km": 250,
   "count": 300,
   "quakes": [
+    {
+      "id": "pPfKl985sc0sf",
+      "provider": "afad",
+      "title": "Gördes (Manisa)",
+      "mag": 1.3,
+      "depth": 7.19,
+      "lat": 38.9982,
+      "lon": 28.1813,
+      "timestamp": 1787385993000,
+      "closest_city": "İzmir",
+      "epicenter": "Manisa",
+      "distance_km": 233.6,
+      "is_istanbul": false,
+      "first_seen": "2026-08-22T09:11:47.759Z"
+    },
     {
       "id": "N8T15J6CV3rem",
       "provider": "afad",
@@ -4493,21 +4508,6 @@
       "distance_km": 26,
       "is_istanbul": true,
       "first_seen": "2026-08-20T13:35:09.725Z"
-    },
-    {
-      "id": "SMRvClaAQB_tI",
-      "provider": "afad",
-      "title": "Marmara Denizi",
-      "mag": 1.8,
-      "depth": 12.6,
-      "lat": 40.721,
-      "lon": 29.047,
-      "timestamp": 1787185797000,
-      "closest_city": "Yalova",
-      "epicenter": "Marmara Denizi",
-      "distance_km": 32.5,
-      "is_istanbul": false,
-      "first_seen": "2026-08-21T14:01:19.236Z"
     }
   ]
 }
