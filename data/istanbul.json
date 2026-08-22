@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-22T14:22:43.745Z",
-  "previous_generated_at": "2026-08-22T13:56:15.841Z",
+  "generated_at": "2026-08-22T14:47:58.852Z",
+  "previous_generated_at": "2026-08-22T14:22:43.745Z",
   "source": "Kandilli Rasathanesi / AFAD — api.orhanaydogdu.com.tr",
   "center": {
     "lat": 41.0082,
@@ -9,6 +9,36 @@
   "radius_km": 250,
   "count": 300,
   "quakes": [
+    {
+      "id": "zvxHL25HrdiKh",
+      "provider": "kandilli",
+      "title": "KIZILGUR-SINDIRGI (BALIKESIR)",
+      "mag": 1.9,
+      "depth": 9.4,
+      "lat": 39.2595,
+      "lon": 28.0463,
+      "timestamp": 1787408187000,
+      "closest_city": "Manisa",
+      "epicenter": "Balıkesir",
+      "distance_km": 210,
+      "is_istanbul": false,
+      "first_seen": "2026-08-22T14:47:58.852Z"
+    },
+    {
+      "id": "J6Xv3Xjnzt1Q1",
+      "provider": "afad",
+      "title": "Sındırgı (Balıkesir)",
+      "mag": 1.9,
+      "depth": 12.25,
+      "lat": 39.2705,
+      "lon": 28.0782,
+      "timestamp": 1787408187000,
+      "closest_city": "Manisa",
+      "epicenter": "Balıkesir",
+      "distance_km": 207.8,
+      "is_istanbul": false,
+      "first_seen": "2026-08-22T14:47:58.852Z"
+    },
     {
       "id": "pcbKnModXZmA_",
       "provider": "afad",
@@ -4476,36 +4506,6 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 26,
-      "is_istanbul": true,
-      "first_seen": "2026-08-20T13:35:09.725Z"
-    },
-    {
-      "id": "L7E82BCRxKZ6P",
-      "provider": "kandilli",
-      "title": "ADALAR (ISTANBUL)",
-      "mag": 1.5,
-      "depth": 7.6,
-      "lat": 40.7757,
-      "lon": 29.099,
-      "timestamp": 1787186503000,
-      "closest_city": "Yalova",
-      "epicenter": "Marmara Denizi",
-      "distance_km": 27.8,
-      "is_istanbul": true,
-      "first_seen": "2026-08-20T13:35:09.725Z"
-    },
-    {
-      "id": "hi7nnFUcvgoMM",
-      "provider": "afad",
-      "title": "Marmara Denizi - [07.34 km] Adalar (İstanbul)",
-      "mag": 1.9,
-      "depth": 8.68,
-      "lat": 40.7863,
-      "lon": 29.1252,
-      "timestamp": 1787186400000,
-      "closest_city": "Yalova",
-      "epicenter": "Marmara Denizi",
-      "distance_km": 27.6,
       "is_istanbul": true,
       "first_seen": "2026-08-20T13:35:09.725Z"
     }
