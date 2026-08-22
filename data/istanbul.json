@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-22T10:02:55.743Z",
-  "previous_generated_at": "2026-08-22T09:46:18.925Z",
+  "generated_at": "2026-08-22T10:36:56.231Z",
+  "previous_generated_at": "2026-08-22T10:02:55.743Z",
   "source": "Kandilli Rasathanesi / AFAD — api.orhanaydogdu.com.tr",
   "center": {
     "lat": 41.0082,
@@ -9,6 +9,21 @@
   "radius_km": 250,
   "count": 300,
   "quakes": [
+    {
+      "id": "RlzJ5QMfxnXYi",
+      "provider": "afad",
+      "title": "Mustafakemalpaşa (Bursa)",
+      "mag": 1.4,
+      "depth": 9.3,
+      "lat": 39.8563,
+      "lon": 28.7598,
+      "timestamp": 1787391895000,
+      "closest_city": "Yalova",
+      "epicenter": "Bursa",
+      "distance_km": 129.4,
+      "is_istanbul": false,
+      "first_seen": "2026-08-22T10:36:56.231Z"
+    },
     {
       "id": "0TdNKnCsR_iBd",
       "provider": "afad",
@@ -68,6 +83,21 @@
       "distance_km": 233.6,
       "is_istanbul": false,
       "first_seen": "2026-08-22T09:11:47.759Z"
+    },
+    {
+      "id": "WfhSZlcXrhY4T",
+      "provider": "kandilli",
+      "title": "KABAKOZ-GORDES (MANISA)",
+      "mag": 1.5,
+      "depth": 3.7,
+      "lat": 39.006,
+      "lon": 28.2273,
+      "timestamp": 1787385992000,
+      "closest_city": "İzmir",
+      "epicenter": "Manisa",
+      "distance_km": 231.6,
+      "is_istanbul": false,
+      "first_seen": "2026-08-22T10:36:56.231Z"
     },
     {
       "id": "N8T15J6CV3rem",
@@ -4478,36 +4508,6 @@
       "distance_km": 27.7,
       "is_istanbul": false,
       "first_seen": "2026-08-21T14:01:19.236Z"
-    },
-    {
-      "id": "7JvUhekI_pPc_",
-      "provider": "kandilli",
-      "title": "ADALAR (ISTANBUL)",
-      "mag": 1.5,
-      "depth": 10.3,
-      "lat": 40.7845,
-      "lon": 29.0995,
-      "timestamp": 1787186145000,
-      "closest_city": "Yalova",
-      "epicenter": "Marmara Denizi",
-      "distance_km": 26.9,
-      "is_istanbul": true,
-      "first_seen": "2026-08-20T13:35:09.725Z"
-    },
-    {
-      "id": "Cjwamqva3sgfR",
-      "provider": "kandilli",
-      "title": "ADALAR (ISTANBUL)",
-      "mag": 1.5,
-      "depth": 4.7,
-      "lat": 40.7945,
-      "lon": 29.118,
-      "timestamp": 1787186030000,
-      "closest_city": "Yalova",
-      "epicenter": "Marmara Denizi",
-      "distance_km": 26.5,
-      "is_istanbul": true,
-      "first_seen": "2026-08-20T13:35:09.725Z"
     }
   ]
 }
