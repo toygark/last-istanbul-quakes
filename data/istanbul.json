@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-22T05:46:13.733Z",
-  "previous_generated_at": "2026-08-22T05:12:53.920Z",
+  "generated_at": "2026-08-22T06:13:38.551Z",
+  "previous_generated_at": "2026-08-22T05:46:13.733Z",
   "source": "Kandilli Rasathanesi / AFAD — api.orhanaydogdu.com.tr",
   "center": {
     "lat": 41.0082,
@@ -9,6 +9,21 @@
   "radius_km": 250,
   "count": 300,
   "quakes": [
+    {
+      "id": "psc_ViKCn2RuR",
+      "provider": "kandilli",
+      "title": "ALACAATLI-SINDIRGI (BALIKESIR)",
+      "mag": 1.9,
+      "depth": 7.5,
+      "lat": 39.2483,
+      "lon": 28.0762,
+      "timestamp": 1787376390000,
+      "closest_city": "Manisa",
+      "epicenter": "Balıkesir",
+      "distance_km": 210.2,
+      "is_istanbul": false,
+      "first_seen": "2026-08-22T06:13:38.551Z"
+    },
     {
       "id": "jnsLtsB91Hmwb",
       "provider": "afad",
@@ -4493,21 +4508,6 @@
       "distance_km": 26.1,
       "is_istanbul": true,
       "first_seen": "2026-08-20T13:35:09.725Z"
-    },
-    {
-      "id": "OXlK5Tlb1fish",
-      "provider": "afad",
-      "title": "Marmara Denizi",
-      "mag": 2.4,
-      "depth": 15,
-      "lat": 40.769,
-      "lon": 29.097,
-      "timestamp": 1787185621000,
-      "closest_city": "Yalova",
-      "epicenter": "Marmara Denizi",
-      "distance_km": 28.4,
-      "is_istanbul": false,
-      "first_seen": "2026-08-21T14:01:19.236Z"
     }
   ]
 }
