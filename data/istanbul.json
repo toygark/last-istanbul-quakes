@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-22T09:11:47.759Z",
-  "previous_generated_at": "2026-08-22T08:44:48.759Z",
+  "generated_at": "2026-08-22T09:46:18.925Z",
+  "previous_generated_at": "2026-08-22T09:11:47.759Z",
   "source": "Kandilli Rasathanesi / AFAD — api.orhanaydogdu.com.tr",
   "center": {
     "lat": 41.0082,
@@ -9,6 +9,21 @@
   "radius_km": 250,
   "count": 300,
   "quakes": [
+    {
+      "id": "hzrZdisMcwOu3",
+      "provider": "afad",
+      "title": "Merkez (Bolu)",
+      "mag": 1,
+      "depth": 7,
+      "lat": 40.7962,
+      "lon": 31.756,
+      "timestamp": 1787390345000,
+      "closest_city": "Düzce",
+      "epicenter": "Bolu",
+      "distance_km": 234.6,
+      "is_istanbul": false,
+      "first_seen": "2026-08-22T09:46:18.925Z"
+    },
     {
       "id": "pPfKl985sc0sf",
       "provider": "afad",
@@ -4491,21 +4506,6 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 26.2,
-      "is_istanbul": true,
-      "first_seen": "2026-08-20T13:35:09.725Z"
-    },
-    {
-      "id": "rLeZKCo1S8JJK",
-      "provider": "kandilli",
-      "title": "ADALAR (ISTANBUL)",
-      "mag": 1.5,
-      "depth": 11.4,
-      "lat": 40.7897,
-      "lon": 29.0877,
-      "timestamp": 1787185972000,
-      "closest_city": "Yalova",
-      "epicenter": "Marmara Denizi",
-      "distance_km": 26,
       "is_istanbul": true,
       "first_seen": "2026-08-20T13:35:09.725Z"
     }
