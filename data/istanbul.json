@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-22T10:57:45.532Z",
-  "previous_generated_at": "2026-08-22T10:36:56.231Z",
+  "generated_at": "2026-08-22T11:25:43.176Z",
+  "previous_generated_at": "2026-08-22T10:57:45.532Z",
   "source": "Kandilli Rasathanesi / AFAD — api.orhanaydogdu.com.tr",
   "center": {
     "lat": 41.0082,
@@ -40,6 +40,21 @@
       "first_seen": "2026-08-22T10:02:55.743Z"
     },
     {
+      "id": "TZjaLNg2jJScU",
+      "provider": "kandilli",
+      "title": "CAMKOY-CAN (CANAKKALE)",
+      "mag": 1.4,
+      "depth": 5,
+      "lat": 39.9933,
+      "lon": 26.8272,
+      "timestamp": 1787391665000,
+      "closest_city": "Balıkesir",
+      "epicenter": "Çanakkale",
+      "distance_km": 214,
+      "is_istanbul": false,
+      "first_seen": "2026-08-22T11:25:43.176Z"
+    },
+    {
       "id": "kPfKoVRfac4J9",
       "provider": "afad",
       "title": "Çan (Çanakkale)",
@@ -68,6 +83,21 @@
       "distance_km": 234.6,
       "is_istanbul": false,
       "first_seen": "2026-08-22T09:46:18.925Z"
+    },
+    {
+      "id": "nWyfjlnPHRmhv",
+      "provider": "kandilli",
+      "title": "HAYRANLAR-MENGEN (BOLU)",
+      "mag": 1.4,
+      "depth": 3.5,
+      "lat": 40.8888,
+      "lon": 31.8235,
+      "timestamp": 1787390342000,
+      "closest_city": "Düzce",
+      "epicenter": "Bolu",
+      "distance_km": 239.3,
+      "is_istanbul": false,
+      "first_seen": "2026-08-22T11:25:43.176Z"
     },
     {
       "id": "pPfKl985sc0sf",
@@ -4478,36 +4508,6 @@
       "distance_km": 217,
       "is_istanbul": false,
       "first_seen": "2026-08-20T13:35:09.725Z"
-    },
-    {
-      "id": "sseoXwciJ07kJ",
-      "provider": "kandilli",
-      "title": "ADALAR (ISTANBUL)",
-      "mag": 1.5,
-      "depth": 8.1,
-      "lat": 40.7838,
-      "lon": 29.0793,
-      "timestamp": 1787186176000,
-      "closest_city": "Yalova",
-      "epicenter": "Marmara Denizi",
-      "distance_km": 26.4,
-      "is_istanbul": true,
-      "first_seen": "2026-08-20T13:35:09.725Z"
-    },
-    {
-      "id": "OFDY3b0bgPvkA",
-      "provider": "afad",
-      "title": "Marmara Denizi",
-      "mag": 2.1,
-      "depth": 13.9,
-      "lat": 40.772,
-      "lon": 29.084,
-      "timestamp": 1787186145000,
-      "closest_city": "Yalova",
-      "epicenter": "Marmara Denizi",
-      "distance_km": 27.7,
-      "is_istanbul": false,
-      "first_seen": "2026-08-21T14:01:19.236Z"
     }
   ]
 }
