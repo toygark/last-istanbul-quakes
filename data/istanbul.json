@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-22T15:02:24.862Z",
-  "previous_generated_at": "2026-08-22T14:47:58.852Z",
+  "generated_at": "2026-08-22T15:32:42.426Z",
+  "previous_generated_at": "2026-08-22T15:02:24.862Z",
   "source": "Kandilli Rasathanesi / AFAD — api.orhanaydogdu.com.tr",
   "center": {
     "lat": 41.0082,
@@ -9,6 +9,21 @@
   "radius_km": 250,
   "count": 300,
   "quakes": [
+    {
+      "id": "hWSGJDiO2XVHN",
+      "provider": "kandilli",
+      "title": "KAGITHANE (ISTANBUL)",
+      "mag": 1.1,
+      "depth": 0,
+      "lat": 41.1153,
+      "lon": 28.9668,
+      "timestamp": 1787409931000,
+      "closest_city": "Yalova",
+      "epicenter": "İstanbul",
+      "distance_km": 11.9,
+      "is_istanbul": true,
+      "first_seen": "2026-08-22T15:32:42.426Z"
+    },
     {
       "id": "zvxHL25HrdiKh",
       "provider": "kandilli",
@@ -4491,21 +4506,6 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 27.7,
-      "is_istanbul": true,
-      "first_seen": "2026-08-20T13:35:09.725Z"
-    },
-    {
-      "id": "18o81frOgSO0Q",
-      "provider": "kandilli",
-      "title": "ADALAR (ISTANBUL)",
-      "mag": 1.6,
-      "depth": 11,
-      "lat": 40.7933,
-      "lon": 29.1002,
-      "timestamp": 1787186534000,
-      "closest_city": "Yalova",
-      "epicenter": "Marmara Denizi",
-      "distance_km": 26,
       "is_istanbul": true,
       "first_seen": "2026-08-20T13:35:09.725Z"
     }
