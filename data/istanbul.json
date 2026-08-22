@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-22T04:05:22.936Z",
-  "previous_generated_at": "2026-08-22T03:22:40.720Z",
+  "generated_at": "2026-08-22T04:45:43.526Z",
+  "previous_generated_at": "2026-08-22T04:05:22.936Z",
   "source": "Kandilli Rasathanesi / AFAD — api.orhanaydogdu.com.tr",
   "center": {
     "lat": 41.0082,
@@ -9,6 +9,21 @@
   "radius_km": 250,
   "count": 300,
   "quakes": [
+    {
+      "id": "qd1bV7K0kqhAh",
+      "provider": "afad",
+      "title": "Karesi (Balıkesir)",
+      "mag": 1.2,
+      "depth": 7,
+      "lat": 39.8358,
+      "lon": 27.8303,
+      "timestamp": 1787371345000,
+      "closest_city": "Bursa",
+      "epicenter": "Balıkesir",
+      "distance_km": 162.6,
+      "is_istanbul": false,
+      "first_seen": "2026-08-22T04:45:43.526Z"
+    },
     {
       "id": "wZpcbxcvJM72B",
       "provider": "afad",
@@ -4491,21 +4506,6 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 29.1,
-      "is_istanbul": false,
-      "first_seen": "2026-08-21T14:01:19.236Z"
-    },
-    {
-      "id": "mXQZPghRm67VC",
-      "provider": "afad",
-      "title": "Marmara Denizi",
-      "mag": 1.6,
-      "depth": 23.9,
-      "lat": 40.759,
-      "lon": 29.154,
-      "timestamp": 1787184765000,
-      "closest_city": "Yalova",
-      "epicenter": "Marmara Denizi",
-      "distance_km": 31.4,
       "is_istanbul": false,
       "first_seen": "2026-08-21T14:01:19.236Z"
     }
