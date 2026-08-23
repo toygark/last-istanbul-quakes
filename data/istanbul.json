@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-23T06:17:21.630Z",
-  "previous_generated_at": "2026-08-23T05:49:01.025Z",
+  "generated_at": "2026-08-23T07:06:50.658Z",
+  "previous_generated_at": "2026-08-23T06:17:21.630Z",
   "source": "Kandilli Rasathanesi / AFAD — api.orhanaydogdu.com.tr",
   "center": {
     "lat": 41.0082,
@@ -9,6 +9,51 @@
   "radius_km": 250,
   "count": 300,
   "quakes": [
+    {
+      "id": "w8JMy9QptHPC1",
+      "provider": "kandilli",
+      "title": "DARIYERIBAKACAK-KAYNASLI (DUZCE)",
+      "mag": 1.7,
+      "depth": 7.9,
+      "lat": 40.7982,
+      "lon": 31.4185,
+      "timestamp": 1787464585000,
+      "closest_city": "Bolu",
+      "epicenter": "Düzce",
+      "distance_km": 206.4,
+      "is_istanbul": false,
+      "first_seen": "2026-08-23T07:06:50.658Z"
+    },
+    {
+      "id": "qGIuz8I9sIhpY",
+      "provider": "afad",
+      "title": "Yığılca (Düzce)",
+      "mag": 1.5,
+      "depth": 16.3,
+      "lat": 40.8098,
+      "lon": 31.4293,
+      "timestamp": 1787464585000,
+      "closest_city": "Bolu",
+      "epicenter": "Düzce",
+      "distance_km": 207.1,
+      "is_istanbul": false,
+      "first_seen": "2026-08-23T07:06:50.658Z"
+    },
+    {
+      "id": "mQwm1T0Z2unh5",
+      "provider": "kandilli",
+      "title": "DARIYERIHASANBEY-KAYNASLI (DUZCE)",
+      "mag": 2,
+      "depth": 12.7,
+      "lat": 40.811,
+      "lon": 31.4038,
+      "timestamp": 1787463854000,
+      "closest_city": "Bolu",
+      "epicenter": "Düzce",
+      "distance_km": 205,
+      "is_istanbul": false,
+      "first_seen": "2026-08-23T07:06:50.658Z"
+    },
     {
       "id": "XVb5aAAj0OtTb",
       "provider": "afad",
@@ -4462,51 +4507,6 @@
       "epicenter": "Marmara Denizi",
       "distance_km": 28.2,
       "is_istanbul": true,
-      "first_seen": "2026-08-20T13:35:09.725Z"
-    },
-    {
-      "id": "32ZHtf05KDU0z",
-      "provider": "afad",
-      "title": "Marmara Denizi - [09.53 km] Adalar (İstanbul)",
-      "mag": 1.3,
-      "depth": 8.27,
-      "lat": 40.777,
-      "lon": 29.0873,
-      "timestamp": 1787202873000,
-      "closest_city": "Yalova",
-      "epicenter": "Marmara Denizi",
-      "distance_km": 27.3,
-      "is_istanbul": true,
-      "first_seen": "2026-08-20T13:35:09.725Z"
-    },
-    {
-      "id": "_c8uOGx_bQTas",
-      "provider": "kandilli",
-      "title": "ADALAR (ISTANBUL)",
-      "mag": 1.7,
-      "depth": 10.2,
-      "lat": 40.7772,
-      "lon": 29.0973,
-      "timestamp": 1787202873000,
-      "closest_city": "Yalova",
-      "epicenter": "Marmara Denizi",
-      "distance_km": 27.6,
-      "is_istanbul": true,
-      "first_seen": "2026-08-20T13:35:09.725Z"
-    },
-    {
-      "id": "d6zbTNNTfcao_",
-      "provider": "kandilli",
-      "title": "CINARCIK ACIKLARI-YALOVA (MARMARA DENIZI)",
-      "mag": 1,
-      "depth": 7.8,
-      "lat": 40.7878,
-      "lon": 29.0392,
-      "timestamp": 1787201878000,
-      "closest_city": "Yalova",
-      "epicenter": "Marmara Denizi",
-      "distance_km": 25,
-      "is_istanbul": false,
       "first_seen": "2026-08-20T13:35:09.725Z"
     }
   ]
