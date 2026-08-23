@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-23T19:46:05.822Z",
-  "previous_generated_at": "2026-08-23T19:26:50.226Z",
+  "generated_at": "2026-08-23T20:00:23.922Z",
+  "previous_generated_at": "2026-08-23T19:46:05.822Z",
   "source": "Kandilli Rasathanesi / AFAD — api.orhanaydogdu.com.tr",
   "center": {
     "lat": 41.0082,
@@ -23,6 +23,21 @@
       "distance_km": 207.7,
       "is_istanbul": false,
       "first_seen": "2026-08-23T19:26:50.226Z"
+    },
+    {
+      "id": "SVvXq61nM9xM2",
+      "provider": "afad",
+      "title": "Sındırgı (Balıkesir)",
+      "mag": 1.4,
+      "depth": 13.85,
+      "lat": 39.239,
+      "lon": 28.1388,
+      "timestamp": 1787511793000,
+      "closest_city": "Manisa",
+      "epicenter": "Balıkesir",
+      "distance_km": 209.3,
+      "is_istanbul": false,
+      "first_seen": "2026-08-23T20:00:23.922Z"
     },
     {
       "id": "A7ikMt10_E8uV",
@@ -4491,21 +4506,6 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 26.4,
-      "is_istanbul": true,
-      "first_seen": "2026-08-20T13:35:09.725Z"
-    },
-    {
-      "id": "JTjBH_4kgonc3",
-      "provider": "kandilli",
-      "title": "ADALAR (ISTANBUL)",
-      "mag": 1,
-      "depth": 3.8,
-      "lat": 40.7763,
-      "lon": 29.0937,
-      "timestamp": 1787219828000,
-      "closest_city": "Yalova",
-      "epicenter": "Marmara Denizi",
-      "distance_km": 27.5,
       "is_istanbul": true,
       "first_seen": "2026-08-20T13:35:09.725Z"
     }
