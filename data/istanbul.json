@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-23T03:00:55.223Z",
-  "previous_generated_at": "2026-08-23T01:54:18.824Z",
+  "generated_at": "2026-08-23T03:57:33.545Z",
+  "previous_generated_at": "2026-08-23T03:00:55.223Z",
   "source": "Kandilli Rasathanesi / AFAD — api.orhanaydogdu.com.tr",
   "center": {
     "lat": 41.0082,
@@ -9,6 +9,21 @@
   "radius_km": 250,
   "count": 300,
   "quakes": [
+    {
+      "id": "sDdeYh7nNq7il",
+      "provider": "afad",
+      "title": "Sındırgı (Balıkesir)",
+      "mag": 1,
+      "depth": 13.53,
+      "lat": 39.2283,
+      "lon": 28.1468,
+      "timestamp": 1787454713000,
+      "closest_city": "Manisa",
+      "epicenter": "Balıkesir",
+      "distance_km": 210.2,
+      "is_istanbul": false,
+      "first_seen": "2026-08-23T03:57:33.545Z"
+    },
     {
       "id": "EqlUnXqLOGMNN",
       "provider": "afad",
@@ -4492,21 +4507,6 @@
       "epicenter": "Marmara Denizi",
       "distance_km": 26.6,
       "is_istanbul": true,
-      "first_seen": "2026-08-20T13:35:09.725Z"
-    },
-    {
-      "id": "tNnx9vSlYGsI5",
-      "provider": "afad",
-      "title": "Marmara Denizi - [10.81 km] Çınarcık (Yalova)",
-      "mag": 2.2,
-      "depth": 12.2,
-      "lat": 40.7405,
-      "lon": 29.0533,
-      "timestamp": 1787195788000,
-      "closest_city": "Yalova",
-      "epicenter": "Marmara Denizi",
-      "distance_km": 30.4,
-      "is_istanbul": false,
       "first_seen": "2026-08-20T13:35:09.725Z"
     }
   ]
