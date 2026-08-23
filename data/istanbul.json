@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-23T22:00:32.763Z",
-  "previous_generated_at": "2026-08-23T21:45:29.158Z",
+  "generated_at": "2026-08-23T22:34:57.950Z",
+  "previous_generated_at": "2026-08-23T22:00:32.763Z",
   "source": "Kandilli Rasathanesi / AFAD — api.orhanaydogdu.com.tr",
   "center": {
     "lat": 41.0082,
@@ -9,6 +9,21 @@
   "radius_km": 250,
   "count": 300,
   "quakes": [
+    {
+      "id": "VvGgixFZkOi4R",
+      "provider": "afad",
+      "title": "Marmara Denizi - [07.79 km] Adalar (İstanbul)",
+      "mag": 1.6,
+      "depth": 6.98,
+      "lat": 40.7855,
+      "lon": 29.111,
+      "timestamp": 1787522184000,
+      "closest_city": "Yalova",
+      "epicenter": "Marmara Denizi",
+      "distance_km": 27.2,
+      "is_istanbul": true,
+      "first_seen": "2026-08-23T22:34:57.950Z"
+    },
     {
       "id": "YjfQvgTYCnlk_",
       "provider": "kandilli",
@@ -4491,21 +4506,6 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 27.8,
-      "is_istanbul": true,
-      "first_seen": "2026-08-20T13:35:09.725Z"
-    },
-    {
-      "id": "0Zv74NQw5pZ_5",
-      "provider": "kandilli",
-      "title": "ADALAR (ISTANBUL)",
-      "mag": 1.2,
-      "depth": 6.2,
-      "lat": 40.8245,
-      "lon": 29.115,
-      "timestamp": 1787222294000,
-      "closest_city": "Yalova",
-      "epicenter": "Marmara Denizi",
-      "distance_km": 23.4,
       "is_istanbul": true,
       "first_seen": "2026-08-20T13:35:09.725Z"
     }
