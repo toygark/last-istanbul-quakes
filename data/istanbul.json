@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-23T18:58:11.256Z",
-  "previous_generated_at": "2026-08-23T18:27:13.255Z",
+  "generated_at": "2026-08-23T19:26:50.226Z",
+  "previous_generated_at": "2026-08-23T18:58:11.256Z",
   "source": "Kandilli Rasathanesi / AFAD — api.orhanaydogdu.com.tr",
   "center": {
     "lat": 41.0082,
@@ -9,6 +9,51 @@
   "radius_km": 250,
   "count": 300,
   "quakes": [
+    {
+      "id": "OHFPqoaGSkIlI",
+      "provider": "kandilli",
+      "title": "IBILLER-SINDIRGI (BALIKESIR)",
+      "mag": 1.7,
+      "depth": 10.2,
+      "lat": 39.2548,
+      "lon": 28.1377,
+      "timestamp": 1787512124000,
+      "closest_city": "Manisa",
+      "epicenter": "Balıkesir",
+      "distance_km": 207.7,
+      "is_istanbul": false,
+      "first_seen": "2026-08-23T19:26:50.226Z"
+    },
+    {
+      "id": "A7ikMt10_E8uV",
+      "provider": "kandilli",
+      "title": "KARAGUR-SINDIRGI (BALIKESIR)",
+      "mag": 1.5,
+      "depth": 9,
+      "lat": 39.251,
+      "lon": 28.1148,
+      "timestamp": 1787511792000,
+      "closest_city": "Manisa",
+      "epicenter": "Balıkesir",
+      "distance_km": 208.7,
+      "is_istanbul": false,
+      "first_seen": "2026-08-23T19:26:50.226Z"
+    },
+    {
+      "id": "OjI3yYvuZmBR4",
+      "provider": "afad",
+      "title": "Merkez (Bolu)",
+      "mag": 1,
+      "depth": 14.32,
+      "lat": 40.8215,
+      "lon": 31.6137,
+      "timestamp": 1787508014000,
+      "closest_city": "Düzce",
+      "epicenter": "Bolu",
+      "distance_km": 222.4,
+      "is_istanbul": false,
+      "first_seen": "2026-08-23T19:26:50.226Z"
+    },
     {
       "id": "tU1IHWvHX7r1d",
       "provider": "kandilli",
@@ -4462,51 +4507,6 @@
       "epicenter": "Marmara Denizi",
       "distance_km": 27.5,
       "is_istanbul": true,
-      "first_seen": "2026-08-20T13:35:09.725Z"
-    },
-    {
-      "id": "ucbJ2ovnwL7uL",
-      "provider": "kandilli",
-      "title": "SAMLAR-BASAKSEHIR (ISTANBUL)",
-      "mag": 1.3,
-      "depth": 0,
-      "lat": 41.1285,
-      "lon": 28.7783,
-      "timestamp": 1787219753000,
-      "closest_city": "Yalova",
-      "epicenter": "İstanbul",
-      "distance_km": 21.5,
-      "is_istanbul": true,
-      "first_seen": "2026-08-20T13:35:09.725Z"
-    },
-    {
-      "id": "HTUEOYfmSvu5B",
-      "provider": "afad",
-      "title": "Arnavutköy (İstanbul)",
-      "mag": 1.2,
-      "depth": 7,
-      "lat": 41.1927,
-      "lon": 28.74,
-      "timestamp": 1787219752000,
-      "closest_city": "Yalova",
-      "epicenter": "İstanbul",
-      "distance_km": 28.6,
-      "is_istanbul": true,
-      "first_seen": "2026-08-20T13:35:09.725Z"
-    },
-    {
-      "id": "QXrdOA_WzwhIa",
-      "provider": "afad",
-      "title": "Mustafakemalpaşa (Bursa)",
-      "mag": 1.1,
-      "depth": 7,
-      "lat": 39.9515,
-      "lon": 28.754,
-      "timestamp": 1787219222000,
-      "closest_city": "Yalova",
-      "epicenter": "Bursa",
-      "distance_km": 119,
-      "is_istanbul": false,
       "first_seen": "2026-08-20T13:35:09.725Z"
     }
   ]
