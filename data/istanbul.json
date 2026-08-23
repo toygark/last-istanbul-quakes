@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-23T05:49:01.025Z",
-  "previous_generated_at": "2026-08-23T05:15:00.322Z",
+  "generated_at": "2026-08-23T06:17:21.630Z",
+  "previous_generated_at": "2026-08-23T05:49:01.025Z",
   "source": "Kandilli Rasathanesi / AFAD — api.orhanaydogdu.com.tr",
   "center": {
     "lat": 41.0082,
@@ -9,6 +9,21 @@
   "radius_km": 250,
   "count": 300,
   "quakes": [
+    {
+      "id": "XVb5aAAj0OtTb",
+      "provider": "afad",
+      "title": "Karacabey (Bursa)",
+      "mag": 1,
+      "depth": 7.01,
+      "lat": 40.1332,
+      "lon": 28.2912,
+      "timestamp": 1787463500000,
+      "closest_city": "Balıkesir",
+      "epicenter": "Bursa",
+      "distance_km": 113.3,
+      "is_istanbul": false,
+      "first_seen": "2026-08-23T06:17:21.630Z"
+    },
     {
       "id": "2M8Zx9TyyefXx",
       "provider": "kandilli",
@@ -4492,21 +4507,6 @@
       "epicenter": "Marmara Denizi",
       "distance_km": 25,
       "is_istanbul": false,
-      "first_seen": "2026-08-20T13:35:09.725Z"
-    },
-    {
-      "id": "elfdLk8oco2K7",
-      "provider": "afad",
-      "title": "Marmara Denizi - [07.17 km] Adalar (İstanbul)",
-      "mag": 1.2,
-      "depth": 10.94,
-      "lat": 40.8027,
-      "lon": 29.0815,
-      "timestamp": 1787201362000,
-      "closest_city": "Yalova",
-      "epicenter": "Marmara Denizi",
-      "distance_km": 24.4,
-      "is_istanbul": true,
       "first_seen": "2026-08-20T13:35:09.725Z"
     }
   ]
