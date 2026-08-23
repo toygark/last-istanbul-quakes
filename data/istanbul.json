@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-23T23:20:08.362Z",
-  "previous_generated_at": "2026-08-23T22:55:24.624Z",
+  "generated_at": "2026-08-23T23:41:06.758Z",
+  "previous_generated_at": "2026-08-23T23:20:08.362Z",
   "source": "Kandilli Rasathanesi / AFAD — api.orhanaydogdu.com.tr",
   "center": {
     "lat": 41.0082,
@@ -38,6 +38,21 @@
       "distance_km": 139.3,
       "is_istanbul": false,
       "first_seen": "2026-08-23T23:20:08.362Z"
+    },
+    {
+      "id": "_Y4F5wSTZUfqv",
+      "provider": "kandilli",
+      "title": "CITGOL-SIMAV (KUTAHYA)",
+      "mag": 1.3,
+      "depth": 16.1,
+      "lat": 39.1293,
+      "lon": 28.9282,
+      "timestamp": 1787524801000,
+      "closest_city": "Uşak",
+      "epicenter": "Kütahya",
+      "distance_km": 209,
+      "is_istanbul": false,
+      "first_seen": "2026-08-23T23:41:06.758Z"
     },
     {
       "id": "VG8PROl9V4NO5",
@@ -4491,21 +4506,6 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 27.8,
-      "is_istanbul": true,
-      "first_seen": "2026-08-20T13:35:09.725Z"
-    },
-    {
-      "id": "vWwU8dQbB_DzL",
-      "provider": "afad",
-      "title": "Marmara Denizi - [08.67 km] Adalar (İstanbul)",
-      "mag": 1.2,
-      "depth": 8.05,
-      "lat": 40.7893,
-      "lon": 29.0772,
-      "timestamp": 1787225837000,
-      "closest_city": "Yalova",
-      "epicenter": "Marmara Denizi",
-      "distance_km": 25.7,
       "is_istanbul": true,
       "first_seen": "2026-08-20T13:35:09.725Z"
     }
