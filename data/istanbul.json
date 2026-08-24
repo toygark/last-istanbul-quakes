@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-24T10:50:54.352Z",
-  "previous_generated_at": "2026-08-24T10:06:58.021Z",
+  "generated_at": "2026-08-24T11:27:04.149Z",
+  "previous_generated_at": "2026-08-24T10:50:54.352Z",
   "source": "Kandilli Rasathanesi / AFAD — api.orhanaydogdu.com.tr",
   "center": {
     "lat": 41.0082,
@@ -9,6 +9,36 @@
   "radius_km": 250,
   "count": 300,
   "quakes": [
+    {
+      "id": "ADb3XWSTUDKMB",
+      "provider": "kandilli",
+      "title": "ADALAR (ISTANBUL)",
+      "mag": 1.2,
+      "depth": 4.9,
+      "lat": 40.8107,
+      "lon": 29.1407,
+      "timestamp": 1787563899000,
+      "closest_city": "Yalova",
+      "epicenter": "Marmara Denizi",
+      "distance_km": 25.9,
+      "is_istanbul": true,
+      "first_seen": "2026-08-24T11:27:04.149Z"
+    },
+    {
+      "id": "7UPhQkJsnQv47",
+      "provider": "kandilli",
+      "title": "SEYHLER-HISARCIK (KUTAHYA)",
+      "mag": 1.7,
+      "depth": 5.5,
+      "lat": 39.1822,
+      "lon": 29.3528,
+      "timestamp": 1787560109000,
+      "closest_city": "Uşak",
+      "epicenter": "Kütahya",
+      "distance_km": 205.5,
+      "is_istanbul": false,
+      "first_seen": "2026-08-24T11:27:04.149Z"
+    },
     {
       "id": "uCDalqhy6VDpp",
       "provider": "afad",
@@ -4478,36 +4508,6 @@
       "distance_km": 29.6,
       "is_istanbul": false,
       "first_seen": "2026-08-20T15:41:55.272Z"
-    },
-    {
-      "id": "YUtgXwR_ciVrW",
-      "provider": "afad",
-      "title": "Söğütlü (Sakarya)",
-      "mag": 0.9,
-      "depth": 8.15,
-      "lat": 40.9238,
-      "lon": 30.44,
-      "timestamp": 1787236311000,
-      "closest_city": "Kocaeli",
-      "epicenter": "Sakarya",
-      "distance_km": 123.1,
-      "is_istanbul": false,
-      "first_seen": "2026-08-20T15:00:03.368Z"
-    },
-    {
-      "id": "JjqLplVsnY9jg",
-      "provider": "afad",
-      "title": "Karadeniz - [05.34 km] Çatalca (İstanbul)",
-      "mag": 0.8,
-      "depth": 7,
-      "lat": 41.49,
-      "lon": 28.3577,
-      "timestamp": 1787235132000,
-      "closest_city": "İstanbul",
-      "epicenter": "Karadeniz",
-      "distance_km": 74.6,
-      "is_istanbul": true,
-      "first_seen": "2026-08-20T14:19:20.552Z"
     }
   ]
 }
