@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-24T19:30:04.522Z",
-  "previous_generated_at": "2026-08-24T18:55:58.924Z",
+  "generated_at": "2026-08-24T19:57:38.422Z",
+  "previous_generated_at": "2026-08-24T19:30:04.522Z",
   "source": "Kandilli Rasathanesi / AFAD — api.orhanaydogdu.com.tr",
   "center": {
     "lat": 41.0082,
@@ -53,6 +53,21 @@
       "distance_km": 206.7,
       "is_istanbul": false,
       "first_seen": "2026-08-24T19:30:04.522Z"
+    },
+    {
+      "id": "DPCi7Mv9_g1GV",
+      "provider": "kandilli",
+      "title": "AKTAS-SINDIRGI (BALIKESIR)",
+      "mag": 1.3,
+      "depth": 16.9,
+      "lat": 39.166,
+      "lon": 28.202,
+      "timestamp": 1787595046000,
+      "closest_city": "Manisa",
+      "epicenter": "Balıkesir",
+      "distance_km": 215.2,
+      "is_istanbul": false,
+      "first_seen": "2026-08-24T19:57:38.422Z"
     },
     {
       "id": "6NCvdD7t5LW8E",
@@ -4493,21 +4508,6 @@
       "distance_km": 27.8,
       "is_istanbul": true,
       "first_seen": "2026-08-20T17:27:07.258Z"
-    },
-    {
-      "id": "3QG_bixzlteSI",
-      "provider": "kandilli",
-      "title": "PURSUNLER-SINDIRGI (BALIKESIR)",
-      "mag": 1.1,
-      "depth": 5.3,
-      "lat": 39.2417,
-      "lon": 28.1977,
-      "timestamp": 1787245652000,
-      "closest_city": "Manisa",
-      "epicenter": "Balıkesir",
-      "distance_km": 207.3,
-      "is_istanbul": false,
-      "first_seen": "2026-08-20T18:49:08.922Z"
     }
   ]
 }
