@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-24T07:37:35.954Z",
-  "previous_generated_at": "2026-08-24T06:25:44.228Z",
+  "generated_at": "2026-08-24T08:24:59.964Z",
+  "previous_generated_at": "2026-08-24T07:37:35.954Z",
   "source": "Kandilli Rasathanesi / AFAD — api.orhanaydogdu.com.tr",
   "center": {
     "lat": 41.0082,
@@ -23,6 +23,21 @@
       "distance_km": 114.6,
       "is_istanbul": false,
       "first_seen": "2026-08-24T07:37:35.954Z"
+    },
+    {
+      "id": "p8LMmNo49ZR39",
+      "provider": "kandilli",
+      "title": "KUCUKKISLA-KAYNARCA (SAKARYA)",
+      "mag": 1.6,
+      "depth": 22.7,
+      "lat": 41.0092,
+      "lon": 30.41,
+      "timestamp": 1787555377000,
+      "closest_city": "Kocaeli",
+      "epicenter": "Sakarya",
+      "distance_km": 120.1,
+      "is_istanbul": false,
+      "first_seen": "2026-08-24T08:24:59.964Z"
     },
     {
       "id": "QaT8d1t7gTf5t",
@@ -4493,21 +4508,6 @@
       "distance_km": 31.8,
       "is_istanbul": true,
       "first_seen": "2026-08-20T13:55:21.650Z"
-    },
-    {
-      "id": "0CHLwt2OTWJz9",
-      "provider": "kandilli",
-      "title": "CINARCIK ACIKLARI-YALOVA (MARMARA DENIZI)",
-      "mag": 1.5,
-      "depth": 14.6,
-      "lat": 40.796,
-      "lon": 29.0185,
-      "timestamp": 1787231395000,
-      "closest_city": "Yalova",
-      "epicenter": "Marmara Denizi",
-      "distance_km": 23.8,
-      "is_istanbul": false,
-      "first_seen": "2026-08-20T13:35:09.725Z"
     }
   ]
 }
