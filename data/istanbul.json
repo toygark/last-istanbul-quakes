@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-25T17:14:29.667Z",
-  "previous_generated_at": "2026-08-25T16:37:06.044Z",
+  "generated_at": "2026-08-25T17:48:17.162Z",
+  "previous_generated_at": "2026-08-25T17:14:29.667Z",
   "source": "Kandilli Rasathanesi / AFAD — api.orhanaydogdu.com.tr",
   "center": {
     "lat": 41.0082,
@@ -9,6 +9,36 @@
   "radius_km": 250,
   "count": 300,
   "quakes": [
+    {
+      "id": "xxGiLsbJuij_b",
+      "provider": "afad",
+      "title": "Altıeylül (Balıkesir)",
+      "mag": 0.9,
+      "depth": 7,
+      "lat": 39.426,
+      "lon": 27.9478,
+      "timestamp": 1787676831000,
+      "closest_city": "Manisa",
+      "epicenter": "Balıkesir",
+      "distance_km": 196.5,
+      "is_istanbul": false,
+      "first_seen": "2026-08-25T17:48:17.162Z"
+    },
+    {
+      "id": "Yjafvm6pTj5mJ",
+      "provider": "afad",
+      "title": "Sındırgı (Balıkesir)",
+      "mag": 1,
+      "depth": 9.57,
+      "lat": 39.2598,
+      "lon": 28.1,
+      "timestamp": 1787675636000,
+      "closest_city": "Manisa",
+      "epicenter": "Balıkesir",
+      "distance_km": 208.3,
+      "is_istanbul": false,
+      "first_seen": "2026-08-25T17:48:17.162Z"
+    },
     {
       "id": "LYm_ZMjYcI_in",
       "provider": "kandilli",
@@ -4476,36 +4506,6 @@
       "closest_city": "Uşak",
       "epicenter": "Kütahya",
       "distance_km": 195,
-      "is_istanbul": false,
-      "first_seen": "2026-08-21T01:38:32.929Z"
-    },
-    {
-      "id": "t2Te71d2X2nT0",
-      "provider": "afad",
-      "title": "Sındırgı (Balıkesir)",
-      "mag": 1.5,
-      "depth": 5.75,
-      "lat": 39.2378,
-      "lon": 28.1057,
-      "timestamp": 1787270205000,
-      "closest_city": "Manisa",
-      "epicenter": "Balıkesir",
-      "distance_km": 210.4,
-      "is_istanbul": false,
-      "first_seen": "2026-08-21T01:38:32.929Z"
-    },
-    {
-      "id": "cJjqIx58pKd_W",
-      "provider": "kandilli",
-      "title": "KOZLU-SINDIRGI (BALIKESIR)",
-      "mag": 1.5,
-      "depth": 10.2,
-      "lat": 39.238,
-      "lon": 28.0903,
-      "timestamp": 1787270205000,
-      "closest_city": "Manisa",
-      "epicenter": "Balıkesir",
-      "distance_km": 210.8,
       "is_istanbul": false,
       "first_seen": "2026-08-21T01:38:32.929Z"
     }
