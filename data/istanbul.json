@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-25T19:42:35.655Z",
-  "previous_generated_at": "2026-08-25T19:04:41.221Z",
+  "generated_at": "2026-08-25T20:08:35.251Z",
+  "previous_generated_at": "2026-08-25T19:42:35.655Z",
   "source": "Kandilli Rasathanesi / AFAD — api.orhanaydogdu.com.tr",
   "center": {
     "lat": 41.0082,
@@ -53,6 +53,21 @@
       "distance_km": 217.5,
       "is_istanbul": false,
       "first_seen": "2026-08-25T18:18:20.433Z"
+    },
+    {
+      "id": "5fEMR2WIBDPTB",
+      "provider": "kandilli",
+      "title": "SAHINKAYA-SINDIRGI (BALIKESIR)",
+      "mag": 1.4,
+      "depth": 9.3,
+      "lat": 39.1975,
+      "lon": 28.0103,
+      "timestamp": 1787680075000,
+      "closest_city": "Balıkesir",
+      "epicenter": "Manisa",
+      "distance_km": 217.5,
+      "is_istanbul": false,
+      "first_seen": "2026-08-25T20:08:35.251Z"
     },
     {
       "id": "DxYqbzSVuowuL",
@@ -4491,21 +4506,6 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 27.2,
-      "is_istanbul": false,
-      "first_seen": "2026-08-21T03:38:18.251Z"
-    },
-    {
-      "id": "26XquxjDbd4FL",
-      "provider": "kandilli",
-      "title": "YEMISLI-SIMAV (KUTAHYA)",
-      "mag": 0.5,
-      "depth": 5,
-      "lat": 39.2343,
-      "lon": 28.9592,
-      "timestamp": 1787273286000,
-      "closest_city": "Uşak",
-      "epicenter": "Kütahya",
-      "distance_km": 197.3,
       "is_istanbul": false,
       "first_seen": "2026-08-21T03:38:18.251Z"
     }
