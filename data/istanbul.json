@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-25T15:55:47.154Z",
-  "previous_generated_at": "2026-08-25T15:04:32.353Z",
+  "generated_at": "2026-08-25T16:37:06.044Z",
+  "previous_generated_at": "2026-08-25T15:55:47.154Z",
   "source": "Kandilli Rasathanesi / AFAD — api.orhanaydogdu.com.tr",
   "center": {
     "lat": 41.0082,
@@ -9,6 +9,21 @@
   "radius_km": 250,
   "count": 300,
   "quakes": [
+    {
+      "id": "QH0zU9xPPV1LJ",
+      "provider": "afad",
+      "title": "Gönen (Balıkesir)",
+      "mag": 1.1,
+      "depth": 7.13,
+      "lat": 40.1557,
+      "lon": 27.4153,
+      "timestamp": 1787671951000,
+      "closest_city": "Balıkesir",
+      "epicenter": "Çanakkale",
+      "distance_km": 162.5,
+      "is_istanbul": false,
+      "first_seen": "2026-08-25T16:37:06.044Z"
+    },
     {
       "id": "1TmjQ2xviCwPO",
       "provider": "afad",
@@ -4493,21 +4508,6 @@
       "distance_km": 196.7,
       "is_istanbul": false,
       "first_seen": "2026-08-20T23:57:18.925Z"
-    },
-    {
-      "id": "vXmetsZQ8CH9w",
-      "provider": "afad",
-      "title": "Simav (Kütahya)",
-      "mag": 2.2,
-      "depth": 11.25,
-      "lat": 39.2373,
-      "lon": 29.0112,
-      "timestamp": 1787269628000,
-      "closest_city": "Uşak",
-      "epicenter": "Kütahya",
-      "distance_km": 196.9,
-      "is_istanbul": false,
-      "first_seen": "2026-08-21T01:38:32.929Z"
     }
   ]
 }
