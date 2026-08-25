@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-25T04:57:14.034Z",
-  "previous_generated_at": "2026-08-25T04:11:06.859Z",
+  "generated_at": "2026-08-25T05:35:19.825Z",
+  "previous_generated_at": "2026-08-25T04:57:14.034Z",
   "source": "Kandilli Rasathanesi / AFAD — api.orhanaydogdu.com.tr",
   "center": {
     "lat": 41.0082,
@@ -9,6 +9,51 @@
   "radius_km": 250,
   "count": 300,
   "quakes": [
+    {
+      "id": "2aGjuo1t8RfHH",
+      "provider": "kandilli",
+      "title": "DARIYERIHASANBEY-KAYNASLI (DUZCE)",
+      "mag": 1.4,
+      "depth": 3,
+      "lat": 40.8018,
+      "lon": 31.3842,
+      "timestamp": 1787633449000,
+      "closest_city": "Bolu",
+      "epicenter": "Düzce",
+      "distance_km": 203.5,
+      "is_istanbul": false,
+      "first_seen": "2026-08-25T05:35:19.825Z"
+    },
+    {
+      "id": "2OqvQGB0gxOqW",
+      "provider": "afad",
+      "title": "Kaynaşlı (Düzce)",
+      "mag": 1.6,
+      "depth": 9.1,
+      "lat": 40.798,
+      "lon": 31.411,
+      "timestamp": 1787633287000,
+      "closest_city": "Bolu",
+      "epicenter": "Düzce",
+      "distance_km": 205.8,
+      "is_istanbul": false,
+      "first_seen": "2026-08-25T05:35:19.825Z"
+    },
+    {
+      "id": "d4Fhs5xvUQPWb",
+      "provider": "kandilli",
+      "title": "DARIYERIHASANBEY-KAYNASLI (DUZCE)",
+      "mag": 1.7,
+      "depth": 8,
+      "lat": 40.833,
+      "lon": 31.4208,
+      "timestamp": 1787633286000,
+      "closest_city": "Bolu",
+      "epicenter": "Düzce",
+      "distance_km": 206.1,
+      "is_istanbul": false,
+      "first_seen": "2026-08-25T05:35:19.825Z"
+    },
     {
       "id": "k28jGeko6Ykku",
       "provider": "afad",
@@ -4463,51 +4508,6 @@
       "distance_km": 208.1,
       "is_istanbul": false,
       "first_seen": "2026-08-20T23:36:23.054Z"
-    },
-    {
-      "id": "Y7SgPMIKcXnbO",
-      "provider": "afad",
-      "title": "Simav (Kütahya)",
-      "mag": 1.6,
-      "depth": 9.07,
-      "lat": 39.2395,
-      "lon": 29.0162,
-      "timestamp": 1787264952000,
-      "closest_city": "Uşak",
-      "epicenter": "Kütahya",
-      "distance_km": 196.7,
-      "is_istanbul": false,
-      "first_seen": "2026-08-20T23:00:11.738Z"
-    },
-    {
-      "id": "lWTSvaZqCMcNw",
-      "provider": "kandilli",
-      "title": "YESILDERE-SIMAV (KUTAHYA)",
-      "mag": 1.8,
-      "depth": 6.5,
-      "lat": 39.2588,
-      "lon": 28.992,
-      "timestamp": 1787264951000,
-      "closest_city": "Uşak",
-      "epicenter": "Kütahya",
-      "distance_km": 194.5,
-      "is_istanbul": false,
-      "first_seen": "2026-08-20T23:00:11.738Z"
-    },
-    {
-      "id": "GO6aCsTwBDoAD",
-      "provider": "kandilli",
-      "title": "ADALAR (ISTANBUL)",
-      "mag": 1.4,
-      "depth": 9,
-      "lat": 40.7805,
-      "lon": 29.0967,
-      "timestamp": 1787264835000,
-      "closest_city": "Yalova",
-      "epicenter": "Marmara Denizi",
-      "distance_km": 27.2,
-      "is_istanbul": true,
-      "first_seen": "2026-08-20T23:00:11.738Z"
     }
   ]
 }
