@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-25T06:02:05.122Z",
-  "previous_generated_at": "2026-08-25T05:35:19.825Z",
+  "generated_at": "2026-08-25T07:05:33.451Z",
+  "previous_generated_at": "2026-08-25T06:02:05.122Z",
   "source": "Kandilli Rasathanesi / AFAD — api.orhanaydogdu.com.tr",
   "center": {
     "lat": 41.0082,
@@ -9,6 +9,36 @@
   "radius_km": 250,
   "count": 300,
   "quakes": [
+    {
+      "id": "7Pk45XLX2uuQa",
+      "provider": "kandilli",
+      "title": "SAHINKAYA-SINDIRGI (BALIKESIR)",
+      "mag": 1.7,
+      "depth": 15.6,
+      "lat": 39.2215,
+      "lon": 28.0207,
+      "timestamp": 1787636641000,
+      "closest_city": "Manisa",
+      "epicenter": "Balıkesir",
+      "distance_km": 214.7,
+      "is_istanbul": false,
+      "first_seen": "2026-08-25T07:05:33.451Z"
+    },
+    {
+      "id": "v1o64sxwwQNSR",
+      "provider": "afad",
+      "title": "Sındırgı (Balıkesir)",
+      "mag": 1.4,
+      "depth": 7,
+      "lat": 39.2398,
+      "lon": 28.0637,
+      "timestamp": 1787636641000,
+      "closest_city": "Manisa",
+      "epicenter": "Balıkesir",
+      "distance_km": 211.5,
+      "is_istanbul": false,
+      "first_seen": "2026-08-25T07:05:33.451Z"
+    },
     {
       "id": "2aGjuo1t8RfHH",
       "provider": "kandilli",
@@ -4476,36 +4506,6 @@
       "closest_city": "Uşak",
       "epicenter": "Kütahya",
       "distance_km": 199.4,
-      "is_istanbul": false,
-      "first_seen": "2026-08-20T23:36:23.054Z"
-    },
-    {
-      "id": "BPIl89PcwjHcj",
-      "provider": "kandilli",
-      "title": "YEMISLI-SIMAV (KUTAHYA)",
-      "mag": 1.8,
-      "depth": 7,
-      "lat": 39.2362,
-      "lon": 28.979,
-      "timestamp": 1787265009000,
-      "closest_city": "Uşak",
-      "epicenter": "Kütahya",
-      "distance_km": 197,
-      "is_istanbul": false,
-      "first_seen": "2026-08-20T23:36:23.054Z"
-    },
-    {
-      "id": "czQ1OdQZYmbIQ",
-      "provider": "kandilli",
-      "title": "GUMUSSU-SIMAV (KUTAHYA)",
-      "mag": 1.9,
-      "depth": 5,
-      "lat": 39.1392,
-      "lon": 28.8487,
-      "timestamp": 1787264998000,
-      "closest_city": "Manisa",
-      "epicenter": "Kütahya",
-      "distance_km": 208.1,
       "is_istanbul": false,
       "first_seen": "2026-08-20T23:36:23.054Z"
     }
