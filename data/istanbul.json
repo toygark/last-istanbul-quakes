@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-25T16:37:06.044Z",
-  "previous_generated_at": "2026-08-25T15:55:47.154Z",
+  "generated_at": "2026-08-25T17:14:29.667Z",
+  "previous_generated_at": "2026-08-25T16:37:06.044Z",
   "source": "Kandilli Rasathanesi / AFAD — api.orhanaydogdu.com.tr",
   "center": {
     "lat": 41.0082,
@@ -9,6 +9,21 @@
   "radius_km": 250,
   "count": 300,
   "quakes": [
+    {
+      "id": "LYm_ZMjYcI_in",
+      "provider": "kandilli",
+      "title": "YOLINDI-BIGA (CANAKKALE)",
+      "mag": 1.6,
+      "depth": 1.5,
+      "lat": 40.1245,
+      "lon": 27.3882,
+      "timestamp": 1787671951000,
+      "closest_city": "Balıkesir",
+      "epicenter": "Çanakkale",
+      "distance_km": 166.4,
+      "is_istanbul": false,
+      "first_seen": "2026-08-25T17:14:29.667Z"
+    },
     {
       "id": "QH0zU9xPPV1LJ",
       "provider": "afad",
@@ -4493,21 +4508,6 @@
       "distance_km": 210.8,
       "is_istanbul": false,
       "first_seen": "2026-08-21T01:38:32.929Z"
-    },
-    {
-      "id": "PuUBnwsdJ4bop",
-      "provider": "kandilli",
-      "title": "YEMISLI-SIMAV (KUTAHYA)",
-      "mag": 2.1,
-      "depth": 10.5,
-      "lat": 39.239,
-      "lon": 29.0115,
-      "timestamp": 1787269629000,
-      "closest_city": "Uşak",
-      "epicenter": "Kütahya",
-      "distance_km": 196.7,
-      "is_istanbul": false,
-      "first_seen": "2026-08-20T23:57:18.925Z"
     }
   ]
 }
