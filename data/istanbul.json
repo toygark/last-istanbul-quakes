@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-25T09:20:51.360Z",
-  "previous_generated_at": "2026-08-25T08:40:57.255Z",
+  "generated_at": "2026-08-25T10:00:32.863Z",
+  "previous_generated_at": "2026-08-25T09:20:51.360Z",
   "source": "Kandilli Rasathanesi / AFAD — api.orhanaydogdu.com.tr",
   "center": {
     "lat": 41.0082,
@@ -9,6 +9,36 @@
   "radius_km": 250,
   "count": 300,
   "quakes": [
+    {
+      "id": "rNLsgYx664cKp",
+      "provider": "afad",
+      "title": "Nallıhan (Ankara)",
+      "mag": 1.6,
+      "depth": 7,
+      "lat": 40.2618,
+      "lon": 31.5468,
+      "timestamp": 1787649432000,
+      "closest_city": "Bolu",
+      "epicenter": "Ankara",
+      "distance_km": 232.1,
+      "is_istanbul": false,
+      "first_seen": "2026-08-25T10:00:32.863Z"
+    },
+    {
+      "id": "W8MY2ro1J0vpx",
+      "provider": "afad",
+      "title": "Kaynarca (Sakarya)",
+      "mag": 1,
+      "depth": 7,
+      "lat": 40.9883,
+      "lon": 30.2806,
+      "timestamp": 1787648988000,
+      "closest_city": "Sakarya",
+      "epicenter": "Kocaeli",
+      "distance_km": 109.3,
+      "is_istanbul": false,
+      "first_seen": "2026-08-25T10:00:32.863Z"
+    },
     {
       "id": "fD0X2A3foIPiO",
       "provider": "afad",
@@ -4476,36 +4506,6 @@
       "closest_city": "Uşak",
       "epicenter": "Kütahya",
       "distance_km": 198.2,
-      "is_istanbul": false,
-      "first_seen": "2026-08-20T23:36:23.054Z"
-    },
-    {
-      "id": "3FbSTEqf_iFzA",
-      "provider": "kandilli",
-      "title": "YEMISLI-SIMAV (KUTAHYA)",
-      "mag": 1.7,
-      "depth": 5.8,
-      "lat": 39.2348,
-      "lon": 29.0168,
-      "timestamp": 1787266747000,
-      "closest_city": "Uşak",
-      "epicenter": "Kütahya",
-      "distance_km": 197.2,
-      "is_istanbul": false,
-      "first_seen": "2026-08-20T23:36:23.054Z"
-    },
-    {
-      "id": "GT9VGs93dMBHO",
-      "provider": "afad",
-      "title": "Simav (Kütahya)",
-      "mag": 2,
-      "depth": 13.52,
-      "lat": 39.2242,
-      "lon": 29.0215,
-      "timestamp": 1787266746000,
-      "closest_city": "Uşak",
-      "epicenter": "Kütahya",
-      "distance_km": 198.4,
       "is_istanbul": false,
       "first_seen": "2026-08-20T23:36:23.054Z"
     }
