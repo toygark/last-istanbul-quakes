@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-25T02:32:50.772Z",
-  "previous_generated_at": "2026-08-25T01:10:47.254Z",
+  "generated_at": "2026-08-25T03:29:06.033Z",
+  "previous_generated_at": "2026-08-25T02:32:50.772Z",
   "source": "Kandilli Rasathanesi / AFAD — api.orhanaydogdu.com.tr",
   "center": {
     "lat": 41.0082,
@@ -9,6 +9,36 @@
   "radius_km": 250,
   "count": 300,
   "quakes": [
+    {
+      "id": "IjcWAShegJgsw",
+      "provider": "afad",
+      "title": "Sındırgı (Balıkesir)",
+      "mag": 1.4,
+      "depth": 6.89,
+      "lat": 39.231,
+      "lon": 28.1528,
+      "timestamp": 1787624233000,
+      "closest_city": "Manisa",
+      "epicenter": "Balıkesir",
+      "distance_km": 209.7,
+      "is_istanbul": false,
+      "first_seen": "2026-08-25T03:29:06.033Z"
+    },
+    {
+      "id": "3_q5FL2LrSrFD",
+      "provider": "kandilli",
+      "title": "BAYIRLI-SINDIRGI (BALIKESIR)",
+      "mag": 1.4,
+      "depth": 12.1,
+      "lat": 39.2145,
+      "lon": 28.1213,
+      "timestamp": 1787624232000,
+      "closest_city": "Manisa",
+      "epicenter": "Balıkesir",
+      "distance_km": 212.3,
+      "is_istanbul": false,
+      "first_seen": "2026-08-25T03:29:06.033Z"
+    },
     {
       "id": "SXJmD4ThgBb4q",
       "provider": "afad",
@@ -98,6 +128,21 @@
       "distance_km": 216.4,
       "is_istanbul": false,
       "first_seen": "2026-08-25T01:10:47.254Z"
+    },
+    {
+      "id": "WsgztfRJTyy_n",
+      "provider": "kandilli",
+      "title": "YUREGIL-SINDIRGI (BALIKESIR)",
+      "mag": 1.6,
+      "depth": 12.7,
+      "lat": 39.1132,
+      "lon": 28.2947,
+      "timestamp": 1787609219000,
+      "closest_city": "Manisa",
+      "epicenter": "Balıkesir",
+      "distance_km": 218.6,
+      "is_istanbul": false,
+      "first_seen": "2026-08-25T03:29:06.033Z"
     },
     {
       "id": "hJWCXPT62HLIP",
@@ -4461,51 +4506,6 @@
       "closest_city": "Uşak",
       "epicenter": "Kütahya",
       "distance_km": 197.1,
-      "is_istanbul": false,
-      "first_seen": "2026-08-20T22:36:21.258Z"
-    },
-    {
-      "id": "oCNNS2tEuTqBw",
-      "provider": "afad",
-      "title": "Simav (Kütahya)",
-      "mag": 2.1,
-      "depth": 7.64,
-      "lat": 39.2418,
-      "lon": 29.0145,
-      "timestamp": 1787264526000,
-      "closest_city": "Uşak",
-      "epicenter": "Kütahya",
-      "distance_km": 196.4,
-      "is_istanbul": false,
-      "first_seen": "2026-08-20T22:36:21.258Z"
-    },
-    {
-      "id": "poL2_pd3KzZKG",
-      "provider": "kandilli",
-      "title": "KATRANDAGI-EMET (KUTAHYA)",
-      "mag": 2.1,
-      "depth": 4.2,
-      "lat": 39.23,
-      "lon": 29.0317,
-      "timestamp": 1787264526000,
-      "closest_city": "Uşak",
-      "epicenter": "Kütahya",
-      "distance_km": 197.8,
-      "is_istanbul": false,
-      "first_seen": "2026-08-20T22:36:21.258Z"
-    },
-    {
-      "id": "bSYdwQqLbepnS",
-      "provider": "kandilli",
-      "title": "KATRANDAGI-EMET (KUTAHYA)",
-      "mag": 0.9,
-      "depth": 10,
-      "lat": 39.2323,
-      "lon": 29.041,
-      "timestamp": 1787264131000,
-      "closest_city": "Uşak",
-      "epicenter": "Kütahya",
-      "distance_km": 197.5,
       "is_istanbul": false,
       "first_seen": "2026-08-20T22:36:21.258Z"
     }
