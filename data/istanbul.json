@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-26T05:55:11.423Z",
-  "previous_generated_at": "2026-08-26T05:20:07.352Z",
+  "generated_at": "2026-08-26T06:46:20.427Z",
+  "previous_generated_at": "2026-08-26T05:55:11.423Z",
   "source": "Kandilli Rasathanesi / AFAD — api.orhanaydogdu.com.tr",
   "center": {
     "lat": 41.0082,
@@ -9,6 +9,51 @@
   "radius_km": 250,
   "count": 300,
   "quakes": [
+    {
+      "id": "wwGvi892UDg2k",
+      "provider": "afad",
+      "title": "Sındırgı (Balıkesir)",
+      "mag": 1.3,
+      "depth": 7.48,
+      "lat": 39.2237,
+      "lon": 28.1348,
+      "timestamp": 1787725205000,
+      "closest_city": "Manisa",
+      "epicenter": "Balıkesir",
+      "distance_km": 211,
+      "is_istanbul": false,
+      "first_seen": "2026-08-26T06:46:20.427Z"
+    },
+    {
+      "id": "546_QkDQEygK7",
+      "provider": "kandilli",
+      "title": "ORHANGAZI (BURSA)",
+      "mag": 1.2,
+      "depth": 0,
+      "lat": 40.483,
+      "lon": 29.2945,
+      "timestamp": 1787723679000,
+      "closest_city": "Yalova",
+      "epicenter": "Bursa",
+      "distance_km": 64.2,
+      "is_istanbul": false,
+      "first_seen": "2026-08-26T06:46:20.427Z"
+    },
+    {
+      "id": "Y64bzG65WyaTa",
+      "provider": "afad",
+      "title": "Orhangazi (Bursa)",
+      "mag": 1.2,
+      "depth": 7.4,
+      "lat": 40.5075,
+      "lon": 29.3063,
+      "timestamp": 1787723679000,
+      "closest_city": "Yalova",
+      "epicenter": "Bursa",
+      "distance_km": 62.1,
+      "is_istanbul": false,
+      "first_seen": "2026-08-26T06:46:20.427Z"
+    },
     {
       "id": "enBhAmWCTASMk",
       "provider": "kandilli",
@@ -4463,51 +4508,6 @@
       "distance_km": 192.8,
       "is_istanbul": false,
       "first_seen": "2026-08-21T06:26:58.860Z"
-    },
-    {
-      "id": "CZpqJzz8JLz1p",
-      "provider": "afad",
-      "title": "Marmara Denizi - Erdek Körfezi - [04.17 km] Biga (Çanakkale)",
-      "mag": 1,
-      "depth": 7,
-      "lat": 40.3467,
-      "lon": 27.3842,
-      "timestamp": 1787291862000,
-      "closest_city": "Balıkesir",
-      "epicenter": "Marmara Denizi",
-      "distance_km": 153.2,
-      "is_istanbul": false,
-      "first_seen": "2026-08-21T06:26:58.860Z"
-    },
-    {
-      "id": "7fPznc3MseWYY",
-      "provider": "kandilli",
-      "title": "ADALAR (ISTANBUL)",
-      "mag": 1.9,
-      "depth": 9.4,
-      "lat": 40.7668,
-      "lon": 29.124,
-      "timestamp": 1787289286000,
-      "closest_city": "Yalova",
-      "epicenter": "Marmara Denizi",
-      "distance_km": 29.5,
-      "is_istanbul": true,
-      "first_seen": "2026-08-21T06:19:36.250Z"
-    },
-    {
-      "id": "n6joKZ3fJ1rtP",
-      "provider": "afad",
-      "title": "Marmara Denizi - [09.63 km] Adalar (İstanbul)",
-      "mag": 1.7,
-      "depth": 10.71,
-      "lat": 40.773,
-      "lon": 29.0947,
-      "timestamp": 1787289286000,
-      "closest_city": "Yalova",
-      "epicenter": "Marmara Denizi",
-      "distance_km": 27.9,
-      "is_istanbul": true,
-      "first_seen": "2026-08-21T05:45:48.243Z"
     }
   ]
 }
