@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-26T11:50:00.151Z",
-  "previous_generated_at": "2026-08-26T11:16:24.145Z",
+  "generated_at": "2026-08-26T12:20:46.335Z",
+  "previous_generated_at": "2026-08-26T11:50:00.151Z",
   "source": "Kandilli Rasathanesi / AFAD — api.orhanaydogdu.com.tr",
   "center": {
     "lat": 41.0082,
@@ -9,6 +9,36 @@
   "radius_km": 250,
   "count": 300,
   "quakes": [
+    {
+      "id": "Q4CBfcNeFEJS_",
+      "provider": "afad",
+      "title": "Büyükorhan (Bursa)",
+      "mag": 1.1,
+      "depth": 7,
+      "lat": 39.6407,
+      "lon": 28.8793,
+      "timestamp": 1787745400000,
+      "closest_city": "Kütahya",
+      "epicenter": "Bursa",
+      "distance_km": 152.3,
+      "is_istanbul": false,
+      "first_seen": "2026-08-26T12:20:46.335Z"
+    },
+    {
+      "id": "dLY40ALcQJsOC",
+      "provider": "kandilli",
+      "title": "MARMARA DENIZI",
+      "mag": 1.6,
+      "depth": 21.2,
+      "lat": 40.7037,
+      "lon": 28.638,
+      "timestamp": 1787743528000,
+      "closest_city": "Yalova",
+      "epicenter": "Marmara Denizi",
+      "distance_km": 44.3,
+      "is_istanbul": false,
+      "first_seen": "2026-08-26T12:20:46.335Z"
+    },
     {
       "id": "sQlvjs99GAuWy",
       "provider": "afad",
@@ -4478,36 +4508,6 @@
       "distance_km": 27,
       "is_istanbul": true,
       "first_seen": "2026-08-21T08:54:44.138Z"
-    },
-    {
-      "id": "KrbcYbZN5ng_n",
-      "provider": "kandilli",
-      "title": "CINARCIK ACIKLARI-YALOVA (MARMARA DENIZI)",
-      "mag": 1.4,
-      "depth": 13.4,
-      "lat": 40.7562,
-      "lon": 29.0428,
-      "timestamp": 1787297360000,
-      "closest_city": "Yalova",
-      "epicenter": "Marmara Denizi",
-      "distance_km": 28.5,
-      "is_istanbul": false,
-      "first_seen": "2026-08-21T08:00:50.159Z"
-    },
-    {
-      "id": "zdL_DED7McCfq",
-      "provider": "afad",
-      "title": "Sındırgı (Balıkesir)",
-      "mag": 1.2,
-      "depth": 7.35,
-      "lat": 39.1248,
-      "lon": 28.286,
-      "timestamp": 1787297022000,
-      "closest_city": "Manisa",
-      "epicenter": "Balıkesir",
-      "distance_km": 217.6,
-      "is_istanbul": false,
-      "first_seen": "2026-08-21T08:00:50.159Z"
     }
   ]
 }
