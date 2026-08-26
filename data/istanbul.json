@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-26T03:03:50.255Z",
-  "previous_generated_at": "2026-08-26T01:55:23.325Z",
+  "generated_at": "2026-08-26T04:00:00.252Z",
+  "previous_generated_at": "2026-08-26T03:03:50.255Z",
   "source": "Kandilli Rasathanesi / AFAD — api.orhanaydogdu.com.tr",
   "center": {
     "lat": 41.0082,
@@ -23,6 +23,21 @@
       "distance_km": 211.6,
       "is_istanbul": false,
       "first_seen": "2026-08-26T03:03:50.255Z"
+    },
+    {
+      "id": "eHnSHm3wBPOyZ",
+      "provider": "afad",
+      "title": "Sındırgı (Balıkesir)",
+      "mag": 1,
+      "depth": 10.88,
+      "lat": 39.2198,
+      "lon": 28.1083,
+      "timestamp": 1787710646000,
+      "closest_city": "Manisa",
+      "epicenter": "Balıkesir",
+      "distance_km": 212.2,
+      "is_istanbul": false,
+      "first_seen": "2026-08-26T04:00:00.252Z"
     },
     {
       "id": "6IQ4XwCDq0Wca",
@@ -4491,21 +4506,6 @@
       "closest_city": "Uşak",
       "epicenter": "Kütahya",
       "distance_km": 224,
-      "is_istanbul": false,
-      "first_seen": "2026-08-21T05:04:47.927Z"
-    },
-    {
-      "id": "oC20cXKBn3I8M",
-      "provider": "afad",
-      "title": "Aslanapa (Kütahya)",
-      "mag": 1.1,
-      "depth": 9.65,
-      "lat": 39.052,
-      "lon": 29.7707,
-      "timestamp": 1787285903000,
-      "closest_city": "Uşak",
-      "epicenter": "Kütahya",
-      "distance_km": 227.7,
       "is_istanbul": false,
       "first_seen": "2026-08-21T05:04:47.927Z"
     }
