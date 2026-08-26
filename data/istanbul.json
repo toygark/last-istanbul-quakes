@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-26T07:34:00.020Z",
-  "previous_generated_at": "2026-08-26T06:46:20.427Z",
+  "generated_at": "2026-08-26T08:22:27.628Z",
+  "previous_generated_at": "2026-08-26T07:34:00.020Z",
   "source": "Kandilli Rasathanesi / AFAD — api.orhanaydogdu.com.tr",
   "center": {
     "lat": 41.0082,
@@ -9,6 +9,21 @@
   "radius_km": 250,
   "count": 300,
   "quakes": [
+    {
+      "id": "lsy7N19_wIz3J",
+      "provider": "afad",
+      "title": "Tavşanlı (Kütahya)",
+      "mag": 1.1,
+      "depth": 7.11,
+      "lat": 39.6598,
+      "lon": 29.4597,
+      "timestamp": 1787729646000,
+      "closest_city": "Bursa",
+      "epicenter": "Kütahya",
+      "distance_km": 155.4,
+      "is_istanbul": false,
+      "first_seen": "2026-08-26T08:22:27.628Z"
+    },
     {
       "id": "wwGvi892UDg2k",
       "provider": "afad",
@@ -4493,21 +4508,6 @@
       "distance_km": 194.6,
       "is_istanbul": false,
       "first_seen": "2026-08-21T07:13:56.248Z"
-    },
-    {
-      "id": "C_pzaUbfwmd9T",
-      "provider": "afad",
-      "title": "Simav (Kütahya)",
-      "mag": 1.1,
-      "depth": 6.82,
-      "lat": 39.2744,
-      "lon": 29,
-      "timestamp": 1787292874000,
-      "closest_city": "Uşak",
-      "epicenter": "Kütahya",
-      "distance_km": 192.8,
-      "is_istanbul": false,
-      "first_seen": "2026-08-21T06:26:58.860Z"
     }
   ]
 }
