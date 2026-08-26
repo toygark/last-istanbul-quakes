@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-26T09:11:28.751Z",
-  "previous_generated_at": "2026-08-26T08:22:27.628Z",
+  "generated_at": "2026-08-26T10:00:42.150Z",
+  "previous_generated_at": "2026-08-26T09:11:28.751Z",
   "source": "Kandilli Rasathanesi / AFAD — api.orhanaydogdu.com.tr",
   "center": {
     "lat": 41.0082,
@@ -9,6 +9,36 @@
   "radius_km": 250,
   "count": 300,
   "quakes": [
+    {
+      "id": "8goSdiBmvuBQa",
+      "provider": "kandilli",
+      "title": "BOYALICA-IZNIK (BURSA)",
+      "mag": 1,
+      "depth": 17.9,
+      "lat": 40.4503,
+      "lon": 29.5618,
+      "timestamp": 1787734905000,
+      "closest_city": "Yalova",
+      "epicenter": "Bursa",
+      "distance_km": 79.2,
+      "is_istanbul": false,
+      "first_seen": "2026-08-26T10:00:42.150Z"
+    },
+    {
+      "id": "semwekzJryik8",
+      "provider": "afad",
+      "title": "Merkez (Çanakkale)",
+      "mag": 0.8,
+      "depth": 6.92,
+      "lat": 40.0767,
+      "lon": 26.5577,
+      "timestamp": 1787734379000,
+      "closest_city": "Balıkesir",
+      "epicenter": "Çanakkale",
+      "distance_km": 229.3,
+      "is_istanbul": false,
+      "first_seen": "2026-08-26T10:00:42.150Z"
+    },
     {
       "id": "lsy7N19_wIz3J",
       "provider": "afad",
@@ -4478,36 +4508,6 @@
       "distance_km": 189.4,
       "is_istanbul": false,
       "first_seen": "2026-08-21T08:00:50.159Z"
-    },
-    {
-      "id": "Zusr9JGaqF8lm",
-      "provider": "afad",
-      "title": "Emet (Kütahya)",
-      "mag": 1,
-      "depth": 7,
-      "lat": 39.2712,
-      "lon": 29.1353,
-      "timestamp": 1787293164000,
-      "closest_city": "Uşak",
-      "epicenter": "Kütahya",
-      "distance_km": 193.6,
-      "is_istanbul": false,
-      "first_seen": "2026-08-21T07:13:56.248Z"
-    },
-    {
-      "id": "ozsRqes36TcM_",
-      "provider": "afad",
-      "title": "Emet (Kütahya)",
-      "mag": 1.1,
-      "depth": 7,
-      "lat": 39.2595,
-      "lon": 29.0683,
-      "timestamp": 1787292947000,
-      "closest_city": "Uşak",
-      "epicenter": "Kütahya",
-      "distance_km": 194.6,
-      "is_istanbul": false,
-      "first_seen": "2026-08-21T07:13:56.248Z"
     }
   ]
 }
