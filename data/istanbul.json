@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-26T04:49:40.554Z",
-  "previous_generated_at": "2026-08-26T04:00:00.252Z",
+  "generated_at": "2026-08-26T05:20:07.352Z",
+  "previous_generated_at": "2026-08-26T04:49:40.554Z",
   "source": "Kandilli Rasathanesi / AFAD — api.orhanaydogdu.com.tr",
   "center": {
     "lat": 41.0082,
@@ -9,6 +9,21 @@
   "radius_km": 250,
   "count": 300,
   "quakes": [
+    {
+      "id": "Ae0zLmemVl19A",
+      "provider": "kandilli",
+      "title": "TETEMECELE-(BOLU)",
+      "mag": 1.5,
+      "depth": 14.5,
+      "lat": 40.8353,
+      "lon": 31.7362,
+      "timestamp": 1787719903000,
+      "closest_city": "Düzce",
+      "epicenter": "Bolu",
+      "distance_km": 232.5,
+      "is_istanbul": false,
+      "first_seen": "2026-08-26T05:20:07.352Z"
+    },
     {
       "id": "mneZCtsGpS8dz",
       "provider": "kandilli",
@@ -4492,21 +4507,6 @@
       "epicenter": "Marmara Denizi",
       "distance_km": 29,
       "is_istanbul": true,
-      "first_seen": "2026-08-21T05:04:47.927Z"
-    },
-    {
-      "id": "HWZwxTCDdi6SN",
-      "provider": "kandilli",
-      "title": "ASLIHANLAR-ASLANAPA (KUTAHYA)",
-      "mag": 1.3,
-      "depth": 7.7,
-      "lat": 39.1035,
-      "lon": 29.8358,
-      "timestamp": 1787285904000,
-      "closest_city": "Uşak",
-      "epicenter": "Kütahya",
-      "distance_km": 224,
-      "is_istanbul": false,
       "first_seen": "2026-08-21T05:04:47.927Z"
     }
   ]
