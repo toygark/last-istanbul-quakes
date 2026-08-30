@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-29T22:36:08.655Z",
-  "previous_generated_at": "2026-08-29T20:00:15.253Z",
+  "generated_at": "2026-08-30T00:40:38.525Z",
+  "previous_generated_at": "2026-08-29T22:36:08.655Z",
   "source": "Kandilli Rasathanesi / AFAD — api.orhanaydogdu.com.tr",
   "center": {
     "lat": 41.0082,
@@ -9,6 +9,51 @@
   "radius_km": 250,
   "count": 300,
   "quakes": [
+    {
+      "id": "TbF5JZ8YuRtjn",
+      "provider": "afad",
+      "title": "Sındırgı (Balıkesir)",
+      "mag": 1,
+      "depth": 8.92,
+      "lat": 39.1997,
+      "lon": 28.119,
+      "timestamp": 1788049120000,
+      "closest_city": "Manisa",
+      "epicenter": "Balıkesir",
+      "distance_km": 214,
+      "is_istanbul": false,
+      "first_seen": "2026-08-30T00:40:38.525Z"
+    },
+    {
+      "id": "_m4FM50HzbQDp",
+      "provider": "afad",
+      "title": "Merkez (Bolu)",
+      "mag": 1.3,
+      "depth": 13.85,
+      "lat": 40.7988,
+      "lon": 31.5453,
+      "timestamp": 1788047357000,
+      "closest_city": "Düzce",
+      "epicenter": "Bolu",
+      "distance_km": 217,
+      "is_istanbul": false,
+      "first_seen": "2026-08-30T00:40:38.525Z"
+    },
+    {
+      "id": "94EAFduEVlDj0",
+      "provider": "kandilli",
+      "title": "KIZILAGIL-(BOLU)",
+      "mag": 1.4,
+      "depth": 12.4,
+      "lat": 40.7827,
+      "lon": 31.5157,
+      "timestamp": 1788047357000,
+      "closest_city": "Düzce",
+      "epicenter": "Bolu",
+      "distance_km": 214.7,
+      "is_istanbul": false,
+      "first_seen": "2026-08-30T00:40:38.525Z"
+    },
     {
       "id": "snjC4HzGe_qNQ",
       "provider": "kandilli",
@@ -4463,51 +4508,6 @@
       "distance_km": 27.4,
       "is_istanbul": true,
       "first_seen": "2026-08-23T23:20:08.362Z"
-    },
-    {
-      "id": "VvGgixFZkOi4R",
-      "provider": "afad",
-      "title": "Marmara Denizi - [07.79 km] Adalar (İstanbul)",
-      "mag": 1.6,
-      "depth": 6.98,
-      "lat": 40.7855,
-      "lon": 29.111,
-      "timestamp": 1787522184000,
-      "closest_city": "Yalova",
-      "epicenter": "Marmara Denizi",
-      "distance_km": 27.2,
-      "is_istanbul": true,
-      "first_seen": "2026-08-23T22:34:57.950Z"
-    },
-    {
-      "id": "YjfQvgTYCnlk_",
-      "provider": "kandilli",
-      "title": "YALOVA ACIKLARI (MARMARA DENIZI)",
-      "mag": 1,
-      "depth": 4.8,
-      "lat": 40.7682,
-      "lon": 29.2362,
-      "timestamp": 1787521452000,
-      "closest_city": "Yalova",
-      "epicenter": "Marmara Denizi",
-      "distance_km": 34.4,
-      "is_istanbul": false,
-      "first_seen": "2026-08-23T22:00:32.763Z"
-    },
-    {
-      "id": "8I5SH_eCCg21b",
-      "provider": "afad",
-      "title": "Kırkağaç (Manisa)",
-      "mag": 1.4,
-      "depth": 7.03,
-      "lat": 39.3358,
-      "lon": 27.8735,
-      "timestamp": 1787520096000,
-      "closest_city": "Balıkesir",
-      "epicenter": "Manisa",
-      "distance_km": 208.3,
-      "is_istanbul": false,
-      "first_seen": "2026-08-23T21:45:29.158Z"
     }
   ]
 }
