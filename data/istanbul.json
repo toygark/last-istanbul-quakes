@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-02T23:16:54.739Z",
-  "previous_generated_at": "2026-09-02T21:00:48.129Z",
+  "generated_at": "2026-09-03T01:11:14.875Z",
+  "previous_generated_at": "2026-09-02T23:16:54.739Z",
   "source": "Kandilli Rasathanesi / AFAD — api.orhanaydogdu.com.tr",
   "center": {
     "lat": 41.0082,
@@ -9,6 +9,21 @@
   "radius_km": 250,
   "count": 300,
   "quakes": [
+    {
+      "id": "gceS7Irr0z1yt",
+      "provider": "kandilli",
+      "title": "SAROS KORFEZI (EGE DENIZI)",
+      "mag": 1.2,
+      "depth": 2.8,
+      "lat": 40.4815,
+      "lon": 26.2975,
+      "timestamp": 1788395572000,
+      "closest_city": "Çanakkale",
+      "epicenter": "Ege Denizi",
+      "distance_km": 233.3,
+      "is_istanbul": false,
+      "first_seen": "2026-09-03T01:11:14.875Z"
+    },
     {
       "id": "Sp6PGXoVTFQ1u",
       "provider": "kandilli",
@@ -4491,21 +4506,6 @@
       "closest_city": "Manisa",
       "epicenter": "Balıkesir",
       "distance_km": 209.1,
-      "is_istanbul": false,
-      "first_seen": "2026-08-27T12:52:20.551Z"
-    },
-    {
-      "id": "CVHmzVh6h1EwZ",
-      "provider": "afad",
-      "title": "Sındırgı (Balıkesir)",
-      "mag": 2.4,
-      "depth": 7,
-      "lat": 39.1215,
-      "lon": 28.3912,
-      "timestamp": 1787808169000,
-      "closest_city": "Manisa",
-      "epicenter": "Balıkesir",
-      "distance_km": 215.7,
       "is_istanbul": false,
       "first_seen": "2026-08-27T12:52:20.551Z"
     }
