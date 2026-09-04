@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-03T23:12:18.740Z",
-  "previous_generated_at": "2026-09-03T20:58:52.252Z",
+  "generated_at": "2026-09-04T01:02:45.534Z",
+  "previous_generated_at": "2026-09-03T23:12:18.740Z",
   "source": "Kandilli Rasathanesi / AFAD — api.orhanaydogdu.com.tr",
   "center": {
     "lat": 41.0082,
@@ -9,6 +9,21 @@
   "radius_km": 250,
   "count": 300,
   "quakes": [
+    {
+      "id": "o5A0H3_njhEpZ",
+      "provider": "kandilli",
+      "title": "KIZILAGIL-(BOLU)",
+      "mag": 2,
+      "depth": 8.7,
+      "lat": 40.8033,
+      "lon": 31.5453,
+      "timestamp": 1788482076000,
+      "closest_city": "Düzce",
+      "epicenter": "Bolu",
+      "distance_km": 216.9,
+      "is_istanbul": false,
+      "first_seen": "2026-09-04T01:02:45.534Z"
+    },
     {
       "id": "yTF_L0goipznM",
       "provider": "kandilli",
@@ -38,6 +53,21 @@
       "distance_km": 203.3,
       "is_istanbul": false,
       "first_seen": "2026-09-03T23:12:18.740Z"
+    },
+    {
+      "id": "rekZEJdK5_cnm",
+      "provider": "kandilli",
+      "title": "YILDIZ-BEYPAZARI (ANKARA)",
+      "mag": 1.9,
+      "depth": 5,
+      "lat": 40.2505,
+      "lon": 31.7427,
+      "timestamp": 1788473690000,
+      "closest_city": "Bolu",
+      "epicenter": "Ankara",
+      "distance_km": 248,
+      "is_istanbul": false,
+      "first_seen": "2026-09-04T01:02:45.534Z"
     },
     {
       "id": "qNjgSjjYWro4g",
@@ -4476,36 +4506,6 @@
       "closest_city": "Tekirdağ",
       "epicenter": "Marmara Denizi",
       "distance_km": 78.2,
-      "is_istanbul": false,
-      "first_seen": "2026-08-28T06:23:17.739Z"
-    },
-    {
-      "id": "jdXy3pnPWlNAg",
-      "provider": "afad",
-      "title": "Akhisar (Manisa)",
-      "mag": 1.3,
-      "depth": 7.02,
-      "lat": 39.1867,
-      "lon": 27.968,
-      "timestamp": 1787888776000,
-      "closest_city": "Balıkesir",
-      "epicenter": "Manisa",
-      "distance_km": 220,
-      "is_istanbul": false,
-      "first_seen": "2026-08-28T06:23:17.739Z"
-    },
-    {
-      "id": "oLE2FduevOEfr",
-      "provider": "kandilli",
-      "title": "AKKOCALI-AKHISAR (MANISA)",
-      "mag": 1.4,
-      "depth": 11.6,
-      "lat": 39.1778,
-      "lon": 27.9477,
-      "timestamp": 1787888776000,
-      "closest_city": "Balıkesir",
-      "epicenter": "Manisa",
-      "distance_km": 221.6,
       "is_istanbul": false,
       "first_seen": "2026-08-28T06:23:17.739Z"
     }
