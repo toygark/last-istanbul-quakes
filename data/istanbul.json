@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-05T08:25:38.878Z",
-  "previous_generated_at": "2026-09-05T04:19:19.246Z",
+  "generated_at": "2026-09-05T11:55:24.756Z",
+  "previous_generated_at": "2026-09-05T08:25:38.878Z",
   "source": "Kandilli Rasathanesi / AFAD — api.orhanaydogdu.com.tr",
   "center": {
     "lat": 41.0082,
@@ -9,6 +9,21 @@
   "radius_km": 250,
   "count": 300,
   "quakes": [
+    {
+      "id": "nhco_pwpqNKPQ",
+      "provider": "afad",
+      "title": "Sındırgı (Balıkesir)",
+      "mag": 0.9,
+      "depth": 7,
+      "lat": 39.2073,
+      "lon": 28.4617,
+      "timestamp": 1788602970000,
+      "closest_city": "Manisa",
+      "epicenter": "Balıkesir",
+      "distance_km": 205,
+      "is_istanbul": false,
+      "first_seen": "2026-09-05T11:55:24.756Z"
+    },
     {
       "id": "5UhnCUtExlV3w",
       "provider": "afad",
@@ -38,6 +53,21 @@
       "distance_km": 173.6,
       "is_istanbul": false,
       "first_seen": "2026-09-05T08:25:38.878Z"
+    },
+    {
+      "id": "IhUVGVJVchLl_",
+      "provider": "kandilli",
+      "title": "DOGANCAM-BIGADIC (BALIKESIR)",
+      "mag": 1.3,
+      "depth": 11,
+      "lat": 39.5225,
+      "lon": 28.2432,
+      "timestamp": 1788589886000,
+      "closest_city": "Manisa",
+      "epicenter": "Balıkesir",
+      "distance_km": 176.6,
+      "is_istanbul": false,
+      "first_seen": "2026-09-05T11:55:24.756Z"
     },
     {
       "id": "uN9MB_Kiyb053",
@@ -4476,36 +4506,6 @@
       "closest_city": "Uşak",
       "epicenter": "Kütahya",
       "distance_km": 203.9,
-      "is_istanbul": false,
-      "first_seen": "2026-08-29T08:56:56.656Z"
-    },
-    {
-      "id": "mnutYuAzb4g0m",
-      "provider": "kandilli",
-      "title": "YESILDERE-SIMAV (KUTAHYA)",
-      "mag": 1.6,
-      "depth": 10.3,
-      "lat": 39.2625,
-      "lon": 29.0023,
-      "timestamp": 1787986629000,
-      "closest_city": "Uşak",
-      "epicenter": "Kütahya",
-      "distance_km": 194.1,
-      "is_istanbul": false,
-      "first_seen": "2026-08-29T08:56:56.656Z"
-    },
-    {
-      "id": "Go2vuMZqnW2UL",
-      "provider": "afad",
-      "title": "Orhaneli (Bursa)",
-      "mag": 1.3,
-      "depth": 7,
-      "lat": 39.9065,
-      "lon": 28.804,
-      "timestamp": 1787983518000,
-      "closest_city": "Yalova",
-      "epicenter": "Bursa",
-      "distance_km": 123.4,
       "is_istanbul": false,
       "first_seen": "2026-08-29T08:56:56.656Z"
     }
