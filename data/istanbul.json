@@ -1,14 +1,29 @@
 {
-  "generated_at": "2026-09-06T15:50:32.156Z",
-  "previous_generated_at": "2026-09-06T12:48:53.855Z",
+  "generated_at": "2026-09-06T18:01:54.824Z",
+  "previous_generated_at": "2026-09-06T15:50:32.156Z",
   "source": "Kandilli Rasathanesi / AFAD — api.orhanaydogdu.com.tr",
   "center": {
     "lat": 41.0082,
     "lon": 28.9784
   },
   "radius_km": 250,
-  "count": 299,
+  "count": 300,
   "quakes": [
+    {
+      "id": "GxfrMxK6qMER9",
+      "provider": "afad",
+      "title": "Geyve (Sakarya)",
+      "mag": 1.4,
+      "depth": 10.67,
+      "lat": 40.4408,
+      "lon": 30.2915,
+      "timestamp": 1788708464000,
+      "closest_city": "Bilecik",
+      "epicenter": "Sakarya",
+      "distance_km": 127.4,
+      "is_istanbul": false,
+      "first_seen": "2026-09-06T18:01:54.824Z"
+    },
     {
       "id": "SbIBiNOPwv77S",
       "provider": "kandilli",
@@ -23,6 +38,21 @@
       "distance_km": 129.1,
       "is_istanbul": false,
       "first_seen": "2026-09-06T15:50:32.156Z"
+    },
+    {
+      "id": "vFs11vy6tr1s1",
+      "provider": "afad",
+      "title": "Kestel (Bursa)",
+      "mag": 1.5,
+      "depth": 10.97,
+      "lat": 40.3187,
+      "lon": 29.3252,
+      "timestamp": 1788708010000,
+      "closest_city": "Yalova",
+      "epicenter": "Bursa",
+      "distance_km": 82.1,
+      "is_istanbul": false,
+      "first_seen": "2026-09-06T18:01:54.824Z"
     },
     {
       "id": "ZmlPN9Cx3IfNK",
@@ -4478,21 +4508,6 @@
       "distance_km": 196,
       "is_istanbul": false,
       "first_seen": "2026-08-30T18:43:14.660Z"
-    },
-    {
-      "id": "fedY78LD3GrzO",
-      "provider": "afad",
-      "title": "Marmara Denizi - [21.12 km] Marmaraereğlisi (Tekirdağ)",
-      "mag": 1.5,
-      "depth": 13.61,
-      "lat": 40.8305,
-      "lon": 28.134,
-      "timestamp": 1788096776000,
-      "closest_city": "Tekirdağ",
-      "epicenter": "Marmara Denizi",
-      "distance_km": 73.6,
-      "is_istanbul": false,
-      "first_seen": "2026-08-30T15:23:23.053Z"
     }
   ]
 }
