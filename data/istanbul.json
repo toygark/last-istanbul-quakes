@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-08T20:14:05.547Z",
-  "previous_generated_at": "2026-09-08T17:34:44.651Z",
+  "generated_at": "2026-09-08T22:44:06.147Z",
+  "previous_generated_at": "2026-09-08T20:14:05.547Z",
   "source": "Kandilli Rasathanesi / AFAD — api.orhanaydogdu.com.tr",
   "center": {
     "lat": 41.0082,
@@ -9,6 +9,51 @@
   "radius_km": 250,
   "count": 300,
   "quakes": [
+    {
+      "id": "_eGRl_EqO5pjS",
+      "provider": "afad",
+      "title": "Tepebaşı (Eskişehir)",
+      "mag": 1.4,
+      "depth": 7,
+      "lat": 39.8188,
+      "lon": 30.7488,
+      "timestamp": 1788905332000,
+      "closest_city": "Bilecik",
+      "epicenter": "Eskişehir",
+      "distance_km": 199.9,
+      "is_istanbul": false,
+      "first_seen": "2026-09-08T22:44:06.147Z"
+    },
+    {
+      "id": "vyoRj3jI0rVi9",
+      "provider": "afad",
+      "title": "Altıeylül (Balıkesir)",
+      "mag": 1,
+      "depth": 7,
+      "lat": 39.5712,
+      "lon": 27.8302,
+      "timestamp": 1788901590000,
+      "closest_city": "Manisa",
+      "epicenter": "Balıkesir",
+      "distance_km": 187.1,
+      "is_istanbul": false,
+      "first_seen": "2026-09-08T22:44:06.147Z"
+    },
+    {
+      "id": "q1Ae_WKuxtywr",
+      "provider": "kandilli",
+      "title": "BAYRAKLI-SINDIRGI (BALIKESIR)",
+      "mag": 1.1,
+      "depth": 18,
+      "lat": 39.1375,
+      "lon": 28.2533,
+      "timestamp": 1788896189000,
+      "closest_city": "Manisa",
+      "epicenter": "Balıkesir",
+      "distance_km": 217,
+      "is_istanbul": false,
+      "first_seen": "2026-09-08T22:44:06.147Z"
+    },
     {
       "id": "63xDFErnPdk25",
       "provider": "afad",
@@ -4463,51 +4508,6 @@
       "distance_km": 197.1,
       "is_istanbul": false,
       "first_seen": "2026-09-01T23:28:16.775Z"
-    },
-    {
-      "id": "AtUV03c4CSYUm",
-      "provider": "kandilli",
-      "title": "YEMISLI-SIMAV (KUTAHYA)",
-      "mag": 1.8,
-      "depth": 4.3,
-      "lat": 39.2383,
-      "lon": 29.0077,
-      "timestamp": 1788299046000,
-      "closest_city": "Uşak",
-      "epicenter": "Kütahya",
-      "distance_km": 196.8,
-      "is_istanbul": false,
-      "first_seen": "2026-09-01T23:28:16.775Z"
-    },
-    {
-      "id": "5fddqlZLT9qFj",
-      "provider": "afad",
-      "title": "Sındırgı (Balıkesir)",
-      "mag": 0.8,
-      "depth": 7,
-      "lat": 39.1385,
-      "lon": 28.1828,
-      "timestamp": 1788296419000,
-      "closest_city": "Manisa",
-      "epicenter": "Balıkesir",
-      "distance_km": 218.6,
-      "is_istanbul": false,
-      "first_seen": "2026-09-01T21:26:07.026Z"
-    },
-    {
-      "id": "Z4IZe5uI3bUqB",
-      "provider": "afad",
-      "title": "Sındırgı (Balıkesir)",
-      "mag": 1.1,
-      "depth": 7.41,
-      "lat": 39.2753,
-      "lon": 28.09,
-      "timestamp": 1788296376000,
-      "closest_city": "Manisa",
-      "epicenter": "Balıkesir",
-      "distance_km": 207,
-      "is_istanbul": false,
-      "first_seen": "2026-09-01T21:26:07.026Z"
     }
   ]
 }
