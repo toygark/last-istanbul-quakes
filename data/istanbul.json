@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-08T04:51:39.055Z",
-  "previous_generated_at": "2026-09-08T00:18:56.029Z",
+  "generated_at": "2026-09-08T09:22:36.351Z",
+  "previous_generated_at": "2026-09-08T04:51:39.055Z",
   "source": "Kandilli Rasathanesi / AFAD — api.orhanaydogdu.com.tr",
   "center": {
     "lat": 41.0082,
@@ -9,6 +9,36 @@
   "radius_km": 250,
   "count": 300,
   "quakes": [
+    {
+      "id": "K2dbuSC5a_BSx",
+      "provider": "afad",
+      "title": "Marmara Denizi - [12.84 km] Çınarcık (Yalova)",
+      "mag": 1.4,
+      "depth": 5.14,
+      "lat": 40.7406,
+      "lon": 28.9742,
+      "timestamp": 1788849466000,
+      "closest_city": "Yalova",
+      "epicenter": "Marmara Denizi",
+      "distance_km": 29.8,
+      "is_istanbul": false,
+      "first_seen": "2026-09-08T09:22:36.351Z"
+    },
+    {
+      "id": "NQzEwBgzKskDf",
+      "provider": "afad",
+      "title": "Merkez (Bolu)",
+      "mag": 1.2,
+      "depth": 6.97,
+      "lat": 40.9252,
+      "lon": 31.629,
+      "timestamp": 1788844223000,
+      "closest_city": "Bolu",
+      "epicenter": "Düzce",
+      "distance_km": 222.7,
+      "is_istanbul": false,
+      "first_seen": "2026-09-08T09:22:36.351Z"
+    },
     {
       "id": "LZ86SYDWv_dPU",
       "provider": "afad",
@@ -4476,36 +4506,6 @@
       "closest_city": "Tekirdağ",
       "epicenter": "Marmara Denizi",
       "distance_km": 126.3,
-      "is_istanbul": false,
-      "first_seen": "2026-09-01T11:47:17.851Z"
-    },
-    {
-      "id": "_8H1_4PDDHBkg",
-      "provider": "afad",
-      "title": "Marmara Denizi - [03.74 km] Süleymanpaşa (Tekirdağ)",
-      "mag": 1.2,
-      "depth": 7,
-      "lat": 40.855,
-      "lon": 27.4994,
-      "timestamp": 1788255542000,
-      "closest_city": "Tekirdağ",
-      "epicenter": "Marmara Denizi",
-      "distance_km": 125.4,
-      "is_istanbul": false,
-      "first_seen": "2026-09-01T11:47:17.851Z"
-    },
-    {
-      "id": "jd0Le1soYRDg8",
-      "provider": "afad",
-      "title": "Bayramiç (Çanakkale)",
-      "mag": 0.8,
-      "depth": 7,
-      "lat": 39.9592,
-      "lon": 26.7742,
-      "timestamp": 1788255517000,
-      "closest_city": "Balıkesir",
-      "epicenter": "Çanakkale",
-      "distance_km": 219.9,
       "is_istanbul": false,
       "first_seen": "2026-09-01T11:47:17.851Z"
     }
