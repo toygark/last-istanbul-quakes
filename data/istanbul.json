@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-09T22:41:55.150Z",
-  "previous_generated_at": "2026-09-09T20:27:52.354Z",
+  "generated_at": "2026-09-10T00:38:59.078Z",
+  "previous_generated_at": "2026-09-09T22:41:55.150Z",
   "source": "Kandilli Rasathanesi / AFAD — api.orhanaydogdu.com.tr",
   "center": {
     "lat": 41.0082,
@@ -9,6 +9,21 @@
   "radius_km": 250,
   "count": 300,
   "quakes": [
+    {
+      "id": "tTZ7dRqe1SuTJ",
+      "provider": "kandilli",
+      "title": "KERTIL-SINDIRGI (BALIKESIR)",
+      "mag": 1.2,
+      "depth": 10.4,
+      "lat": 39.2172,
+      "lon": 28.109,
+      "timestamp": 1788992443000,
+      "closest_city": "Manisa",
+      "epicenter": "Balıkesir",
+      "distance_km": 212.4,
+      "is_istanbul": false,
+      "first_seen": "2026-09-10T00:38:59.078Z"
+    },
     {
       "id": "2ZVwxgJ51HqLP",
       "provider": "afad",
@@ -4491,21 +4506,6 @@
       "closest_city": "Uşak",
       "epicenter": "Kütahya",
       "distance_km": 197.5,
-      "is_istanbul": false,
-      "first_seen": "2026-09-02T18:08:14.091Z"
-    },
-    {
-      "id": "H6Nl3gjMt4ZM3",
-      "provider": "kandilli",
-      "title": "BEKIRLER-YIGILCA (DUZCE)",
-      "mag": 1.7,
-      "depth": 15.7,
-      "lat": 40.889,
-      "lon": 31.5398,
-      "timestamp": 1788360394000,
-      "closest_city": "Bolu",
-      "epicenter": "Düzce",
-      "distance_km": 215.5,
       "is_istanbul": false,
       "first_seen": "2026-09-02T18:08:14.091Z"
     }
