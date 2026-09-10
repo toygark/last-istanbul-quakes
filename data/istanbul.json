@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-10T17:40:08.255Z",
-  "previous_generated_at": "2026-09-10T14:04:09.948Z",
+  "generated_at": "2026-09-10T20:01:27.827Z",
+  "previous_generated_at": "2026-09-10T17:40:08.255Z",
   "source": "Kandilli Rasathanesi / AFAD — api.orhanaydogdu.com.tr",
   "center": {
     "lat": 41.0082,
@@ -9,6 +9,36 @@
   "radius_km": 250,
   "count": 300,
   "quakes": [
+    {
+      "id": "3doW15pYgN2KI",
+      "provider": "afad",
+      "title": "Sındırgı (Balıkesir)",
+      "mag": 0.8,
+      "depth": 6.49,
+      "lat": 39.1792,
+      "lon": 28.4183,
+      "timestamp": 1789069156000,
+      "closest_city": "Manisa",
+      "epicenter": "Balıkesir",
+      "distance_km": 208.9,
+      "is_istanbul": false,
+      "first_seen": "2026-09-10T20:01:27.827Z"
+    },
+    {
+      "id": "ZTTHE8op5XMPL",
+      "provider": "kandilli",
+      "title": "YAYLACIK-SINDIRGI (BALIKESIR)",
+      "mag": 1,
+      "depth": 11.1,
+      "lat": 39.2157,
+      "lon": 28.1703,
+      "timestamp": 1789059262000,
+      "closest_city": "Manisa",
+      "epicenter": "Balıkesir",
+      "distance_km": 210.8,
+      "is_istanbul": false,
+      "first_seen": "2026-09-10T20:01:27.827Z"
+    },
     {
       "id": "80hwsxKjNfrph",
       "provider": "afad",
@@ -53,6 +83,21 @@
       "distance_km": 29.7,
       "is_istanbul": true,
       "first_seen": "2026-09-10T17:40:08.255Z"
+    },
+    {
+      "id": "gGwXFPAJuYue6",
+      "provider": "kandilli",
+      "title": "KARAKOY-NALLIHAN (ANKARA)",
+      "mag": 2.3,
+      "depth": 5,
+      "lat": 40.1832,
+      "lon": 31.6438,
+      "timestamp": 1789053136000,
+      "closest_city": "Bolu",
+      "epicenter": "Ankara",
+      "distance_km": 243,
+      "is_istanbul": false,
+      "first_seen": "2026-09-10T20:01:27.827Z"
     },
     {
       "id": "nmrOjQx4D7_7h",
@@ -4463,51 +4508,6 @@
       "distance_km": 199.3,
       "is_istanbul": false,
       "first_seen": "2026-09-03T20:58:52.252Z"
-    },
-    {
-      "id": "SLM1GvSCKL9R1",
-      "provider": "kandilli",
-      "title": "YENILER-SIMAV (KUTAHYA)",
-      "mag": 1.6,
-      "depth": 11.3,
-      "lat": 39.2417,
-      "lon": 28.9413,
-      "timestamp": 1788458257000,
-      "closest_city": "Uşak",
-      "epicenter": "Kütahya",
-      "distance_km": 196.5,
-      "is_istanbul": false,
-      "first_seen": "2026-09-03T18:06:53.732Z"
-    },
-    {
-      "id": "8dqVb7pn4lJYY",
-      "provider": "afad",
-      "title": "Simav (Kütahya)",
-      "mag": 3.1,
-      "depth": 11.7,
-      "lat": 39.2262,
-      "lon": 28.9473,
-      "timestamp": 1788456856000,
-      "closest_city": "Uşak",
-      "epicenter": "Kütahya",
-      "distance_km": 198.2,
-      "is_istanbul": false,
-      "first_seen": "2026-09-03T18:06:53.732Z"
-    },
-    {
-      "id": "AaF4dIbQsIwnt",
-      "provider": "kandilli",
-      "title": "KARAKOCA-SIMAV (KUTAHYA)",
-      "mag": 3.2,
-      "depth": 7.6,
-      "lat": 39.2602,
-      "lon": 28.924,
-      "timestamp": 1788456856000,
-      "closest_city": "Uşak",
-      "epicenter": "Kütahya",
-      "distance_km": 194.4,
-      "is_istanbul": false,
-      "first_seen": "2026-09-03T18:06:53.732Z"
     }
   ]
 }
