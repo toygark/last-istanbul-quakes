@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-12T15:59:26.527Z",
-  "previous_generated_at": "2026-09-12T12:54:28.326Z",
+  "generated_at": "2026-09-12T18:17:38.671Z",
+  "previous_generated_at": "2026-09-12T15:59:26.527Z",
   "source": "Kandilli Rasathanesi / AFAD — api.orhanaydogdu.com.tr",
   "center": {
     "lat": 41.0082,
@@ -9,6 +9,21 @@
   "radius_km": 250,
   "count": 300,
   "quakes": [
+    {
+      "id": "et9bi5pA9pN4f",
+      "provider": "afad",
+      "title": "Simav (Kütahya)",
+      "mag": 0.9,
+      "depth": 7,
+      "lat": 39.2265,
+      "lon": 28.9212,
+      "timestamp": 1789229645000,
+      "closest_city": "Uşak",
+      "epicenter": "Kütahya",
+      "distance_km": 198.2,
+      "is_istanbul": false,
+      "first_seen": "2026-09-12T18:17:38.671Z"
+    },
     {
       "id": "7Q2nKIlmvd9Sy",
       "provider": "kandilli",
@@ -4493,21 +4508,6 @@
       "distance_km": 213.8,
       "is_istanbul": false,
       "first_seen": "2026-09-05T22:41:54.021Z"
-    },
-    {
-      "id": "qKLgHbB6zuxqI",
-      "provider": "kandilli",
-      "title": "CAVLI-SAVASTEPE (BALIKESIR)",
-      "mag": 1.5,
-      "depth": 12.6,
-      "lat": 39.5368,
-      "lon": 27.6213,
-      "timestamp": 1788637682000,
-      "closest_city": "Manisa",
-      "epicenter": "Balıkesir",
-      "distance_km": 200.1,
-      "is_istanbul": false,
-      "first_seen": "2026-09-05T20:56:22.962Z"
     }
   ]
 }
