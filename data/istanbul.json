@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-13T17:22:05.154Z",
-  "previous_generated_at": "2026-09-13T13:56:44.552Z",
+  "generated_at": "2026-09-13T19:40:17.952Z",
+  "previous_generated_at": "2026-09-13T17:22:05.154Z",
   "source": "Kandilli Rasathanesi / AFAD — api.orhanaydogdu.com.tr",
   "center": {
     "lat": 41.0082,
@@ -9,6 +9,36 @@
   "radius_km": 250,
   "count": 300,
   "quakes": [
+    {
+      "id": "l12RmsatjMX2R",
+      "provider": "afad",
+      "title": "Sındırgı (Balıkesir)",
+      "mag": 1.1,
+      "depth": 12.46,
+      "lat": 39.2648,
+      "lon": 28.0847,
+      "timestamp": 1789323303000,
+      "closest_city": "Manisa",
+      "epicenter": "Balıkesir",
+      "distance_km": 208.2,
+      "is_istanbul": false,
+      "first_seen": "2026-09-13T19:40:17.952Z"
+    },
+    {
+      "id": "N7aQ4T9wljLwf",
+      "provider": "afad",
+      "title": "Merkez (Bolu)",
+      "mag": 1,
+      "depth": 7,
+      "lat": 40.861,
+      "lon": 31.5593,
+      "timestamp": 1789316797000,
+      "closest_city": "Düzce",
+      "epicenter": "Bolu",
+      "distance_km": 217.4,
+      "is_istanbul": false,
+      "first_seen": "2026-09-13T19:40:17.952Z"
+    },
     {
       "id": "rgirTeqdauXJN",
       "provider": "afad",
@@ -23,6 +53,21 @@
       "distance_km": 215.3,
       "is_istanbul": false,
       "first_seen": "2026-09-13T17:22:05.154Z"
+    },
+    {
+      "id": "F03x9aRuYhuE6",
+      "provider": "kandilli",
+      "title": "AKKOCALI-AKHISAR (MANISA)",
+      "mag": 1.6,
+      "depth": 13.4,
+      "lat": 39.1738,
+      "lon": 27.9472,
+      "timestamp": 1789315601000,
+      "closest_city": "Balıkesir",
+      "epicenter": "Manisa",
+      "distance_km": 222,
+      "is_istanbul": false,
+      "first_seen": "2026-09-13T19:40:17.952Z"
     },
     {
       "id": "6UQJtRmiWOJIo",
@@ -4461,51 +4506,6 @@
       "closest_city": "Yalova",
       "epicenter": "Bursa",
       "distance_km": 59.6,
-      "is_istanbul": false,
-      "first_seen": "2026-09-06T15:50:32.156Z"
-    },
-    {
-      "id": "ZFPz7hYhG33Ht",
-      "provider": "kandilli",
-      "title": "SAHINYURDU-GEMLIK (BURSA)",
-      "mag": 1.7,
-      "depth": 5.2,
-      "lat": 40.4925,
-      "lon": 29.1945,
-      "timestamp": 1788705649000,
-      "closest_city": "Yalova",
-      "epicenter": "Bursa",
-      "distance_km": 60.2,
-      "is_istanbul": false,
-      "first_seen": "2026-09-06T15:50:32.156Z"
-    },
-    {
-      "id": "8Kxs7sQFiTDcC",
-      "provider": "afad",
-      "title": "Sındırgı (Balıkesir)",
-      "mag": 1.6,
-      "depth": 11.79,
-      "lat": 39.2453,
-      "lon": 28.1218,
-      "timestamp": 1788702881000,
-      "closest_city": "Manisa",
-      "epicenter": "Balıkesir",
-      "distance_km": 209.1,
-      "is_istanbul": false,
-      "first_seen": "2026-09-06T15:50:32.156Z"
-    },
-    {
-      "id": "JGrBmWdPVCIeK",
-      "provider": "kandilli",
-      "title": "AKKOCALI-AKHISAR (MANISA)",
-      "mag": 1.6,
-      "depth": 18.8,
-      "lat": 39.1875,
-      "lon": 27.9623,
-      "timestamp": 1788702880000,
-      "closest_city": "Balıkesir",
-      "epicenter": "Manisa",
-      "distance_km": 220.1,
       "is_istanbul": false,
       "first_seen": "2026-09-06T15:50:32.156Z"
     }
