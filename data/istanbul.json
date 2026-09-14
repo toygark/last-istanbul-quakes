@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-14T19:28:36.260Z",
-  "previous_generated_at": "2026-09-14T14:14:03.546Z",
+  "generated_at": "2026-09-14T22:42:51.362Z",
+  "previous_generated_at": "2026-09-14T19:28:36.260Z",
   "source": "Kandilli Rasathanesi / AFAD — api.orhanaydogdu.com.tr",
   "center": {
     "lat": 41.0082,
@@ -9,6 +9,51 @@
   "radius_km": 250,
   "count": 300,
   "quakes": [
+    {
+      "id": "qrFnhlnR7Gpvj",
+      "provider": "kandilli",
+      "title": "YEMISLI-SIMAV (KUTAHYA)",
+      "mag": 1.1,
+      "depth": 17.9,
+      "lat": 39.254,
+      "lon": 28.9988,
+      "timestamp": 1789423623000,
+      "closest_city": "Uşak",
+      "epicenter": "Kütahya",
+      "distance_km": 195.1,
+      "is_istanbul": false,
+      "first_seen": "2026-09-14T22:42:51.362Z"
+    },
+    {
+      "id": "l8g1IKXSExXGV",
+      "provider": "afad",
+      "title": "Kırkağaç (Manisa)",
+      "mag": 0.8,
+      "depth": 7.05,
+      "lat": 39.1927,
+      "lon": 27.9378,
+      "timestamp": 1789422783000,
+      "closest_city": "Balıkesir",
+      "epicenter": "Manisa",
+      "distance_km": 220.4,
+      "is_istanbul": false,
+      "first_seen": "2026-09-14T22:42:51.362Z"
+    },
+    {
+      "id": "UAylEQTTK2Zmt",
+      "provider": "afad",
+      "title": "Osmangazi (Bursa)",
+      "mag": 1.4,
+      "depth": 11.47,
+      "lat": 40.0875,
+      "lon": 29.0275,
+      "timestamp": 1789421787000,
+      "closest_city": "Yalova",
+      "epicenter": "Bursa",
+      "distance_km": 102.5,
+      "is_istanbul": false,
+      "first_seen": "2026-09-14T22:42:51.362Z"
+    },
     {
       "id": "EZVtYbZ0UnByx",
       "provider": "afad",
@@ -25,6 +70,21 @@
       "first_seen": "2026-09-14T19:28:36.260Z"
     },
     {
+      "id": "5_BLgW7m3Ddch",
+      "provider": "kandilli",
+      "title": "SAROS KORFEZI (EGE DENIZI)",
+      "mag": 1.7,
+      "depth": 16.6,
+      "lat": 40.4622,
+      "lon": 26.3642,
+      "timestamp": 1789411763000,
+      "closest_city": "Çanakkale",
+      "epicenter": "Ege Denizi",
+      "distance_km": 228.5,
+      "is_istanbul": false,
+      "first_seen": "2026-09-14T22:42:51.362Z"
+    },
+    {
       "id": "rNGBYEHhjGRxd",
       "provider": "afad",
       "title": "Sındırgı (Balıkesir)",
@@ -38,6 +98,21 @@
       "distance_km": 207.2,
       "is_istanbul": false,
       "first_seen": "2026-09-14T19:28:36.260Z"
+    },
+    {
+      "id": "cWjJr7jqAZpTQ",
+      "provider": "kandilli",
+      "title": "YAYLACIK-SINDIRGI (BALIKESIR)",
+      "mag": 1.4,
+      "depth": 7.8,
+      "lat": 39.2187,
+      "lon": 28.1682,
+      "timestamp": 1789402193000,
+      "closest_city": "Manisa",
+      "epicenter": "Balıkesir",
+      "distance_km": 210.6,
+      "is_istanbul": false,
+      "first_seen": "2026-09-14T22:42:51.362Z"
     },
     {
       "id": "GZfM1uSYvSkni",
@@ -4433,81 +4508,6 @@
       "distance_km": 213.7,
       "is_istanbul": false,
       "first_seen": "2026-09-07T19:13:27.226Z"
-    },
-    {
-      "id": "2aZyfm5Tma0JY",
-      "provider": "afad",
-      "title": "Emet (Kütahya)",
-      "mag": 0.8,
-      "depth": 7.36,
-      "lat": 39.3098,
-      "lon": 29.0335,
-      "timestamp": 1788787983000,
-      "closest_city": "Bursa",
-      "epicenter": "Kütahya",
-      "distance_km": 188.9,
-      "is_istanbul": false,
-      "first_seen": "2026-09-07T15:13:13.870Z"
-    },
-    {
-      "id": "V0tVjcp836mY9",
-      "provider": "afad",
-      "title": "Simav (Kütahya)",
-      "mag": 0.7,
-      "depth": 7,
-      "lat": 39.1448,
-      "lon": 29.0905,
-      "timestamp": 1788783187000,
-      "closest_city": "Uşak",
-      "epicenter": "Kütahya",
-      "distance_km": 207.4,
-      "is_istanbul": false,
-      "first_seen": "2026-09-07T15:13:13.870Z"
-    },
-    {
-      "id": "tS9Ska5TADlLJ",
-      "provider": "afad",
-      "title": "Sındırgı (Balıkesir)",
-      "mag": 1.2,
-      "depth": 7,
-      "lat": 39.3302,
-      "lon": 27.939,
-      "timestamp": 1788775897000,
-      "closest_city": "Manisa",
-      "epicenter": "Balıkesir",
-      "distance_km": 206.4,
-      "is_istanbul": false,
-      "first_seen": "2026-09-07T15:13:13.870Z"
-    },
-    {
-      "id": "iJ_aWsYYWZ1ik",
-      "provider": "afad",
-      "title": "Ferizli (Sakarya)",
-      "mag": 1.1,
-      "depth": 7.21,
-      "lat": 40.9382,
-      "lon": 30.5187,
-      "timestamp": 1788775560000,
-      "closest_city": "Kocaeli",
-      "epicenter": "Sakarya",
-      "distance_km": 129.5,
-      "is_istanbul": false,
-      "first_seen": "2026-09-07T15:13:13.870Z"
-    },
-    {
-      "id": "AL73Izs_PD5OH",
-      "provider": "afad",
-      "title": "Tepebaşı (Eskişehir)",
-      "mag": 0.9,
-      "depth": 7,
-      "lat": 39.7295,
-      "lon": 30.2292,
-      "timestamp": 1788773152000,
-      "closest_city": "Bilecik",
-      "epicenter": "Eskişehir",
-      "distance_km": 177.3,
-      "is_istanbul": false,
-      "first_seen": "2026-09-07T15:13:13.870Z"
     }
   ]
 }
