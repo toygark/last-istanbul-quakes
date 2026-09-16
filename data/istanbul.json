@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-16T10:13:17.152Z",
-  "previous_generated_at": "2026-09-16T05:21:37.552Z",
+  "generated_at": "2026-09-16T15:02:04.244Z",
+  "previous_generated_at": "2026-09-16T10:13:17.152Z",
   "source": "Kandilli Rasathanesi / AFAD — api.orhanaydogdu.com.tr",
   "center": {
     "lat": 41.0082,
@@ -9,6 +9,21 @@
   "radius_km": 250,
   "count": 300,
   "quakes": [
+    {
+      "id": "K_QoyHoMtIx_K",
+      "provider": "afad",
+      "title": "Söğütlü (Sakarya)",
+      "mag": 1,
+      "depth": 7.01,
+      "lat": 40.9193,
+      "lon": 30.4413,
+      "timestamp": 1789567809000,
+      "closest_city": "Kocaeli",
+      "epicenter": "Sakarya",
+      "distance_km": 123.2,
+      "is_istanbul": false,
+      "first_seen": "2026-09-16T15:02:04.244Z"
+    },
     {
       "id": "___xwoiMFXNzf",
       "provider": "afad",
@@ -4491,21 +4506,6 @@
       "closest_city": "Manisa",
       "epicenter": "Balıkesir",
       "distance_km": 215,
-      "is_istanbul": false,
-      "first_seen": "2026-09-09T00:41:47.020Z"
-    },
-    {
-      "id": "JHHRJ1oSFXNwe",
-      "provider": "afad",
-      "title": "Soma (Manisa)",
-      "mag": 1.4,
-      "depth": 7,
-      "lat": 39.2065,
-      "lon": 27.749,
-      "timestamp": 1788910575000,
-      "closest_city": "Balıkesir",
-      "epicenter": "Manisa",
-      "distance_km": 226,
       "is_istanbul": false,
       "first_seen": "2026-09-09T00:41:47.020Z"
     }
