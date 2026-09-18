@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-18T19:44:42.952Z",
-  "previous_generated_at": "2026-09-18T17:16:59.060Z",
+  "generated_at": "2026-09-18T21:56:32.825Z",
+  "previous_generated_at": "2026-09-18T19:44:42.952Z",
   "source": "Kandilli Rasathanesi / AFAD — api.orhanaydogdu.com.tr",
   "center": {
     "lat": 41.0082,
@@ -9,6 +9,36 @@
   "radius_km": 250,
   "count": 300,
   "quakes": [
+    {
+      "id": "Cn6MzyLmLwXG_",
+      "provider": "afad",
+      "title": "Altıeylül (Balıkesir)",
+      "mag": 1.2,
+      "depth": 12.09,
+      "lat": 39.4103,
+      "lon": 27.8487,
+      "timestamp": 1789763673000,
+      "closest_city": "Manisa",
+      "epicenter": "Balıkesir",
+      "distance_km": 201.9,
+      "is_istanbul": false,
+      "first_seen": "2026-09-18T21:56:32.825Z"
+    },
+    {
+      "id": "wYnbfCUv7Zzq4",
+      "provider": "kandilli",
+      "title": "ATAKOY-(BALIKESIR)",
+      "mag": 1.4,
+      "depth": 15,
+      "lat": 39.4198,
+      "lon": 27.8408,
+      "timestamp": 1789763673000,
+      "closest_city": "Manisa",
+      "epicenter": "Balıkesir",
+      "distance_km": 201.3,
+      "is_istanbul": false,
+      "first_seen": "2026-09-18T21:56:32.825Z"
+    },
     {
       "id": "Qnuv3lOnljv3z",
       "provider": "afad",
@@ -4476,36 +4506,6 @@
       "closest_city": "Manisa",
       "epicenter": "Balıkesir",
       "distance_km": 210.6,
-      "is_istanbul": false,
-      "first_seen": "2026-09-12T12:54:28.326Z"
-    },
-    {
-      "id": "XiAO3rIOBr75r",
-      "provider": "afad",
-      "title": "Orhaneli (Bursa)",
-      "mag": 1.7,
-      "depth": 8.37,
-      "lat": 39.88,
-      "lon": 28.7882,
-      "timestamp": 1789202163000,
-      "closest_city": "Yalova",
-      "epicenter": "Bursa",
-      "distance_km": 126.5,
-      "is_istanbul": false,
-      "first_seen": "2026-09-12T12:54:28.326Z"
-    },
-    {
-      "id": "mxSVidhVd4tur",
-      "provider": "kandilli",
-      "title": "ALACAAT-MUSTAFAKEMALPASA (BURSA)",
-      "mag": 1.6,
-      "depth": 5.4,
-      "lat": 39.831,
-      "lon": 28.6802,
-      "timestamp": 1789202161000,
-      "closest_city": "Balıkesir",
-      "epicenter": "Bursa",
-      "distance_km": 133.3,
       "is_istanbul": false,
       "first_seen": "2026-09-12T12:54:28.326Z"
     }
