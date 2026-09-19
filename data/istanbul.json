@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-19T13:03:09.625Z",
-  "previous_generated_at": "2026-09-19T08:58:06.343Z",
+  "generated_at": "2026-09-19T16:26:32.553Z",
+  "previous_generated_at": "2026-09-19T13:03:09.625Z",
   "source": "Kandilli Rasathanesi / AFAD — api.orhanaydogdu.com.tr",
   "center": {
     "lat": 41.0082,
@@ -9,6 +9,21 @@
   "radius_km": 250,
   "count": 300,
   "quakes": [
+    {
+      "id": "WS7uT87QgPZK5",
+      "provider": "afad",
+      "title": "Osmangazi (Bursa)",
+      "mag": 1.1,
+      "depth": 7,
+      "lat": 40.1423,
+      "lon": 29.0098,
+      "timestamp": 1789827781000,
+      "closest_city": "Yalova",
+      "epicenter": "Bursa",
+      "distance_km": 96.3,
+      "is_istanbul": false,
+      "first_seen": "2026-09-19T16:26:32.553Z"
+    },
     {
       "id": "UqKtN7Xb5iLpw",
       "provider": "kandilli",
@@ -4493,21 +4508,6 @@
       "distance_km": 195.7,
       "is_istanbul": false,
       "first_seen": "2026-09-13T00:09:09.320Z"
-    },
-    {
-      "id": "bwJe_XAq4tbv9",
-      "provider": "kandilli",
-      "title": "YEMISLI-SIMAV (KUTAHYA)",
-      "mag": 1.7,
-      "depth": 14.9,
-      "lat": 39.2245,
-      "lon": 28.9875,
-      "timestamp": 1789245604000,
-      "closest_city": "Uşak",
-      "epicenter": "Kütahya",
-      "distance_km": 198.3,
-      "is_istanbul": false,
-      "first_seen": "2026-09-12T22:23:40.469Z"
     }
   ]
 }
