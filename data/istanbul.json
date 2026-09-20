@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-20T20:46:17.520Z",
-  "previous_generated_at": "2026-09-20T18:06:01.526Z",
+  "generated_at": "2026-09-20T22:44:27.839Z",
+  "previous_generated_at": "2026-09-20T20:46:17.520Z",
   "source": "Kandilli Rasathanesi / AFAD — api.orhanaydogdu.com.tr",
   "center": {
     "lat": 41.0082,
@@ -9,6 +9,51 @@
   "radius_km": 250,
   "count": 300,
   "quakes": [
+    {
+      "id": "CAZ20e4qmw9Vs",
+      "provider": "kandilli",
+      "title": "HACIASLANLAR-EDREMIT (BALIKESIR)",
+      "mag": 1.8,
+      "depth": 17.3,
+      "lat": 39.665,
+      "lon": 27.1185,
+      "timestamp": 1789942975000,
+      "closest_city": "Çanakkale",
+      "epicenter": "Balıkesir",
+      "distance_km": 217.2,
+      "is_istanbul": false,
+      "first_seen": "2026-09-20T22:44:27.839Z"
+    },
+    {
+      "id": "t_uqKsH2GjZ54",
+      "provider": "afad",
+      "title": "Marmara Denizi - [15.26 km] Marmaraereğlisi (Tekirdağ)",
+      "mag": 1.3,
+      "depth": 4.09,
+      "lat": 40.8318,
+      "lon": 27.9973,
+      "timestamp": 1789940471000,
+      "closest_city": "Tekirdağ",
+      "epicenter": "Marmara Denizi",
+      "distance_km": 84.7,
+      "is_istanbul": false,
+      "first_seen": "2026-09-20T22:44:27.839Z"
+    },
+    {
+      "id": "nxrF8FjPRNfQU",
+      "provider": "afad",
+      "title": "Marmara Denizi - [12.95 km] Bandırma (Balıkesir)",
+      "mag": 1.4,
+      "depth": 15.73,
+      "lat": 40.494,
+      "lon": 28.1805,
+      "timestamp": 1789940108000,
+      "closest_city": "Yalova",
+      "epicenter": "Marmara Denizi",
+      "distance_km": 88.2,
+      "is_istanbul": false,
+      "first_seen": "2026-09-20T22:44:27.839Z"
+    },
     {
       "id": "18eOvWb4yopRv",
       "provider": "afad",
@@ -4463,51 +4508,6 @@
       "distance_km": 222,
       "is_istanbul": false,
       "first_seen": "2026-09-13T19:40:17.952Z"
-    },
-    {
-      "id": "6UQJtRmiWOJIo",
-      "provider": "afad",
-      "title": "Marmara Denizi - [18.49 km] Marmaraereğlisi (Tekirdağ)",
-      "mag": 2.3,
-      "depth": 6.83,
-      "lat": 40.8115,
-      "lon": 27.8633,
-      "timestamp": 1789307723000,
-      "closest_city": "Tekirdağ",
-      "epicenter": "Marmara Denizi",
-      "distance_km": 96.2,
-      "is_istanbul": false,
-      "first_seen": "2026-09-13T17:22:05.154Z"
-    },
-    {
-      "id": "QjZvy1QFHu90T",
-      "provider": "kandilli",
-      "title": "MARMARA DENIZI",
-      "mag": 2.3,
-      "depth": 16.4,
-      "lat": 40.8145,
-      "lon": 27.8838,
-      "timestamp": 1789307723000,
-      "closest_city": "Tekirdağ",
-      "epicenter": "Marmara Denizi",
-      "distance_km": 94.5,
-      "is_istanbul": false,
-      "first_seen": "2026-09-13T17:22:05.154Z"
-    },
-    {
-      "id": "84pSJvAhWD2he",
-      "provider": "afad",
-      "title": "Sındırgı (Balıkesir)",
-      "mag": 1.7,
-      "depth": 7,
-      "lat": 39.1842,
-      "lon": 28.1218,
-      "timestamp": 1789306908000,
-      "closest_city": "Manisa",
-      "epicenter": "Balıkesir",
-      "distance_km": 215.5,
-      "is_istanbul": false,
-      "first_seen": "2026-09-13T17:22:05.154Z"
     }
   ]
 }
