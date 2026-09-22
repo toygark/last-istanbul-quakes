@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-22T14:10:33.552Z",
-  "previous_generated_at": "2026-09-22T09:30:48.049Z",
+  "generated_at": "2026-09-22T18:08:54.549Z",
+  "previous_generated_at": "2026-09-22T14:10:33.552Z",
   "source": "Kandilli Rasathanesi / AFAD — api.orhanaydogdu.com.tr",
   "center": {
     "lat": 41.0082,
@@ -9,6 +9,21 @@
   "radius_km": 250,
   "count": 300,
   "quakes": [
+    {
+      "id": "lNdMoieWuCBMm",
+      "provider": "kandilli",
+      "title": "BULGARISTAN",
+      "mag": 3.2,
+      "depth": 7.9,
+      "lat": 42.5367,
+      "lon": 27.8857,
+      "timestamp": 1790099644000,
+      "closest_city": "Kırklareli",
+      "epicenter": "Karadeniz",
+      "distance_km": 192.6,
+      "is_istanbul": false,
+      "first_seen": "2026-09-22T18:08:54.549Z"
+    },
     {
       "id": "L4odrgFOmzG_E",
       "provider": "kandilli",
@@ -4491,21 +4506,6 @@
       "closest_city": "Manisa",
       "epicenter": "Balıkesir",
       "distance_km": 210.9,
-      "is_istanbul": false,
-      "first_seen": "2026-09-15T00:59:24.378Z"
-    },
-    {
-      "id": "GW82gPePf8JA3",
-      "provider": "kandilli",
-      "title": "KARAAGAC-SINDIRGI (BALIKESIR)",
-      "mag": 1,
-      "depth": 17.6,
-      "lat": 39.2825,
-      "lon": 28.1453,
-      "timestamp": 1789430061000,
-      "closest_city": "Manisa",
-      "epicenter": "Balıkesir",
-      "distance_km": 204.5,
       "is_istanbul": false,
       "first_seen": "2026-09-15T00:59:24.378Z"
     }
