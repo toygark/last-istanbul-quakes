@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-22T21:19:02.719Z",
-  "previous_generated_at": "2026-09-22T18:08:54.549Z",
+  "generated_at": "2026-09-22T23:39:32.626Z",
+  "previous_generated_at": "2026-09-22T21:19:02.719Z",
   "source": "Kandilli Rasathanesi / AFAD — api.orhanaydogdu.com.tr",
   "center": {
     "lat": 41.0082,
@@ -9,6 +9,51 @@
   "radius_km": 250,
   "count": 300,
   "quakes": [
+    {
+      "id": "mQJ8e6pOLKUmy",
+      "provider": "afad",
+      "title": "Simav (Kütahya)",
+      "mag": 1.2,
+      "depth": 7,
+      "lat": 39.1627,
+      "lon": 28.7923,
+      "timestamp": 1790113531000,
+      "closest_city": "Manisa",
+      "epicenter": "Kütahya",
+      "distance_km": 205.8,
+      "is_istanbul": false,
+      "first_seen": "2026-09-22T23:39:32.626Z"
+    },
+    {
+      "id": "ssCurODdy8dxR",
+      "provider": "kandilli",
+      "title": "BAHTILLI-SIMAV (KUTAHYA)",
+      "mag": 1.4,
+      "depth": 8,
+      "lat": 39.1658,
+      "lon": 28.7897,
+      "timestamp": 1790113530000,
+      "closest_city": "Manisa",
+      "epicenter": "Kütahya",
+      "distance_km": 205.5,
+      "is_istanbul": false,
+      "first_seen": "2026-09-22T23:39:32.626Z"
+    },
+    {
+      "id": "AyCf0gC2_tn1a",
+      "provider": "afad",
+      "title": "Sındırgı (Balıkesir)",
+      "mag": 0.8,
+      "depth": 7,
+      "lat": 39.1085,
+      "lon": 28.2428,
+      "timestamp": 1790113120000,
+      "closest_city": "Manisa",
+      "epicenter": "Balıkesir",
+      "distance_km": 220.3,
+      "is_istanbul": false,
+      "first_seen": "2026-09-22T23:39:32.626Z"
+    },
     {
       "id": "FR5AVvJuTF4_x",
       "provider": "kandilli",
@@ -4463,51 +4508,6 @@
       "distance_km": 195,
       "is_istanbul": false,
       "first_seen": "2026-09-15T11:39:21.529Z"
-    },
-    {
-      "id": "TLXDZaRoFiU7u",
-      "provider": "afad",
-      "title": "Soma (Manisa)",
-      "mag": 1.4,
-      "depth": 7,
-      "lat": 39.089,
-      "lon": 27.5913,
-      "timestamp": 1789453121000,
-      "closest_city": "İzmir",
-      "epicenter": "Manisa",
-      "distance_km": 243.9,
-      "is_istanbul": false,
-      "first_seen": "2026-09-15T11:39:21.529Z"
-    },
-    {
-      "id": "ntdYMICemwoc_",
-      "provider": "kandilli",
-      "title": "DEREKOY-SOMA (MANISA)",
-      "mag": 1.5,
-      "depth": 0,
-      "lat": 39.1182,
-      "lon": 27.5207,
-      "timestamp": 1789453119000,
-      "closest_city": "İzmir",
-      "epicenter": "Manisa",
-      "distance_km": 244,
-      "is_istanbul": false,
-      "first_seen": "2026-09-15T11:39:21.529Z"
-    },
-    {
-      "id": "E0KeqcGRIoY45",
-      "provider": "kandilli",
-      "title": "YENIKOY ACIKLARI-TEKIRDAG (MARMARA DENIZI)",
-      "mag": 1.9,
-      "depth": 13.7,
-      "lat": 40.7902,
-      "lon": 27.4835,
-      "timestamp": 1789444699000,
-      "closest_city": "Tekirdağ",
-      "epicenter": "Marmara Denizi",
-      "distance_km": 128,
-      "is_istanbul": false,
-      "first_seen": "2026-09-15T06:05:13.332Z"
     }
   ]
 }
