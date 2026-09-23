@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-23T20:36:59.861Z",
-  "previous_generated_at": "2026-09-23T17:23:00.973Z",
+  "generated_at": "2026-09-23T23:09:09.477Z",
+  "previous_generated_at": "2026-09-23T20:36:59.861Z",
   "source": "Kandilli Rasathanesi / AFAD — api.orhanaydogdu.com.tr",
   "center": {
     "lat": 41.0082,
@@ -9,6 +9,51 @@
   "radius_km": 250,
   "count": 300,
   "quakes": [
+    {
+      "id": "Xw3F_ghyLTNsy",
+      "provider": "afad",
+      "title": "Altıntaş (Kütahya)",
+      "mag": 0.9,
+      "depth": 6.98,
+      "lat": 39.0237,
+      "lon": 29.909,
+      "timestamp": 1790201372000,
+      "closest_city": "Uşak",
+      "epicenter": "Kütahya",
+      "distance_km": 234.5,
+      "is_istanbul": false,
+      "first_seen": "2026-09-23T23:09:09.477Z"
+    },
+    {
+      "id": "JGmE0Ey7JFWdF",
+      "provider": "afad",
+      "title": "Altıntaş (Kütahya)",
+      "mag": 0.7,
+      "depth": 7.01,
+      "lat": 39.0187,
+      "lon": 29.9137,
+      "timestamp": 1790201075000,
+      "closest_city": "Uşak",
+      "epicenter": "Kütahya",
+      "distance_km": 235.1,
+      "is_istanbul": false,
+      "first_seen": "2026-09-23T23:09:09.477Z"
+    },
+    {
+      "id": "pOmQH_BznW4fu",
+      "provider": "afad",
+      "title": "Sındırgı (Balıkesir)",
+      "mag": 0.9,
+      "depth": 10.13,
+      "lat": 39.1667,
+      "lon": 28.1463,
+      "timestamp": 1790200113000,
+      "closest_city": "Manisa",
+      "epicenter": "Balıkesir",
+      "distance_km": 216.7,
+      "is_istanbul": false,
+      "first_seen": "2026-09-23T23:09:09.477Z"
+    },
     {
       "id": "5vbfw1oCeghKD",
       "provider": "afad",
@@ -4463,51 +4508,6 @@
       "distance_km": 234.1,
       "is_istanbul": false,
       "first_seen": "2026-09-17T14:51:05.339Z"
-    },
-    {
-      "id": "3S_RNLUKVEYYP",
-      "provider": "afad",
-      "title": "Gediz (Kütahya)",
-      "mag": 1.4,
-      "depth": 7.69,
-      "lat": 38.9397,
-      "lon": 29.4327,
-      "timestamp": 1789639859000,
-      "closest_city": "Uşak",
-      "epicenter": "Kütahya",
-      "distance_km": 233.2,
-      "is_istanbul": false,
-      "first_seen": "2026-09-17T14:51:05.339Z"
-    },
-    {
-      "id": "YjWLxZlrFuaa1",
-      "provider": "afad",
-      "title": "Söğütlü (Sakarya)",
-      "mag": 0.6,
-      "depth": 6.68,
-      "lat": 40.9322,
-      "lon": 30.4125,
-      "timestamp": 1789638258000,
-      "closest_city": "Kocaeli",
-      "epicenter": "Sakarya",
-      "distance_km": 120.7,
-      "is_istanbul": false,
-      "first_seen": "2026-09-17T14:51:05.339Z"
-    },
-    {
-      "id": "BRwp85Qe09vJN",
-      "provider": "kandilli",
-      "title": "AVCILAR ACIKLARI-ISTANBUL (MARMARA DENIZI)",
-      "mag": 1.3,
-      "depth": 20,
-      "lat": 40.8965,
-      "lon": 28.7788,
-      "timestamp": 1789635706000,
-      "closest_city": "İstanbul",
-      "epicenter": "Marmara Denizi",
-      "distance_km": 20.9,
-      "is_istanbul": true,
-      "first_seen": "2026-09-17T09:57:40.944Z"
     }
   ]
 }
