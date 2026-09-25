@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-24T23:26:04.158Z",
-  "previous_generated_at": "2026-09-24T20:34:51.262Z",
+  "generated_at": "2026-09-25T01:47:20.162Z",
+  "previous_generated_at": "2026-09-24T23:26:04.158Z",
   "source": "Kandilli Rasathanesi / AFAD — api.orhanaydogdu.com.tr",
   "center": {
     "lat": 41.0082,
@@ -9,6 +9,21 @@
   "radius_km": 250,
   "count": 300,
   "quakes": [
+    {
+      "id": "3_WqgY4gfVaMc",
+      "provider": "kandilli",
+      "title": "KATRANDAGI-EMET (KUTAHYA)",
+      "mag": 0.8,
+      "depth": 9.1,
+      "lat": 39.233,
+      "lon": 29.0293,
+      "timestamp": 1790291752000,
+      "closest_city": "Uşak",
+      "epicenter": "Kütahya",
+      "distance_km": 197.4,
+      "is_istanbul": false,
+      "first_seen": "2026-09-25T01:47:20.162Z"
+    },
     {
       "id": "Gz19HgA7PPTBc",
       "provider": "kandilli",
@@ -4493,21 +4508,6 @@
       "distance_km": 201.2,
       "is_istanbul": false,
       "first_seen": "2026-09-18T00:04:12.721Z"
-    },
-    {
-      "id": "P97yZDH7Y4Yc5",
-      "provider": "kandilli",
-      "title": "KATRANDAGI-EMET (KUTAHYA)",
-      "mag": 1.3,
-      "depth": 5,
-      "lat": 39.2372,
-      "lon": 29.0517,
-      "timestamp": 1789681606000,
-      "closest_city": "Uşak",
-      "epicenter": "Kütahya",
-      "distance_km": 197,
-      "is_istanbul": false,
-      "first_seen": "2026-09-17T21:57:52.157Z"
     }
   ]
 }
