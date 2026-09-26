@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-26T16:39:08.158Z",
-  "previous_generated_at": "2026-09-26T12:26:33.156Z",
+  "generated_at": "2026-09-26T19:24:21.854Z",
+  "previous_generated_at": "2026-09-26T16:39:08.158Z",
   "source": "Kandilli Rasathanesi / AFAD — api.orhanaydogdu.com.tr",
   "center": {
     "lat": 41.0082,
@@ -9,6 +9,21 @@
   "radius_km": 250,
   "count": 300,
   "quakes": [
+    {
+      "id": "kauUb4RfWRSee",
+      "provider": "afad",
+      "title": "Simav (Kütahya)",
+      "mag": 1,
+      "depth": 7,
+      "lat": 39.5157,
+      "lon": 28.9575,
+      "timestamp": 1790439672000,
+      "closest_city": "Bursa",
+      "epicenter": "Kütahya",
+      "distance_km": 166,
+      "is_istanbul": false,
+      "first_seen": "2026-09-26T19:24:21.854Z"
+    },
     {
       "id": "kiihKPaf4gpUI",
       "provider": "kandilli",
@@ -4491,21 +4506,6 @@
       "closest_city": "Düzce",
       "epicenter": "Zonguldak",
       "distance_km": 215.1,
-      "is_istanbul": false,
-      "first_seen": "2026-09-18T13:40:29.024Z"
-    },
-    {
-      "id": "_eJHcd8Erb6Bx",
-      "provider": "afad",
-      "title": "Dursunbey (Balıkesir)",
-      "mag": 0.9,
-      "depth": 7.2,
-      "lat": 39.6795,
-      "lon": 28.737,
-      "timestamp": 1789728552000,
-      "closest_city": "Kütahya",
-      "epicenter": "Bursa",
-      "distance_km": 149.2,
       "is_istanbul": false,
       "first_seen": "2026-09-18T13:40:29.024Z"
     }
