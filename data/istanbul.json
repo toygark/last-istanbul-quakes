@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-26T19:24:21.854Z",
-  "previous_generated_at": "2026-09-26T16:39:08.158Z",
+  "generated_at": "2026-09-26T22:07:35.649Z",
+  "previous_generated_at": "2026-09-26T19:24:21.854Z",
   "source": "Kandilli Rasathanesi / AFAD — api.orhanaydogdu.com.tr",
   "center": {
     "lat": 41.0082,
@@ -9,6 +9,21 @@
   "radius_km": 250,
   "count": 300,
   "quakes": [
+    {
+      "id": "0eTijTnl3v5aQ",
+      "provider": "afad",
+      "title": "Ege Denizi - [19.80 km] Eceabat (Çanakkale)",
+      "mag": 1.4,
+      "depth": 7,
+      "lat": 40.4132,
+      "lon": 26.133,
+      "timestamp": 1790451001000,
+      "closest_city": "Çanakkale",
+      "epicenter": "Ege Denizi",
+      "distance_km": 248.8,
+      "is_istanbul": false,
+      "first_seen": "2026-09-26T22:07:35.649Z"
+    },
     {
       "id": "kauUb4RfWRSee",
       "provider": "afad",
@@ -4491,21 +4506,6 @@
       "closest_city": "İzmir",
       "epicenter": "Manisa",
       "distance_km": 249.5,
-      "is_istanbul": false,
-      "first_seen": "2026-09-18T13:40:29.024Z"
-    },
-    {
-      "id": "lowLW3pv0xUef",
-      "provider": "afad",
-      "title": "Ereğli (Zonguldak)",
-      "mag": 1.1,
-      "depth": 7,
-      "lat": 41.1535,
-      "lon": 31.5378,
-      "timestamp": 1789728763000,
-      "closest_city": "Düzce",
-      "epicenter": "Zonguldak",
-      "distance_km": 215.1,
       "is_istanbul": false,
       "first_seen": "2026-09-18T13:40:29.024Z"
     }
