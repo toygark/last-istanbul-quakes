@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-30T14:08:20.901Z",
-  "previous_generated_at": "2026-09-30T07:26:20.153Z",
+  "generated_at": "2026-09-30T19:19:16.370Z",
+  "previous_generated_at": "2026-09-30T14:08:20.901Z",
   "source": "Kandilli Rasathanesi / AFAD — api.orhanaydogdu.com.tr",
   "center": {
     "lat": 41.0082,
@@ -9,6 +9,21 @@
   "radius_km": 250,
   "count": 300,
   "quakes": [
+    {
+      "id": "FP5UNuVp5ciVx",
+      "provider": "kandilli",
+      "title": "KAGITHANE (ISTANBUL)",
+      "mag": 1,
+      "depth": 0,
+      "lat": 41.0918,
+      "lon": 28.949,
+      "timestamp": 1790780127000,
+      "closest_city": "Yalova",
+      "epicenter": "İstanbul",
+      "distance_km": 9.6,
+      "is_istanbul": true,
+      "first_seen": "2026-09-30T19:19:16.370Z"
+    },
     {
       "id": "o1PdyvHmUvhiz",
       "provider": "afad",
@@ -4491,21 +4506,6 @@
       "closest_city": "Balıkesir",
       "epicenter": "Manisa",
       "distance_km": 217.9,
-      "is_istanbul": false,
-      "first_seen": "2026-09-22T14:10:33.552Z"
-    },
-    {
-      "id": "8mhM42X_V6mG2",
-      "provider": "kandilli",
-      "title": "YENILER-SIMAV (KUTAHYA)",
-      "mag": 2.7,
-      "depth": 10.9,
-      "lat": 39.2323,
-      "lon": 28.9507,
-      "timestamp": 1790078420000,
-      "closest_city": "Uşak",
-      "epicenter": "Kütahya",
-      "distance_km": 197.5,
       "is_istanbul": false,
       "first_seen": "2026-09-22T14:10:33.552Z"
     }
