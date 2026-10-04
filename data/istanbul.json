@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-04T06:25:50.518Z",
-  "previous_generated_at": "2026-10-04T00:45:18.285Z",
+  "generated_at": "2026-10-04T12:46:02.566Z",
+  "previous_generated_at": "2026-10-04T06:25:50.518Z",
   "source": "Kandilli Rasathanesi / AFAD — api.orhanaydogdu.com.tr",
   "center": {
     "lat": 41.0082,
@@ -9,6 +9,21 @@
   "radius_km": 250,
   "count": 300,
   "quakes": [
+    {
+      "id": "KKQgYYi377pte",
+      "provider": "afad",
+      "title": "Marmara Denizi - [20.17 km] Marmara (Balıkesir)",
+      "mag": 1.7,
+      "depth": 7.08,
+      "lat": 40.7988,
+      "lon": 27.7997,
+      "timestamp": 1791108333000,
+      "closest_city": "Tekirdağ",
+      "epicenter": "Marmara Denizi",
+      "distance_km": 101.8,
+      "is_istanbul": false,
+      "first_seen": "2026-10-04T12:46:02.566Z"
+    },
     {
       "id": "_454Hw30yLOaE",
       "provider": "kandilli",
@@ -4491,21 +4506,6 @@
       "closest_city": "Manisa",
       "epicenter": "Balıkesir",
       "distance_km": 212.3,
-      "is_istanbul": false,
-      "first_seen": "2026-09-24T12:11:23.059Z"
-    },
-    {
-      "id": "UmKymnBEdIEQi",
-      "provider": "afad",
-      "title": "Sındırgı (Balıkesir)",
-      "mag": 0.9,
-      "depth": 7,
-      "lat": 39.2553,
-      "lon": 28.0217,
-      "timestamp": 1790241693000,
-      "closest_city": "Manisa",
-      "epicenter": "Balıkesir",
-      "distance_km": 211.2,
       "is_istanbul": false,
       "first_seen": "2026-09-24T12:11:23.059Z"
     }
