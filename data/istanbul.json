@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-04T23:11:05.294Z",
-  "previous_generated_at": "2026-10-04T20:09:22.059Z",
+  "generated_at": "2026-10-05T02:05:23.080Z",
+  "previous_generated_at": "2026-10-04T23:11:05.294Z",
   "source": "Kandilli Rasathanesi / AFAD — api.orhanaydogdu.com.tr",
   "center": {
     "lat": 41.0082,
@@ -9,6 +9,21 @@
   "radius_km": 250,
   "count": 300,
   "quakes": [
+    {
+      "id": "6iF0AktKSusqk",
+      "provider": "afad",
+      "title": "Gürsu (Bursa)",
+      "mag": 1,
+      "depth": 7.04,
+      "lat": 40.2627,
+      "lon": 29.2333,
+      "timestamp": 1791158634000,
+      "closest_city": "Yalova",
+      "epicenter": "Bursa",
+      "distance_km": 85.6,
+      "is_istanbul": false,
+      "first_seen": "2026-10-05T02:05:23.080Z"
+    },
     {
       "id": "Rx8nd75QFRuNj",
       "provider": "afad",
@@ -4491,21 +4506,6 @@
       "closest_city": "Manisa",
       "epicenter": "Balıkesir",
       "distance_km": 210.6,
-      "is_istanbul": false,
-      "first_seen": "2026-09-24T17:19:40.854Z"
-    },
-    {
-      "id": "jFwaeCD_ZHttk",
-      "provider": "afad",
-      "title": "Sındırgı (Balıkesir)",
-      "mag": 1,
-      "depth": 7,
-      "lat": 39.2238,
-      "lon": 28.1392,
-      "timestamp": 1790253271000,
-      "closest_city": "Manisa",
-      "epicenter": "Balıkesir",
-      "distance_km": 210.9,
       "is_istanbul": false,
       "first_seen": "2026-09-24T17:19:40.854Z"
     }
