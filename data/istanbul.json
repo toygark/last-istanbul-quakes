@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-15T10:20:28.120Z",
-  "previous_generated_at": "2026-10-15T05:39:55.409Z",
+  "generated_at": "2026-10-15T15:15:20.089Z",
+  "previous_generated_at": "2026-10-15T10:20:28.120Z",
   "source": "Kandilli Rasathanesi / AFAD — api.orhanaydogdu.com.tr",
   "center": {
     "lat": 41.0082,
@@ -9,6 +9,21 @@
   "radius_km": 250,
   "count": 300,
   "quakes": [
+    {
+      "id": "R2H0X4VwtTYUm",
+      "provider": "kandilli",
+      "title": "KATRANDAGI-EMET (KUTAHYA)",
+      "mag": 0.8,
+      "depth": 8.6,
+      "lat": 39.2317,
+      "lon": 29.0337,
+      "timestamp": 1792064193000,
+      "closest_city": "Uşak",
+      "epicenter": "Kütahya",
+      "distance_km": 197.6,
+      "is_istanbul": false,
+      "first_seen": "2026-10-15T15:15:20.089Z"
+    },
     {
       "id": "4wvnDedqfn_JL",
       "provider": "kandilli",
@@ -4491,21 +4506,6 @@
       "closest_city": "Afyon",
       "epicenter": "Kütahya",
       "distance_km": 243.7,
-      "is_istanbul": false,
-      "first_seen": "2026-10-09T06:45:08.251Z"
-    },
-    {
-      "id": "H7ntL35OULWJN",
-      "provider": "kandilli",
-      "title": "YOLCATI-ALTINTAS (KUTAHYA)",
-      "mag": 1.8,
-      "depth": 1.7,
-      "lat": 39.0278,
-      "lon": 30.229,
-      "timestamp": 1791517890000,
-      "closest_city": "Afyon",
-      "epicenter": "Kütahya",
-      "distance_km": 244.6,
       "is_istanbul": false,
       "first_seen": "2026-10-09T06:45:08.251Z"
     }
