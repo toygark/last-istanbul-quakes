@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-17T19:23:58.241Z",
-  "previous_generated_at": "2026-10-17T17:08:48.762Z",
+  "generated_at": "2026-10-17T21:37:57.360Z",
+  "previous_generated_at": "2026-10-17T19:23:58.241Z",
   "source": "Kandilli Rasathanesi / AFAD — api.orhanaydogdu.com.tr",
   "center": {
     "lat": 41.0082,
@@ -25,6 +25,21 @@
       "first_seen": "2026-10-17T19:23:58.241Z"
     },
     {
+      "id": "UCRJLKAMykOwu",
+      "provider": "kandilli",
+      "title": "KARAKURT-KIRKAGAC (MANISA)",
+      "mag": 1.2,
+      "depth": 10.7,
+      "lat": 39.1213,
+      "lon": 27.7922,
+      "timestamp": 1792261485000,
+      "closest_city": "İzmir",
+      "epicenter": "Manisa",
+      "distance_km": 232.8,
+      "is_istanbul": false,
+      "first_seen": "2026-10-17T21:37:57.360Z"
+    },
+    {
       "id": "nzPQ7uXgWtLY6",
       "provider": "afad",
       "title": "Kırkağaç (Manisa)",
@@ -40,6 +55,21 @@
       "first_seen": "2026-10-17T19:23:58.241Z"
     },
     {
+      "id": "FVookeYXYjipK",
+      "provider": "kandilli",
+      "title": "YEMISLI-SIMAV (KUTAHYA)",
+      "mag": 1.9,
+      "depth": 4.3,
+      "lat": 39.2327,
+      "lon": 29.0163,
+      "timestamp": 1792259867000,
+      "closest_city": "Uşak",
+      "epicenter": "Kütahya",
+      "distance_km": 197.5,
+      "is_istanbul": false,
+      "first_seen": "2026-10-17T21:37:57.360Z"
+    },
+    {
       "id": "BGxzQEFwXiE46",
       "provider": "afad",
       "title": "Simav (Kütahya)",
@@ -53,6 +83,21 @@
       "distance_km": 197.7,
       "is_istanbul": false,
       "first_seen": "2026-10-17T19:23:58.241Z"
+    },
+    {
+      "id": "QPVUEDm37yyrP",
+      "provider": "kandilli",
+      "title": "BOZLAR-BIGA (CANAKKALE)",
+      "mag": 1.4,
+      "depth": 9.9,
+      "lat": 40.3222,
+      "lon": 27.3748,
+      "timestamp": 1792258055000,
+      "closest_city": "Balıkesir",
+      "epicenter": "Çanakkale",
+      "distance_km": 155.3,
+      "is_istanbul": false,
+      "first_seen": "2026-10-17T21:37:57.360Z"
     },
     {
       "id": "08CFdbQSBN2lR",
@@ -4461,51 +4506,6 @@
       "closest_city": "Yalova",
       "epicenter": "Marmara Denizi",
       "distance_km": 40.2,
-      "is_istanbul": false,
-      "first_seen": "2026-10-10T22:50:30.326Z"
-    },
-    {
-      "id": "8cRJEMmUTTGmp",
-      "provider": "kandilli",
-      "title": "KOCAGUR-BIGA (CANAKKALE)",
-      "mag": 1.1,
-      "depth": 16.9,
-      "lat": 40.3543,
-      "lon": 27.1973,
-      "timestamp": 1791667763000,
-      "closest_city": "Balıkesir",
-      "epicenter": "Çanakkale",
-      "distance_km": 166.9,
-      "is_istanbul": false,
-      "first_seen": "2026-10-10T22:50:30.326Z"
-    },
-    {
-      "id": "hn0dj8gs56o_R",
-      "provider": "afad",
-      "title": "Marmara Denizi - [02.75 km] Merkez (Yalova)",
-      "mag": 0.9,
-      "depth": 7,
-      "lat": 40.6848,
-      "lon": 29.2873,
-      "timestamp": 1791666341000,
-      "closest_city": "Yalova",
-      "epicenter": "Marmara Denizi",
-      "distance_km": 44.4,
-      "is_istanbul": false,
-      "first_seen": "2026-10-10T22:50:30.326Z"
-    },
-    {
-      "id": "Lp0FQU_NBLfg4",
-      "provider": "afad",
-      "title": "Sındırgı (Balıkesir)",
-      "mag": 1.1,
-      "depth": 6.99,
-      "lat": 39.2095,
-      "lon": 28.1818,
-      "timestamp": 1791666071000,
-      "closest_city": "Manisa",
-      "epicenter": "Balıkesir",
-      "distance_km": 211.2,
       "is_istanbul": false,
       "first_seen": "2026-10-10T22:50:30.326Z"
     }
