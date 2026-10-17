@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-17T01:37:38.938Z",
-  "previous_generated_at": "2026-10-16T23:46:27.509Z",
+  "generated_at": "2026-10-17T06:12:49.285Z",
+  "previous_generated_at": "2026-10-17T01:37:38.938Z",
   "source": "Kandilli Rasathanesi / AFAD — api.orhanaydogdu.com.tr",
   "center": {
     "lat": 41.0082,
@@ -9,6 +9,21 @@
   "radius_km": 250,
   "count": 300,
   "quakes": [
+    {
+      "id": "BOyvkIQICaPgu",
+      "provider": "kandilli",
+      "title": "SINDIRGI (BALIKESIR)",
+      "mag": 1.5,
+      "depth": 10.7,
+      "lat": 39.2453,
+      "lon": 28.1753,
+      "timestamp": 1792208827000,
+      "closest_city": "Manisa",
+      "epicenter": "Balıkesir",
+      "distance_km": 207.6,
+      "is_istanbul": false,
+      "first_seen": "2026-10-17T06:12:49.285Z"
+    },
     {
       "id": "Afxbck_rESSZT",
       "provider": "afad",
@@ -4491,21 +4506,6 @@
       "closest_city": "İzmir",
       "epicenter": "Balıkesir",
       "distance_km": 224.2,
-      "is_istanbul": false,
-      "first_seen": "2026-10-10T02:35:34.879Z"
-    },
-    {
-      "id": "EyAqQ8VG8QjTu",
-      "provider": "afad",
-      "title": "Merkez (Bolu)",
-      "mag": 0.8,
-      "depth": 12.69,
-      "lat": 40.8315,
-      "lon": 31.6988,
-      "timestamp": 1791596794000,
-      "closest_city": "Düzce",
-      "epicenter": "Bolu",
-      "distance_km": 229.4,
       "is_istanbul": false,
       "first_seen": "2026-10-10T02:35:34.879Z"
     }
