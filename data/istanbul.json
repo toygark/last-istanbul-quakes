@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-18T11:36:30.527Z",
-  "previous_generated_at": "2026-10-18T06:26:56.887Z",
+  "generated_at": "2026-10-18T14:49:02.522Z",
+  "previous_generated_at": "2026-10-18T11:36:30.527Z",
   "source": "Kandilli Rasathanesi / AFAD — api.orhanaydogdu.com.tr",
   "center": {
     "lat": 41.0082,
@@ -9,6 +9,51 @@
   "radius_km": 250,
   "count": 300,
   "quakes": [
+    {
+      "id": "8VhVCh5i121_B",
+      "provider": "afad",
+      "title": "Sındırgı (Balıkesir)",
+      "mag": 1.2,
+      "depth": 7.7,
+      "lat": 39.2113,
+      "lon": 28.1695,
+      "timestamp": 1792333199000,
+      "closest_city": "Manisa",
+      "epicenter": "Balıkesir",
+      "distance_km": 211.3,
+      "is_istanbul": false,
+      "first_seen": "2026-10-18T14:49:02.522Z"
+    },
+    {
+      "id": "_VSqJAHCUApc4",
+      "provider": "kandilli",
+      "title": "KATRANDAGI-EMET (KUTAHYA)",
+      "mag": 2.2,
+      "depth": 7.2,
+      "lat": 39.2315,
+      "lon": 29.0698,
+      "timestamp": 1792327241000,
+      "closest_city": "Uşak",
+      "epicenter": "Kütahya",
+      "distance_km": 197.7,
+      "is_istanbul": false,
+      "first_seen": "2026-10-18T14:49:02.522Z"
+    },
+    {
+      "id": "Kvv05KXsfhuDA",
+      "provider": "afad",
+      "title": "Simav (Kütahya)",
+      "mag": 2.2,
+      "depth": 12.36,
+      "lat": 39.2407,
+      "lon": 29.022,
+      "timestamp": 1792327240000,
+      "closest_city": "Uşak",
+      "epicenter": "Kütahya",
+      "distance_km": 196.6,
+      "is_istanbul": false,
+      "first_seen": "2026-10-18T14:49:02.522Z"
+    },
     {
       "id": "42rL2Vj7wM5k2",
       "provider": "afad",
@@ -4463,51 +4508,6 @@
       "distance_km": 227.7,
       "is_istanbul": false,
       "first_seen": "2026-10-12T19:14:20.616Z"
-    },
-    {
-      "id": "k1Gvx2iMpArGh",
-      "provider": "afad",
-      "title": "Merkez (Kırklareli)",
-      "mag": 1.1,
-      "depth": 7,
-      "lat": 41.8605,
-      "lon": 27.3878,
-      "timestamp": 1791796726000,
-      "closest_city": "Tekirdağ",
-      "epicenter": "Kırklareli",
-      "distance_km": 163,
-      "is_istanbul": false,
-      "first_seen": "2026-10-12T19:14:20.616Z"
-    },
-    {
-      "id": "kqdruqVQ9C0ot",
-      "provider": "afad",
-      "title": "Bayramiç (Çanakkale)",
-      "mag": 1.1,
-      "depth": 6.84,
-      "lat": 39.9293,
-      "lon": 26.7737,
-      "timestamp": 1791796077000,
-      "closest_city": "Balıkesir",
-      "epicenter": "Çanakkale",
-      "distance_km": 221.7,
-      "is_istanbul": false,
-      "first_seen": "2026-10-12T19:14:20.616Z"
-    },
-    {
-      "id": "wV8MP7YO2Pdrx",
-      "provider": "afad",
-      "title": "Marmara Denizi, Marmara Adası, Marmara (Balıkesir)",
-      "mag": 1.8,
-      "depth": 7,
-      "lat": 40.6347,
-      "lon": 27.5997,
-      "timestamp": 1791794326000,
-      "closest_city": "Tekirdağ",
-      "epicenter": "Balıkesir",
-      "distance_km": 123.2,
-      "is_istanbul": false,
-      "first_seen": "2026-10-12T09:24:36.050Z"
     }
   ]
 }
