@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-19T00:02:59.341Z",
-  "previous_generated_at": "2026-10-18T19:40:51.029Z",
+  "generated_at": "2026-10-19T04:33:34.292Z",
+  "previous_generated_at": "2026-10-19T00:02:59.341Z",
   "source": "Kandilli Rasathanesi / AFAD — api.orhanaydogdu.com.tr",
   "center": {
     "lat": 41.0082,
@@ -9,6 +9,36 @@
   "radius_km": 250,
   "count": 300,
   "quakes": [
+    {
+      "id": "FF2n5nebbVAIs",
+      "provider": "afad",
+      "title": "Dursunbey (Balıkesir)",
+      "mag": 0.9,
+      "depth": 6.69,
+      "lat": 39.4372,
+      "lon": 28.5705,
+      "timestamp": 1792379908000,
+      "closest_city": "Bursa",
+      "epicenter": "Balıkesir",
+      "distance_km": 178.1,
+      "is_istanbul": false,
+      "first_seen": "2026-10-19T04:33:34.292Z"
+    },
+    {
+      "id": "5GWtrfg0OOKhS",
+      "provider": "afad",
+      "title": "Sındırgı (Balıkesir)",
+      "mag": 1,
+      "depth": 6.9,
+      "lat": 39.1288,
+      "lon": 28.2822,
+      "timestamp": 1792371957000,
+      "closest_city": "Manisa",
+      "epicenter": "Balıkesir",
+      "distance_km": 217.2,
+      "is_istanbul": false,
+      "first_seen": "2026-10-19T04:33:34.292Z"
+    },
     {
       "id": "iOnC2pAiPlIpp",
       "provider": "afad",
@@ -4478,36 +4508,6 @@
       "distance_km": 197.4,
       "is_istanbul": false,
       "first_seen": "2026-10-13T08:16:59.579Z"
-    },
-    {
-      "id": "Tu32xGalhsADQ",
-      "provider": "kandilli",
-      "title": "YEMISLI-SIMAV (KUTAHYA)",
-      "mag": 1.3,
-      "depth": 5.1,
-      "lat": 39.2283,
-      "lon": 29.0157,
-      "timestamp": 1791853485000,
-      "closest_city": "Uşak",
-      "epicenter": "Kütahya",
-      "distance_km": 197.9,
-      "is_istanbul": false,
-      "first_seen": "2026-10-13T01:25:53.509Z"
-    },
-    {
-      "id": "9C3RrCS7WLajS",
-      "provider": "afad",
-      "title": "Simav (Kütahya)",
-      "mag": 0.7,
-      "depth": 7.03,
-      "lat": 39.2333,
-      "lon": 28.977,
-      "timestamp": 1791849655000,
-      "closest_city": "Uşak",
-      "epicenter": "Kütahya",
-      "distance_km": 197.4,
-      "is_istanbul": false,
-      "first_seen": "2026-10-13T01:25:53.509Z"
     }
   ]
 }
