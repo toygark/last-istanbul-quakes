@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-22T23:19:31.240Z",
-  "previous_generated_at": "2026-10-22T20:03:21.755Z",
+  "generated_at": "2026-10-23T01:40:54.295Z",
+  "previous_generated_at": "2026-10-22T23:19:31.240Z",
   "source": "Kandilli Rasathanesi / AFAD — api.orhanaydogdu.com.tr",
   "center": {
     "lat": 41.0082,
@@ -9,6 +9,21 @@
   "radius_km": 250,
   "count": 300,
   "quakes": [
+    {
+      "id": "0cPqEpImgbj0o",
+      "provider": "kandilli",
+      "title": "SAHINYURDU-GEMLIK (BURSA)",
+      "mag": 1.8,
+      "depth": 8.5,
+      "lat": 40.4883,
+      "lon": 29.1787,
+      "timestamp": 1792716201000,
+      "closest_city": "Yalova",
+      "epicenter": "Bursa",
+      "distance_km": 60.2,
+      "is_istanbul": false,
+      "first_seen": "2026-10-23T01:40:54.295Z"
+    },
     {
       "id": "wNWP7GLsr7xb1",
       "provider": "kandilli",
@@ -4493,21 +4508,6 @@
       "distance_km": 209.4,
       "is_istanbul": false,
       "first_seen": "2026-10-15T19:14:49.691Z"
-    },
-    {
-      "id": "c2SIUGhEOjDZ2",
-      "provider": "afad",
-      "title": "Simav (Kütahya)",
-      "mag": 1.1,
-      "depth": 6.52,
-      "lat": 39.114,
-      "lon": 29.14,
-      "timestamp": 1792088846000,
-      "closest_city": "Uşak",
-      "epicenter": "Kütahya",
-      "distance_km": 211.1,
-      "is_istanbul": false,
-      "first_seen": "2026-10-15T22:26:59.750Z"
     }
   ]
 }
