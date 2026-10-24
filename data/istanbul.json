@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-24T06:59:59.224Z",
-  "previous_generated_at": "2026-10-24T01:51:13.630Z",
+  "generated_at": "2026-10-24T11:57:38.786Z",
+  "previous_generated_at": "2026-10-24T06:59:59.224Z",
   "source": "Kandilli Rasathanesi / AFAD — api.orhanaydogdu.com.tr",
   "center": {
     "lat": 41.0082,
@@ -9,6 +9,21 @@
   "radius_km": 250,
   "count": 300,
   "quakes": [
+    {
+      "id": "0_5Z1DYHyjiSJ",
+      "provider": "kandilli",
+      "title": "SAHINYURDU-GEMLIK (BURSA)",
+      "mag": 1.2,
+      "depth": 0,
+      "lat": 40.4722,
+      "lon": 29.2075,
+      "timestamp": 1792841617000,
+      "closest_city": "Yalova",
+      "epicenter": "Bursa",
+      "distance_km": 62.6,
+      "is_istanbul": false,
+      "first_seen": "2026-10-24T11:57:38.786Z"
+    },
     {
       "id": "fdgS5Cp5XNphU",
       "provider": "kandilli",
@@ -4491,21 +4506,6 @@
       "closest_city": "Uşak",
       "epicenter": "Kütahya",
       "distance_km": 197.1,
-      "is_istanbul": false,
-      "first_seen": "2026-10-17T10:56:03.761Z"
-    },
-    {
-      "id": "TFKy7uLynUAGB",
-      "provider": "kandilli",
-      "title": "KATRANDAGI-EMET (KUTAHYA)",
-      "mag": 2.3,
-      "depth": 7,
-      "lat": 39.2285,
-      "lon": 29.0402,
-      "timestamp": 1792217508000,
-      "closest_city": "Uşak",
-      "epicenter": "Kütahya",
-      "distance_km": 198,
       "is_istanbul": false,
       "first_seen": "2026-10-17T10:56:03.761Z"
     }
