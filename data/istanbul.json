@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-24T18:23:38.875Z",
-  "previous_generated_at": "2026-10-24T15:48:55.090Z",
+  "generated_at": "2026-10-24T21:05:36.236Z",
+  "previous_generated_at": "2026-10-24T18:23:38.875Z",
   "source": "Kandilli Rasathanesi / AFAD — api.orhanaydogdu.com.tr",
   "center": {
     "lat": 41.0082,
@@ -9,6 +9,21 @@
   "radius_km": 250,
   "count": 300,
   "quakes": [
+    {
+      "id": "vCvFCkVP8wAII",
+      "provider": "kandilli",
+      "title": "KARACAKAS-SOMA (MANISA)",
+      "mag": 3,
+      "depth": 8.4,
+      "lat": 39.2073,
+      "lon": 27.8032,
+      "timestamp": 1792874562000,
+      "closest_city": "Balıkesir",
+      "epicenter": "Manisa",
+      "distance_km": 223.8,
+      "is_istanbul": false,
+      "first_seen": "2026-10-24T21:05:36.236Z"
+    },
     {
       "id": "dEobSg6TqLAg3",
       "provider": "kandilli",
@@ -4491,21 +4506,6 @@
       "closest_city": "Uşak",
       "epicenter": "Kütahya",
       "distance_km": 198.6,
-      "is_istanbul": false,
-      "first_seen": "2026-10-17T10:56:03.761Z"
-    },
-    {
-      "id": "3DFtQI7ZyQdMY",
-      "provider": "kandilli",
-      "title": "KATRANDAGI-EMET (KUTAHYA)",
-      "mag": 1.1,
-      "depth": 12.5,
-      "lat": 39.2377,
-      "lon": 29.0383,
-      "timestamp": 1792218562000,
-      "closest_city": "Uşak",
-      "epicenter": "Kütahya",
-      "distance_km": 196.9,
       "is_istanbul": false,
       "first_seen": "2026-10-17T10:56:03.761Z"
     }
