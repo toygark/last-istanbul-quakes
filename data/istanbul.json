@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-31T19:59:39.772Z",
-  "previous_generated_at": "2026-10-31T16:10:11.429Z",
+  "generated_at": "2026-10-31T23:18:01.133Z",
+  "previous_generated_at": "2026-10-31T19:59:39.772Z",
   "source": "Kandilli Rasathanesi / AFAD — api.orhanaydogdu.com.tr",
   "center": {
     "lat": 41.0082,
@@ -9,6 +9,21 @@
   "radius_km": 250,
   "count": 300,
   "quakes": [
+    {
+      "id": "MSCdcBX1zGlrS",
+      "provider": "kandilli",
+      "title": "HAMZABEY-SIMAV (KUTAHYA)",
+      "mag": 1.2,
+      "depth": 16.4,
+      "lat": 39.2003,
+      "lon": 28.9507,
+      "timestamp": 1793480945000,
+      "closest_city": "Uşak",
+      "epicenter": "Kütahya",
+      "distance_km": 201,
+      "is_istanbul": false,
+      "first_seen": "2026-10-31T23:18:01.133Z"
+    },
     {
       "id": "SgOgBJUU54NcR",
       "provider": "kandilli",
@@ -4493,21 +4508,6 @@
       "distance_km": 197.7,
       "is_istanbul": false,
       "first_seen": "2026-10-20T05:16:38.168Z"
-    },
-    {
-      "id": "YeoNSvwOJWkYR",
-      "provider": "afad",
-      "title": "Sındırgı (Balıkesir)",
-      "mag": 0.8,
-      "depth": 7,
-      "lat": 39.1537,
-      "lon": 28.2317,
-      "timestamp": 1792452075000,
-      "closest_city": "Manisa",
-      "epicenter": "Balıkesir",
-      "distance_km": 215.8,
-      "is_istanbul": false,
-      "first_seen": "2026-10-20T00:35:58.856Z"
     }
   ]
 }
