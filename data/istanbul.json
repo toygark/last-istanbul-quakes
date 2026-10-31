@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-31T16:10:11.429Z",
-  "previous_generated_at": "2026-10-31T11:13:03.799Z",
+  "generated_at": "2026-10-31T19:59:39.772Z",
+  "previous_generated_at": "2026-10-31T16:10:11.429Z",
   "source": "Kandilli Rasathanesi / AFAD — api.orhanaydogdu.com.tr",
   "center": {
     "lat": 41.0082,
@@ -9,6 +9,21 @@
   "radius_km": 250,
   "count": 300,
   "quakes": [
+    {
+      "id": "SgOgBJUU54NcR",
+      "provider": "kandilli",
+      "title": "INLICE-SIMAV (KUTAHYA)",
+      "mag": 1.1,
+      "depth": 11,
+      "lat": 39.1267,
+      "lon": 29.1488,
+      "timestamp": 1793468600000,
+      "closest_city": "Uşak",
+      "epicenter": "Kütahya",
+      "distance_km": 209.7,
+      "is_istanbul": false,
+      "first_seen": "2026-10-31T19:59:39.772Z"
+    },
     {
       "id": "sEg3Wxeo3LOpq",
       "provider": "kandilli",
@@ -4491,21 +4506,6 @@
       "closest_city": "Manisa",
       "epicenter": "Balıkesir",
       "distance_km": 215.8,
-      "is_istanbul": false,
-      "first_seen": "2026-10-20T00:35:58.856Z"
-    },
-    {
-      "id": "DRaaTxVInMLBu",
-      "provider": "kandilli",
-      "title": "HACIVELIOBA-GONEN (BALIKESIR)",
-      "mag": 1.4,
-      "depth": 15.3,
-      "lat": 40.0747,
-      "lon": 27.6495,
-      "timestamp": 1792447915000,
-      "closest_city": "Çanakkale",
-      "epicenter": "Balıkesir",
-      "distance_km": 152.9,
       "is_istanbul": false,
       "first_seen": "2026-10-20T00:35:58.856Z"
     }
