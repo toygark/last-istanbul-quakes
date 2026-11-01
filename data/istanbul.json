@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-01T20:43:10.158Z",
-  "previous_generated_at": "2026-11-01T16:21:42.750Z",
+  "generated_at": "2026-11-01T23:57:05.551Z",
+  "previous_generated_at": "2026-11-01T20:43:10.158Z",
   "source": "Kandilli Rasathanesi / AFAD — api.orhanaydogdu.com.tr",
   "center": {
     "lat": 41.0082,
@@ -9,6 +9,36 @@
   "radius_km": 250,
   "count": 300,
   "quakes": [
+    {
+      "id": "kZ96OYt6GGOEU",
+      "provider": "kandilli",
+      "title": "KUCUKBUKU-SINDIRGI (BALIKESIR)",
+      "mag": 1.6,
+      "depth": 10.7,
+      "lat": 39.2865,
+      "lon": 28.0998,
+      "timestamp": 1793566757000,
+      "closest_city": "Manisa",
+      "epicenter": "Balıkesir",
+      "distance_km": 205.5,
+      "is_istanbul": false,
+      "first_seen": "2026-11-01T23:57:05.551Z"
+    },
+    {
+      "id": "Qj33I_OP8xv7B",
+      "provider": "kandilli",
+      "title": "KUCUKBUKU-SINDIRGI (BALIKESIR)",
+      "mag": 1.8,
+      "depth": 12.3,
+      "lat": 39.2833,
+      "lon": 28.0967,
+      "timestamp": 1793564463000,
+      "closest_city": "Manisa",
+      "epicenter": "Balıkesir",
+      "distance_km": 205.9,
+      "is_istanbul": false,
+      "first_seen": "2026-11-01T23:57:05.551Z"
+    },
     {
       "id": "RjclnuvssxR6K",
       "provider": "kandilli",
@@ -4476,36 +4506,6 @@
       "closest_city": "Uşak",
       "epicenter": "Kütahya",
       "distance_km": 238.9,
-      "is_istanbul": false,
-      "first_seen": "2026-10-20T10:11:13.004Z"
-    },
-    {
-      "id": "Hb0A6cJSP54Im",
-      "provider": "kandilli",
-      "title": "KARAKUR-SAPHANE (KUTAHYA)",
-      "mag": 1.6,
-      "depth": 5.4,
-      "lat": 38.866,
-      "lon": 29.0887,
-      "timestamp": 1792476335000,
-      "closest_city": "Uşak",
-      "epicenter": "Kütahya",
-      "distance_km": 238.4,
-      "is_istanbul": false,
-      "first_seen": "2026-10-20T10:11:13.004Z"
-    },
-    {
-      "id": "5J0YQGlvYEtFB",
-      "provider": "afad",
-      "title": "Karesi (Balıkesir)",
-      "mag": 1.2,
-      "depth": 7.09,
-      "lat": 39.782,
-      "lon": 27.9298,
-      "timestamp": 1792474234000,
-      "closest_city": "Bursa",
-      "epicenter": "Balıkesir",
-      "distance_km": 162.7,
       "is_istanbul": false,
       "first_seen": "2026-10-20T10:11:13.004Z"
     }
