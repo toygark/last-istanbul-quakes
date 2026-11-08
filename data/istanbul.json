@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-08T08:05:03.238Z",
-  "previous_generated_at": "2026-11-08T01:47:42.866Z",
+  "generated_at": "2026-11-08T15:07:30.981Z",
+  "previous_generated_at": "2026-11-08T08:05:03.238Z",
   "source": "Kandilli Rasathanesi / AFAD — api.orhanaydogdu.com.tr",
   "center": {
     "lat": 41.0082,
@@ -9,6 +9,51 @@
   "radius_km": 250,
   "count": 300,
   "quakes": [
+    {
+      "id": "RaL40bD1IUWZO",
+      "provider": "kandilli",
+      "title": "ICMELER-GOLYAKA (DUZCE)",
+      "mag": 1.5,
+      "depth": 5.1,
+      "lat": 40.8038,
+      "lon": 31.0218,
+      "timestamp": 1794140262000,
+      "closest_city": "Sakarya",
+      "epicenter": "Düzce",
+      "distance_km": 173.2,
+      "is_istanbul": false,
+      "first_seen": "2026-11-08T15:07:30.981Z"
+    },
+    {
+      "id": "zOiQNzGlpgiKg",
+      "provider": "kandilli",
+      "title": "BEHRAMLI-ECEABAT (CANAKKALE)",
+      "mag": 1.9,
+      "depth": 15.1,
+      "lat": 40.1385,
+      "lon": 26.3275,
+      "timestamp": 1794138465000,
+      "closest_city": "Balıkesir",
+      "epicenter": "Çanakkale",
+      "distance_km": 243.9,
+      "is_istanbul": false,
+      "first_seen": "2026-11-08T15:07:30.981Z"
+    },
+    {
+      "id": "6bvtBLA5REXbW",
+      "provider": "kandilli",
+      "title": "KUCUKBUKU-SINDIRGI (BALIKESIR)",
+      "mag": 1.5,
+      "depth": 9.9,
+      "lat": 39.2833,
+      "lon": 28.0803,
+      "timestamp": 1794129626000,
+      "closest_city": "Manisa",
+      "epicenter": "Balıkesir",
+      "distance_km": 206.4,
+      "is_istanbul": false,
+      "first_seen": "2026-11-08T15:07:30.981Z"
+    },
     {
       "id": "06YP2uUCVSTkv",
       "provider": "kandilli",
@@ -4463,51 +4508,6 @@
       "distance_km": 73.9,
       "is_istanbul": false,
       "first_seen": "2026-10-25T06:15:51.687Z"
-    },
-    {
-      "id": "SPtqaBsKzZYb6",
-      "provider": "kandilli",
-      "title": "ARMUTLU-GONEN (BALIKESIR)",
-      "mag": 1.1,
-      "depth": 12.2,
-      "lat": 40.1857,
-      "lon": 27.515,
-      "timestamp": 1792891612000,
-      "closest_city": "Çanakkale",
-      "epicenter": "Balıkesir",
-      "distance_km": 153.7,
-      "is_istanbul": false,
-      "first_seen": "2026-10-25T06:15:51.687Z"
-    },
-    {
-      "id": "WUNx7wNid_pfv",
-      "provider": "kandilli",
-      "title": "TOKAT-HISARCIK (KUTAHYA)",
-      "mag": 1,
-      "depth": 12.2,
-      "lat": 39.1773,
-      "lon": 29.1032,
-      "timestamp": 1792877496000,
-      "closest_city": "Uşak",
-      "epicenter": "Kütahya",
-      "distance_km": 203.9,
-      "is_istanbul": false,
-      "first_seen": "2026-10-24T23:08:52.855Z"
-    },
-    {
-      "id": "vCvFCkVP8wAII",
-      "provider": "kandilli",
-      "title": "KARACAKAS-SOMA (MANISA)",
-      "mag": 3,
-      "depth": 8.4,
-      "lat": 39.2073,
-      "lon": 27.8032,
-      "timestamp": 1792874562000,
-      "closest_city": "Balıkesir",
-      "epicenter": "Manisa",
-      "distance_km": 223.8,
-      "is_istanbul": false,
-      "first_seen": "2026-10-24T21:05:36.236Z"
     }
   ]
 }
