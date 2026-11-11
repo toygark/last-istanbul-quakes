@@ -4,31 +4,33 @@ A small static site that lists recent earthquakes in and around **Istanbul**, us
 [Kandilli Rasathanesi API](https://github.com/orhanayd/kandilli-rasathanesi-api)
 (Boğaziçi University Kandilli Observatory + AFAD data).
 
-The site refreshes itself on three levels:
+The site keeps itself current on three levels:
 
-1. A **scheduled GitHub Action** runs every 10 minutes: it fetches the latest quakes, commits
-   the snapshot to `data/istanbul.json`, and — in the same run — redeploys the site to Pages.
+1. A **GitHub Action** fetches the latest quakes, commits the snapshot to `data/istanbul.json`,
+   and — in the same run — redeploys the site to Pages. It runs on a push to `main` or on demand
+   (**Actions → Refresh data and deploy → Run workflow**). There is **no schedule**: a 10-minute
+   cron cost ~4,300 runs a month, and the two levels below make it unnecessary.
 2. The **open page polls that snapshot every 60 seconds** (and immediately when a backgrounded
    tab becomes visible again), so a browser left open keeps showing current data without a reload.
-3. If the snapshot is more than 10 minutes old — which happens when GitHub skips a scheduled run —
+3. Once the snapshot is more than 10 minutes old — which, with no schedule, is the normal case —
    the page **queries the API itself** and layers the fresh events on top, marking the result
-   *doğrudan API'den alındı*.
+   *doğrudan API'den alındı*. This is what keeps the list current between workflow runs.
 
 ## Where the data comes from
 
-The committed snapshot is the normal source. Fetching once per scheduled run and serving the
-result as a static file costs the upstream API about 6 requests/hour no matter how many people
-have the page open — a courtesy worth extending to a free community service that also asks for
-no more than **40 requests/minute per IP**.
+The committed snapshot is what the page loads first, and while the workflow ran on a cron it was
+also the only source anyone needed. Without that cron the snapshot ages, so the browser's own
+fetch does the live work: the page goes to the API directly whenever the snapshot has fallen more
+than 10 minutes behind — see below.
 
-That limit is per IP, so a visitor's own browser polling occasionally would never come close to
-it. The snapshot is about not hammering someone else's free API for no reason, not about avoiding
-a ban.
+That path is throttled to at most one request per browser every 5 minutes and gives up for the
+session after three consecutive failures. The upstream API is a free community service that asks
+for no more than **40 requests/minute per IP**, and that limit is per IP — so one visitor's
+browser calling it twelve times an hour at worst is nowhere near it.
 
-Which is why the page *does* go to the API directly when the snapshot has fallen more than
-10 minutes behind — see below. That path is throttled to at most one request per browser every
-5 minutes and gives up for the session after three consecutive failures, so it stays negligible
-even if it runs for a while.
+The snapshot still earns its place: it renders instantly with no network wait, it is what a
+visitor sees when the API is unreachable or the browser is offline, and it carries the `first_seen`
+stamps the YENİ badge reads.
 
 ## Layout
 
@@ -40,12 +42,12 @@ assets/theme.js                   the header's system / light / dark switch
 assets/quakes.js                  shared parsing, Istanbul rule, duplicate merging (browser and script)
 scripts/fetch-quakes.mjs          API client that writes the snapshot (Node 20+, no dependencies)
 data/istanbul.json                the committed snapshot the page reads
-.github/workflows/publish.yml     scheduled fetch, commit, and Pages deploy
+.github/workflows/publish.yml     fetch, commit, and Pages deploy (manual / on push)
 ```
 
 ## Setup
 
-1. Push to `main` (scheduled workflows only run off the default branch).
+1. Push to `main` — the workflow fetches and deploys from the default branch.
 2. Make sure the repo is **public**, or that the account has **GitHub Pro**. Pages is a paid
    feature on private repos, and while it is unavailable the *Source* setting below silently
    refuses to stick.
@@ -53,10 +55,10 @@ data/istanbul.json                the committed snapshot the page reads
    creating a Pages site requires repo-admin rights, which `GITHUB_TOKEN` cannot be granted, so
    the deploy workflow cannot enable Pages for you. Until a Pages site exists the deploy job fails
    with *"Get Pages site failed … Not Found"*.
-4. Run **Actions → Refresh data and deploy → Run workflow** once Pages is on. The schedule takes
-   over from there — though note GitHub delays and sometimes drops high-frequency `schedule`
-   events under load, so a 10-minute cron is a target rather than a guarantee. The page always
-   shows how old its snapshot actually is, so a skipped run is visible rather than silent.
+4. Run **Actions → Refresh data and deploy → Run workflow** once Pages is on. Nothing re-runs it
+   on its own, so trigger it by hand whenever you want a fresher committed snapshot; between runs
+   the live fallback keeps the list current. The page always shows how old its snapshot actually
+   is, so an aging snapshot is visible rather than silent.
 
 The workflow also needs **Settings → Actions → General → Read and write permissions** (the default
 for most repos) so it can commit its snapshot.
@@ -66,8 +68,8 @@ for most repos) so it can commit its snapshot.
 Commits made with `GITHUB_TOKEN` deliberately **do not trigger new workflow runs** — GitHub blocks
 that to prevent recursive builds. So a separate deploy workflow listening on `push` would never see
 the data commits, and the published site would sit frozen at whatever a human last pushed while
-`data/istanbul.json` kept moving. Doing both in one run avoids that trap. The deploy job is skipped
-on scheduled runs that found no new quakes, so unchanged data costs no build.
+`data/istanbul.json` kept moving. Doing both in one run avoids that trap. Every run is now a push
+or a manual dispatch, so the deploy job always publishes.
 
 ## Local development
 
@@ -154,7 +156,7 @@ generation on screen, which is all the page has to check.
 Two details keep it honest:
 
 - The live fallback stamps what it introduces the same way, using the fetch time, and caches the
-  stamped copies — so during a slipped schedule the badge still means what it says, and a reload
+  stamped copies — so between workflow runs the badge still means what it says, and a reload
   rebuilds the same marks.
 - Quakes a snapshot carried before this field existed have no stamp and never match, so the first
   run after deploying it flags nothing for anyone rather than lighting up the whole list.
@@ -184,13 +186,13 @@ from that, and the page handles both:
 The API throttle is stored the same way, so returning to the app repeatedly costs the upstream API
 one request per five minutes rather than one per switch.
 
-### When the schedule slips
+### When the snapshot falls behind
 
-GitHub `schedule` events are best-effort: in practice this repo has seen slots skipped entirely
-and others fire five minutes late. Nothing hides that — the page always states how old its data
-is, and the live fallback covers the gap when a run goes missing. If the API cannot be reached
-from the browser (no CORS headers for the origin, or the visitor is offline), the page keeps
-showing the snapshot with its true age rather than failing.
+With no scheduled run the committed snapshot is usually well over 10 minutes old, which is
+precisely the case the live fallback was written for. Nothing hides it: the page always states how
+old its data is, and says *doğrudan API'den alındı* once it has gone to the API itself. If the API
+cannot be reached from the browser (no CORS headers for the origin, or the visitor is offline),
+the page keeps showing the snapshot with its true age rather than failing.
 
 ## Theme switch
 

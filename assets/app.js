@@ -1,13 +1,13 @@
 /**
  * Reads the snapshot written by scripts/fetch-quakes.mjs and renders it.
  *
- * The snapshot is the normal source: it costs the upstream API one fetch per
- * scheduled run no matter how many people are reading. But GitHub's `schedule`
- * events are best-effort and routinely skipped, so when the snapshot has gone
- * stale the browser falls back to querying the API directly. That path is
- * throttled hard and only runs while the snapshot is behind -- the API's rate
- * limit is per IP, so one call per visitor every few minutes is negligible for
- * them, but there is no reason to make it whenever the snapshot is current.
+ * The snapshot renders first: it is instant, and it is the answer when the API
+ * cannot be reached. It is committed by a workflow that has no schedule, so it
+ * is normally behind, and the browser then falls back to querying the API
+ * directly. That path is throttled hard and only runs while the snapshot is
+ * behind -- the API's rate limit is per IP, so one call per visitor every few
+ * minutes is negligible for them, but there is no reason to make it whenever
+ * the snapshot is already current.
  */
 
 import { API_BASE, groupDuplicates, mergeQuakes, normalise, searchBody } from "./quakes.js?v=4";
@@ -313,8 +313,7 @@ function currentGeneration() {
 /**
  * A quake is "new" when the refresh on screen is the one that introduced it --
  * a property of the data, not of the reader, so every visitor sees the same
- * badges and a reload changes nothing. The next refresh, ten minutes later,
- * retires them.
+ * badges and a reload changes nothing. The next refresh retires them.
  *
  * The stamp is what makes this work: an event's own time cannot stand in for
  * it, because Kandilli and AFAD publish some events minutes after they happen,
