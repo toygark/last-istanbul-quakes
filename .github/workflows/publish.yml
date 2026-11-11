@@ -5,11 +5,13 @@ name: Refresh data and deploy
 # listening for pushes would never see the data commits and the published site
 # would sit frozen while data/istanbul.json kept moving.
 
-# There is deliberately no `schedule:` here. A 10-minute cron is ~4,300 runs a
-# month of Actions budget for a hobby site, and the page does not need it: once
-# the committed snapshot is more than 10 minutes old the browser queries the API
-# itself (see README, "Where the data comes from"). So this workflow runs when
-# the site changes, or on demand.
+# There is deliberately no `schedule:` here. A `*/10` cron asks for ~4,300 runs
+# a month; GitHub drops most high-frequency schedule events, so in practice it
+# fired about a tenth of that -- still Actions budget spent on keeping a
+# snapshot warm that the page does not need, because once data/istanbul.json is
+# more than 10 minutes old the browser queries the API itself (see README,
+# "Where the data comes from"). So this workflow runs when the site changes, or
+# on demand.
 on:
   push:
     branches: [main]
