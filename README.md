@@ -8,8 +8,9 @@ The site keeps itself current on three levels:
 
 1. A **GitHub Action** fetches the latest quakes, commits the snapshot to `data/istanbul.json`,
    and — in the same run — redeploys the site to Pages. It runs on a push to `main` or on demand
-   (**Actions → Refresh data and deploy → Run workflow**). There is **no schedule**: a 10-minute
-   cron cost ~4,300 runs a month, and the two levels below make it unnecessary.
+   (**Actions → Refresh data and deploy → Run workflow**). There is **no schedule**: a `*/10`
+   cron asks for ~4,300 runs a month — GitHub drops most of them, but the two levels below make
+   the whole thing unnecessary anyway.
 2. The **open page polls that snapshot every 60 seconds** (and immediately when a backgrounded
    tab becomes visible again), so a browser left open keeps showing current data without a reload.
 3. Once the snapshot is more than 10 minutes old — which, with no schedule, is the normal case —
